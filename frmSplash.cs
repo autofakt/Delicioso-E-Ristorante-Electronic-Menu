@@ -16,5 +16,13 @@ namespace FinalProjectGUIDraft
         {
             InitializeComponent();
         }
+
+        // Lee Salazar Chavez //
+        // Added timer to Splash screen //
+        private void timerSplash_Tick(object sender, EventArgs e)
+        {
+            timerSplash.Start();
+            this.Close();
+        }
     }
 }
