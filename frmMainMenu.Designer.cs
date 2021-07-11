@@ -78,8 +78,8 @@ namespace FinalProjectGUIDraft
             this.label14 = new System.Windows.Forms.Label();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
+            this.nudCapreseSalad = new System.Windows.Forms.NumericUpDown();
+            this.lblCapreseSaladQuantity = new System.Windows.Forms.Label();
             this.lblAntiPastoSalad = new System.Windows.Forms.Label();
             this.lblGreenSalad = new System.Windows.Forms.Label();
             this.lblCapreseSalad = new System.Windows.Forms.Label();
@@ -153,7 +153,7 @@ namespace FinalProjectGUIDraft
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapreseSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCapreseSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAntiPastoSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenSalad)).BeginInit();
@@ -195,6 +195,7 @@ namespace FinalProjectGUIDraft
             // 
             // tabPage1
             // 
+            this.tabPage1.AutoScroll = true;
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.numericUpDown10);
             this.tabPage1.Controls.Add(this.label10);
@@ -250,7 +251,7 @@ namespace FinalProjectGUIDraft
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(386, 516);
+            this.label4.Location = new System.Drawing.Point(423, 601);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(321, 60);
             this.label4.TabIndex = 21;
@@ -260,7 +261,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown10
             // 
             this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown10.Location = new System.Drawing.Point(525, 372);
+            this.numericUpDown10.Location = new System.Drawing.Point(525, 504);
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown10.TabIndex = 60;
@@ -269,7 +270,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(453, 374);
+            this.label10.Location = new System.Drawing.Point(453, 506);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 16);
             this.label10.TabIndex = 59;
@@ -278,7 +279,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown11
             // 
             this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown11.Location = new System.Drawing.Point(217, 372);
+            this.numericUpDown11.Location = new System.Drawing.Point(217, 504);
             this.numericUpDown11.Name = "numericUpDown11";
             this.numericUpDown11.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown11.TabIndex = 58;
@@ -287,7 +288,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(145, 374);
+            this.label11.Location = new System.Drawing.Point(145, 506);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 16);
             this.label11.TabIndex = 57;
@@ -296,7 +297,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown8
             // 
             this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown8.Location = new System.Drawing.Point(217, 517);
+            this.numericUpDown8.Location = new System.Drawing.Point(204, 648);
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown8.TabIndex = 55;
@@ -305,7 +306,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(145, 519);
+            this.label8.Location = new System.Drawing.Point(132, 650);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 16);
             this.label8.TabIndex = 54;
@@ -314,7 +315,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown9
             // 
             this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown9.Location = new System.Drawing.Point(826, 372);
+            this.numericUpDown9.Location = new System.Drawing.Point(826, 504);
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown9.TabIndex = 53;
@@ -323,7 +324,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(754, 374);
+            this.label9.Location = new System.Drawing.Point(754, 506);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 16);
             this.label9.TabIndex = 52;
@@ -332,7 +333,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown6
             // 
             this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown6.Location = new System.Drawing.Point(826, 217);
+            this.numericUpDown6.Location = new System.Drawing.Point(826, 349);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown6.TabIndex = 51;
@@ -341,7 +342,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(754, 219);
+            this.label6.Location = new System.Drawing.Point(754, 351);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(68, 16);
             this.label6.TabIndex = 50;
@@ -350,7 +351,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown7
             // 
             this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown7.Location = new System.Drawing.Point(826, 59);
+            this.numericUpDown7.Location = new System.Drawing.Point(787, 22);
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown7.TabIndex = 49;
@@ -359,7 +360,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(754, 61);
+            this.label7.Location = new System.Drawing.Point(713, 22);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 16);
             this.label7.TabIndex = 48;
@@ -368,7 +369,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown5
             // 
             this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown5.Location = new System.Drawing.Point(525, 221);
+            this.numericUpDown5.Location = new System.Drawing.Point(525, 353);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown5.TabIndex = 47;
@@ -377,7 +378,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(453, 223);
+            this.label5.Location = new System.Drawing.Point(453, 355);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 16);
             this.label5.TabIndex = 46;
@@ -386,7 +387,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown4
             // 
             this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown4.Location = new System.Drawing.Point(525, 59);
+            this.numericUpDown4.Location = new System.Drawing.Point(466, 16);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(55, 22);
             this.numericUpDown4.TabIndex = 45;
@@ -395,7 +396,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(453, 61);
+            this.label3.Location = new System.Drawing.Point(392, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 16);
             this.label3.TabIndex = 44;
@@ -404,7 +405,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown3
             // 
             this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown3.Location = new System.Drawing.Point(217, 217);
+            this.numericUpDown3.Location = new System.Drawing.Point(217, 349);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(45, 22);
             this.numericUpDown3.TabIndex = 43;
@@ -413,7 +414,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(145, 219);
+            this.label2.Location = new System.Drawing.Point(145, 351);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 42;
@@ -422,7 +423,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown2
             // 
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(217, 61);
+            this.numericUpDown2.Location = new System.Drawing.Point(172, 20);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(45, 22);
             this.numericUpDown2.TabIndex = 41;
@@ -431,7 +432,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(145, 63);
+            this.label1.Location = new System.Drawing.Point(100, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 16);
             this.label1.TabIndex = 40;
@@ -441,7 +442,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblSeafood.AutoSize = true;
             this.lblSeafood.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeafood.Location = new System.Drawing.Point(325, 434);
+            this.lblSeafood.Location = new System.Drawing.Point(325, 566);
             this.lblSeafood.Name = "lblSeafood";
             this.lblSeafood.Size = new System.Drawing.Size(101, 19);
             this.lblSeafood.TabIndex = 39;
@@ -451,7 +452,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblMacNCheese.AutoSize = true;
             this.lblMacNCheese.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMacNCheese.Location = new System.Drawing.Point(6, 576);
+            this.lblMacNCheese.Location = new System.Drawing.Point(-7, 707);
             this.lblMacNCheese.Name = "lblMacNCheese";
             this.lblMacNCheese.Size = new System.Drawing.Size(192, 19);
             this.lblMacNCheese.TabIndex = 38;
@@ -461,7 +462,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPizza.AutoSize = true;
             this.lblPizza.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPizza.Location = new System.Drawing.Point(666, 279);
+            this.lblPizza.Location = new System.Drawing.Point(666, 411);
             this.lblPizza.Name = "lblPizza";
             this.lblPizza.Size = new System.Drawing.Size(41, 19);
             this.lblPizza.TabIndex = 37;
@@ -471,7 +472,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblStuffedShells.AutoSize = true;
             this.lblStuffedShells.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStuffedShells.Location = new System.Drawing.Point(295, 279);
+            this.lblStuffedShells.Location = new System.Drawing.Point(295, 411);
             this.lblStuffedShells.Name = "lblStuffedShells";
             this.lblStuffedShells.Size = new System.Drawing.Size(200, 19);
             this.lblStuffedShells.TabIndex = 36;
@@ -481,7 +482,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblFettAlfredo.AutoSize = true;
             this.lblFettAlfredo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFettAlfredo.Location = new System.Drawing.Point(15, 279);
+            this.lblFettAlfredo.Location = new System.Drawing.Point(15, 411);
             this.lblFettAlfredo.Name = "lblFettAlfredo";
             this.lblFettAlfredo.Size = new System.Drawing.Size(124, 19);
             this.lblFettAlfredo.TabIndex = 35;
@@ -491,7 +492,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPesto.AutoSize = true;
             this.lblPesto.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesto.Location = new System.Drawing.Point(35, 434);
+            this.lblPesto.Location = new System.Drawing.Point(35, 566);
             this.lblPesto.Name = "lblPesto";
             this.lblPesto.Size = new System.Drawing.Size(85, 19);
             this.lblPesto.TabIndex = 34;
@@ -501,7 +502,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblRavioli.AutoSize = true;
             this.lblRavioli.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRavioli.Location = new System.Drawing.Point(620, 434);
+            this.lblRavioli.Location = new System.Drawing.Point(620, 566);
             this.lblRavioli.Name = "lblRavioli";
             this.lblRavioli.Size = new System.Drawing.Size(161, 19);
             this.lblRavioli.TabIndex = 33;
@@ -511,7 +512,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblRatatouille.AutoSize = true;
             this.lblRatatouille.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRatatouille.Location = new System.Drawing.Point(647, 123);
+            this.lblRatatouille.Location = new System.Drawing.Point(733, 269);
             this.lblRatatouille.Name = "lblRatatouille";
             this.lblRatatouille.Size = new System.Drawing.Size(80, 19);
             this.lblRatatouille.TabIndex = 32;
@@ -521,7 +522,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblLasagna.AutoSize = true;
             this.lblLasagna.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLasagna.Location = new System.Drawing.Point(325, 123);
+            this.lblLasagna.Location = new System.Drawing.Point(386, 268);
             this.lblLasagna.Name = "lblLasagna";
             this.lblLasagna.Size = new System.Drawing.Size(109, 19);
             this.lblLasagna.TabIndex = 31;
@@ -531,7 +532,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblSpaghetti.AutoSize = true;
             this.lblSpaghetti.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpaghetti.Location = new System.Drawing.Point(6, 130);
+            this.lblSpaghetti.Location = new System.Drawing.Point(89, 272);
             this.lblSpaghetti.Name = "lblSpaghetti";
             this.lblSpaghetti.Size = new System.Drawing.Size(142, 15);
             this.lblSpaghetti.TabIndex = 30;
@@ -541,7 +542,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picSeafoodPasta.Image = ((System.Drawing.Image)(resources.GetObject("picSeafoodPasta.Image")));
             this.picSeafoodPasta.InitialImage = null;
-            this.picSeafoodPasta.Location = new System.Drawing.Point(314, 328);
+            this.picSeafoodPasta.Location = new System.Drawing.Point(314, 460);
             this.picSeafoodPasta.Name = "picSeafoodPasta";
             this.picSeafoodPasta.Size = new System.Drawing.Size(120, 103);
             this.picSeafoodPasta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -552,7 +553,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picMacNCheese.Image = ((System.Drawing.Image)(resources.GetObject("picMacNCheese.Image")));
             this.picMacNCheese.InitialImage = null;
-            this.picMacNCheese.Location = new System.Drawing.Point(19, 470);
+            this.picMacNCheese.Location = new System.Drawing.Point(6, 601);
             this.picMacNCheese.Name = "picMacNCheese";
             this.picMacNCheese.Size = new System.Drawing.Size(120, 103);
             this.picMacNCheese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -563,7 +564,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picPizza.Image = ((System.Drawing.Image)(resources.GetObject("picPizza.Image")));
             this.picPizza.InitialImage = null;
-            this.picPizza.Location = new System.Drawing.Point(624, 173);
+            this.picPizza.Location = new System.Drawing.Point(624, 305);
             this.picPizza.Name = "picPizza";
             this.picPizza.Size = new System.Drawing.Size(120, 103);
             this.picPizza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -574,7 +575,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picStuffedShells.Image = ((System.Drawing.Image)(resources.GetObject("picStuffedShells.Image")));
             this.picStuffedShells.InitialImage = null;
-            this.picStuffedShells.Location = new System.Drawing.Point(314, 173);
+            this.picStuffedShells.Location = new System.Drawing.Point(314, 305);
             this.picStuffedShells.Name = "picStuffedShells";
             this.picStuffedShells.Size = new System.Drawing.Size(120, 103);
             this.picStuffedShells.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -585,7 +586,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picFettAlfredo.Image = ((System.Drawing.Image)(resources.GetObject("picFettAlfredo.Image")));
             this.picFettAlfredo.InitialImage = null;
-            this.picFettAlfredo.Location = new System.Drawing.Point(19, 173);
+            this.picFettAlfredo.Location = new System.Drawing.Point(19, 305);
             this.picFettAlfredo.Name = "picFettAlfredo";
             this.picFettAlfredo.Size = new System.Drawing.Size(120, 103);
             this.picFettAlfredo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -596,7 +597,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picPesto.Image = ((System.Drawing.Image)(resources.GetObject("picPesto.Image")));
             this.picPesto.InitialImage = null;
-            this.picPesto.Location = new System.Drawing.Point(19, 328);
+            this.picPesto.Location = new System.Drawing.Point(19, 460);
             this.picPesto.Name = "picPesto";
             this.picPesto.Size = new System.Drawing.Size(120, 103);
             this.picPesto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -607,7 +608,7 @@ namespace FinalProjectGUIDraft
             // 
             this.picRavioli.Image = ((System.Drawing.Image)(resources.GetObject("picRavioli.Image")));
             this.picRavioli.InitialImage = null;
-            this.picRavioli.Location = new System.Drawing.Point(624, 328);
+            this.picRavioli.Location = new System.Drawing.Point(624, 460);
             this.picRavioli.Name = "picRavioli";
             this.picRavioli.Size = new System.Drawing.Size(120, 103);
             this.picRavioli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -618,9 +619,9 @@ namespace FinalProjectGUIDraft
             // 
             this.picRatatouille.Image = ((System.Drawing.Image)(resources.GetObject("picRatatouille.Image")));
             this.picRatatouille.InitialImage = null;
-            this.picRatatouille.Location = new System.Drawing.Point(624, 17);
+            this.picRatatouille.Location = new System.Drawing.Point(644, 55);
             this.picRatatouille.Name = "picRatatouille";
-            this.picRatatouille.Size = new System.Drawing.Size(120, 103);
+            this.picRatatouille.Size = new System.Drawing.Size(237, 210);
             this.picRatatouille.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRatatouille.TabIndex = 22;
             this.picRatatouille.TabStop = false;
@@ -629,9 +630,9 @@ namespace FinalProjectGUIDraft
             // 
             this.picLasagne.Image = ((System.Drawing.Image)(resources.GetObject("picLasagne.Image")));
             this.picLasagne.InitialImage = null;
-            this.picLasagne.Location = new System.Drawing.Point(314, 17);
+            this.picLasagne.Location = new System.Drawing.Point(343, 55);
             this.picLasagne.Name = "picLasagne";
-            this.picLasagne.Size = new System.Drawing.Size(120, 103);
+            this.picLasagne.Size = new System.Drawing.Size(237, 210);
             this.picLasagne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLasagne.TabIndex = 21;
             this.picLasagne.TabStop = false;
@@ -640,9 +641,9 @@ namespace FinalProjectGUIDraft
             // 
             this.picSpaghetti.Image = ((System.Drawing.Image)(resources.GetObject("picSpaghetti.Image")));
             this.picSpaghetti.InitialImage = null;
-            this.picSpaghetti.Location = new System.Drawing.Point(19, 17);
+            this.picSpaghetti.Location = new System.Drawing.Point(39, 48);
             this.picSpaghetti.Name = "picSpaghetti";
-            this.picSpaghetti.Size = new System.Drawing.Size(120, 103);
+            this.picSpaghetti.Size = new System.Drawing.Size(237, 210);
             this.picSpaghetti.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSpaghetti.TabIndex = 20;
             this.picSpaghetti.TabStop = false;
@@ -653,8 +654,8 @@ namespace FinalProjectGUIDraft
             this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.numericUpDown12);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.numericUpDown1);
-            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.nudCapreseSalad);
+            this.tabPage2.Controls.Add(this.lblCapreseSaladQuantity);
             this.tabPage2.Controls.Add(this.lblAntiPastoSalad);
             this.tabPage2.Controls.Add(this.lblGreenSalad);
             this.tabPage2.Controls.Add(this.lblCapreseSalad);
@@ -673,7 +674,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown13
             // 
             this.numericUpDown13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown13.Location = new System.Drawing.Point(868, 288);
+            this.numericUpDown13.Location = new System.Drawing.Point(734, 19);
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(45, 22);
             this.numericUpDown13.TabIndex = 49;
@@ -682,7 +683,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(796, 290);
+            this.label14.Location = new System.Drawing.Point(662, 21);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 16);
             this.label14.TabIndex = 48;
@@ -691,7 +692,7 @@ namespace FinalProjectGUIDraft
             // numericUpDown12
             // 
             this.numericUpDown12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown12.Location = new System.Drawing.Point(580, 290);
+            this.numericUpDown12.Location = new System.Drawing.Point(479, 19);
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(45, 22);
             this.numericUpDown12.TabIndex = 47;
@@ -700,35 +701,38 @@ namespace FinalProjectGUIDraft
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(508, 292);
+            this.label13.Location = new System.Drawing.Point(407, 21);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 16);
             this.label13.TabIndex = 46;
             this.label13.Text = "Quantity:";
             // 
-            // numericUpDown1
+            // nudCapreseSalad
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(275, 290);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown1.TabIndex = 45;
+            this.nudCapreseSalad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCapreseSalad.Location = new System.Drawing.Point(173, 19);
+            this.nudCapreseSalad.Name = "nudCapreseSalad";
+            this.nudCapreseSalad.Size = new System.Drawing.Size(45, 22);
+            this.nudCapreseSalad.TabIndex = 45;
+            this.nudCapreseSalad.Visible = false;
+            this.nudCapreseSalad.ValueChanged += new System.EventHandler(this.nudCapreseSalad_ValueChanged);
             // 
-            // label12
+            // lblCapreseSaladQuantity
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(203, 292);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 16);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "Quantity:";
+            this.lblCapreseSaladQuantity.AutoSize = true;
+            this.lblCapreseSaladQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapreseSaladQuantity.Location = new System.Drawing.Point(101, 21);
+            this.lblCapreseSaladQuantity.Name = "lblCapreseSaladQuantity";
+            this.lblCapreseSaladQuantity.Size = new System.Drawing.Size(68, 16);
+            this.lblCapreseSaladQuantity.TabIndex = 44;
+            this.lblCapreseSaladQuantity.Text = "Quantity:";
+            this.lblCapreseSaladQuantity.Visible = false;
             // 
             // lblAntiPastoSalad
             // 
             this.lblAntiPastoSalad.AutoSize = true;
             this.lblAntiPastoSalad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAntiPastoSalad.Location = new System.Drawing.Point(675, 359);
+            this.lblAntiPastoSalad.Location = new System.Drawing.Point(718, 276);
             this.lblAntiPastoSalad.Name = "lblAntiPastoSalad";
             this.lblAntiPastoSalad.Size = new System.Drawing.Size(115, 19);
             this.lblAntiPastoSalad.TabIndex = 21;
@@ -738,7 +742,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblGreenSalad.AutoSize = true;
             this.lblGreenSalad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreenSalad.Location = new System.Drawing.Point(376, 359);
+            this.lblGreenSalad.Location = new System.Drawing.Point(412, 276);
             this.lblGreenSalad.Name = "lblGreenSalad";
             this.lblGreenSalad.Size = new System.Drawing.Size(112, 19);
             this.lblGreenSalad.TabIndex = 20;
@@ -748,7 +752,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblCapreseSalad.AutoSize = true;
             this.lblCapreseSalad.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCapreseSalad.Location = new System.Drawing.Point(80, 359);
+            this.lblCapreseSalad.Location = new System.Drawing.Point(117, 276);
             this.lblCapreseSalad.Name = "lblCapreseSalad";
             this.lblCapreseSalad.Size = new System.Drawing.Size(101, 19);
             this.lblCapreseSalad.TabIndex = 19;
@@ -757,19 +761,20 @@ namespace FinalProjectGUIDraft
             // picCapreseSalad
             // 
             this.picCapreseSalad.Image = ((System.Drawing.Image)(resources.GetObject("picCapreseSalad.Image")));
-            this.picCapreseSalad.Location = new System.Drawing.Point(64, 228);
+            this.picCapreseSalad.Location = new System.Drawing.Point(48, 47);
             this.picCapreseSalad.Name = "picCapreseSalad";
-            this.picCapreseSalad.Size = new System.Drawing.Size(133, 128);
+            this.picCapreseSalad.Size = new System.Drawing.Size(237, 210);
             this.picCapreseSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCapreseSalad.TabIndex = 18;
             this.picCapreseSalad.TabStop = false;
+            this.picCapreseSalad.Click += new System.EventHandler(this.picCapreseSalad_Click);
             // 
             // picAntiPastoSalad
             // 
             this.picAntiPastoSalad.Image = ((System.Drawing.Image)(resources.GetObject("picAntiPastoSalad.Image")));
-            this.picAntiPastoSalad.Location = new System.Drawing.Point(668, 228);
+            this.picAntiPastoSalad.Location = new System.Drawing.Point(652, 47);
             this.picAntiPastoSalad.Name = "picAntiPastoSalad";
-            this.picAntiPastoSalad.Size = new System.Drawing.Size(122, 128);
+            this.picAntiPastoSalad.Size = new System.Drawing.Size(237, 210);
             this.picAntiPastoSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAntiPastoSalad.TabIndex = 17;
             this.picAntiPastoSalad.TabStop = false;
@@ -777,9 +782,9 @@ namespace FinalProjectGUIDraft
             // picGreenSalad
             // 
             this.picGreenSalad.Image = ((System.Drawing.Image)(resources.GetObject("picGreenSalad.Image")));
-            this.picGreenSalad.Location = new System.Drawing.Point(369, 228);
+            this.picGreenSalad.Location = new System.Drawing.Point(353, 47);
             this.picGreenSalad.Name = "picGreenSalad";
-            this.picGreenSalad.Size = new System.Drawing.Size(133, 128);
+            this.picGreenSalad.Size = new System.Drawing.Size(237, 210);
             this.picGreenSalad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picGreenSalad.TabIndex = 16;
             this.picGreenSalad.TabStop = false;
@@ -1266,7 +1271,7 @@ namespace FinalProjectGUIDraft
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCapreseSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCapreseSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAntiPastoSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenSalad)).EndInit();
@@ -1353,8 +1358,8 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown numericUpDown12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.NumericUpDown nudCapreseSalad;
+        private System.Windows.Forms.Label lblCapreseSaladQuantity;
         private System.Windows.Forms.Label lblAntiPastoSalad;
         private System.Windows.Forms.Label lblGreenSalad;
         private System.Windows.Forms.Label lblCapreseSalad;
