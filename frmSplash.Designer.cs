@@ -29,35 +29,48 @@ namespace FinalProjectGUIDraft
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
+            this.picSplash = new System.Windows.Forms.PictureBox();
+            this.timerSplash = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.picSplash)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // picSplash
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to the XX Restaurant!";
+            this.picSplash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.picSplash.Image = ((System.Drawing.Image)(resources.GetObject("picSplash.Image")));
+            this.picSplash.Location = new System.Drawing.Point(0, 0);
+            this.picSplash.Name = "picSplash";
+            this.picSplash.Size = new System.Drawing.Size(599, 603);
+            this.picSplash.TabIndex = 0;
+            this.picSplash.TabStop = false;
+            // 
+            // timerSplash
+            // 
+            this.timerSplash.Enabled = true;
+            this.timerSplash.Interval = 2000;
+            this.timerSplash.Tick += new System.EventHandler(this.timerSplash_Tick);
             // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 235);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(600, 604);
+            this.Controls.Add(this.picSplash);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSplash";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
+            ((System.ComponentModel.ISupportInitialize)(this.picSplash)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picSplash;
+        private System.Windows.Forms.Timer timerSplash;
     }
 }
 

@@ -16,8 +16,10 @@ namespace FinalProjectGUIDraft
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Lee Salazar Chavez //
+            // Added frmSplash before frmMainMenu //
+            Application.Run(new frmSplash());
             Application.Run(new frmMainMenu());
-            //Application.Run(new frmSplash());
         }
     }
 }
