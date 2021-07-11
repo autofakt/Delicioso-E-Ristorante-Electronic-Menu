@@ -217,7 +217,6 @@ namespace FinalProjectGUIDraft
             nudPesto.Value++;
             nudPesto.Visible = true;
             lblPestoQuantity.Visible = true;
-            MessageBox.Show(nudPesto.AutoScrollPosition.ToString());
         }
 
         private void nudPesto_ValueChanged(object sender, EventArgs e)
@@ -226,6 +225,55 @@ namespace FinalProjectGUIDraft
             {
                 lblPestoQuantity.Visible = false;
                 nudPesto.Visible = false;
+            }
+        }
+
+        private void picMacaroni_Click(object sender, EventArgs e)
+        {
+            nudMacaroni.Value++;
+            nudMacaroni.Visible = true;
+            lblMacaroniQuantity.Visible = true;
+        }
+
+        private void nudMacaroni_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudMacaroni.Value == 0)
+            {
+                lblMacaroniQuantity.Visible = false;
+                nudMacaroni.Visible = false;
+            }
+        }
+
+        private void picSeafoodPasta_Click(object sender, EventArgs e)
+        {
+            nudSeafoodPasta.Value++;
+            nudSeafoodPasta.Visible = true;
+            lblSeafoodPastaQuantity.Visible = true;
+        }
+
+        private void nudSeafoodPasta_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudSeafoodPasta.Value == 0)
+            {
+                lblSeafoodPastaQuantity.Visible = false;
+                nudSeafoodPasta.Visible = false;
+            }
+        }
+
+        private void picRavioli_Click(object sender, EventArgs e)
+        {
+            nudRavioli.Value++;
+            nudRavioli.Visible = true;
+            lblRavioliQuantity.Visible = true;
+
+        }
+
+        private void nudRavioli_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudRavioli.Value == 0)
+            {
+                lblRavioliQuantity.Visible = false;
+                nudRavioli.Visible = false;
             }
         }
     }

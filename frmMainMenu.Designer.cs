@@ -31,11 +31,11 @@ namespace FinalProjectGUIDraft
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
+            this.y = new System.Windows.Forms.TabPage();
+            this.nudRavioli = new System.Windows.Forms.NumericUpDown();
+            this.lblRavioliQuantity = new System.Windows.Forms.Label();
+            this.nudSeafoodPasta = new System.Windows.Forms.NumericUpDown();
+            this.lblSeafoodPastaQuantity = new System.Windows.Forms.Label();
             this.nudPesto = new System.Windows.Forms.NumericUpDown();
             this.lblPestoQuantity = new System.Windows.Forms.Label();
             this.nudPizza = new System.Windows.Forms.NumericUpDown();
@@ -45,16 +45,14 @@ namespace FinalProjectGUIDraft
             this.nudFettAlfredo = new System.Windows.Forms.NumericUpDown();
             this.lblFettAlfredoQuantity = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
             this.nudRatatouille = new System.Windows.Forms.NumericUpDown();
             this.lblRatatouilleQuantity = new System.Windows.Forms.Label();
             this.nudLasagna = new System.Windows.Forms.NumericUpDown();
             this.lblLasagnaQuantity = new System.Windows.Forms.Label();
             this.nudSpaghetti = new System.Windows.Forms.NumericUpDown();
             this.lblSpaghettiQuantity = new System.Windows.Forms.Label();
-            this.lblSeafood = new System.Windows.Forms.Label();
-            this.lblMacNCheese = new System.Windows.Forms.Label();
+            this.lblSeafoodPasta = new System.Windows.Forms.Label();
+            this.lblMacaroni = new System.Windows.Forms.Label();
             this.lblPizza = new System.Windows.Forms.Label();
             this.lblStuffedShells = new System.Windows.Forms.Label();
             this.lblFettAlfredo = new System.Windows.Forms.Label();
@@ -64,7 +62,7 @@ namespace FinalProjectGUIDraft
             this.lblLasagna = new System.Windows.Forms.Label();
             this.lblSpaghetti = new System.Windows.Forms.Label();
             this.picSeafoodPasta = new System.Windows.Forms.PictureBox();
-            this.picMacNCheese = new System.Windows.Forms.PictureBox();
+            this.picMacaroni = new System.Windows.Forms.PictureBox();
             this.picPizza = new System.Windows.Forms.PictureBox();
             this.picStuffedShells = new System.Windows.Forms.PictureBox();
             this.picFettAlfredo = new System.Windows.Forms.PictureBox();
@@ -128,20 +126,21 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder = new System.Windows.Forms.Button();
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
+            this.nudMacaroni = new System.Windows.Forms.NumericUpDown();
+            this.lblMacaroniQuantity = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.y.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRavioli)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSeafoodPasta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPesto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPizza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStuffedShells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFettAlfredo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRatatouille)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLasagna)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaghetti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeafoodPasta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMacNCheese)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMacaroni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPizza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picStuffedShells)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFettAlfredo)).BeginInit();
@@ -178,11 +177,12 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.y);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -193,98 +193,100 @@ namespace FinalProjectGUIDraft
             this.tabControl1.Size = new System.Drawing.Size(953, 639);
             this.tabControl1.TabIndex = 15;
             // 
-            // tabPage1
+            // y
             // 
-            this.tabPage1.AutoScroll = true;
-            this.tabPage1.Controls.Add(this.numericUpDown1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.numericUpDown2);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.nudPesto);
-            this.tabPage1.Controls.Add(this.lblPestoQuantity);
-            this.tabPage1.Controls.Add(this.nudPizza);
-            this.tabPage1.Controls.Add(this.lblPizzaQuantity);
-            this.tabPage1.Controls.Add(this.nudStuffedShells);
-            this.tabPage1.Controls.Add(this.lblStuffedShellsQuantity);
-            this.tabPage1.Controls.Add(this.nudFettAlfredo);
-            this.tabPage1.Controls.Add(this.lblFettAlfredoQuantity);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.numericUpDown8);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.nudRatatouille);
-            this.tabPage1.Controls.Add(this.lblRatatouilleQuantity);
-            this.tabPage1.Controls.Add(this.nudLasagna);
-            this.tabPage1.Controls.Add(this.lblLasagnaQuantity);
-            this.tabPage1.Controls.Add(this.nudSpaghetti);
-            this.tabPage1.Controls.Add(this.lblSpaghettiQuantity);
-            this.tabPage1.Controls.Add(this.lblSeafood);
-            this.tabPage1.Controls.Add(this.lblMacNCheese);
-            this.tabPage1.Controls.Add(this.lblPizza);
-            this.tabPage1.Controls.Add(this.lblStuffedShells);
-            this.tabPage1.Controls.Add(this.lblFettAlfredo);
-            this.tabPage1.Controls.Add(this.lblPesto);
-            this.tabPage1.Controls.Add(this.lblRavioli);
-            this.tabPage1.Controls.Add(this.lblRatatouille);
-            this.tabPage1.Controls.Add(this.lblLasagna);
-            this.tabPage1.Controls.Add(this.lblSpaghetti);
-            this.tabPage1.Controls.Add(this.picSeafoodPasta);
-            this.tabPage1.Controls.Add(this.picMacNCheese);
-            this.tabPage1.Controls.Add(this.picPizza);
-            this.tabPage1.Controls.Add(this.picStuffedShells);
-            this.tabPage1.Controls.Add(this.picFettAlfredo);
-            this.tabPage1.Controls.Add(this.picPesto);
-            this.tabPage1.Controls.Add(this.picRavioli);
-            this.tabPage1.Controls.Add(this.picRatatouille);
-            this.tabPage1.Controls.Add(this.picLasagna);
-            this.tabPage1.Controls.Add(this.picSpaghetti);
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(945, 606);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Main Course Meals";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.y.AutoScroll = true;
+            this.y.Controls.Add(this.nudMacaroni);
+            this.y.Controls.Add(this.lblMacaroniQuantity);
+            this.y.Controls.Add(this.nudRavioli);
+            this.y.Controls.Add(this.lblRavioliQuantity);
+            this.y.Controls.Add(this.nudSeafoodPasta);
+            this.y.Controls.Add(this.lblSeafoodPastaQuantity);
+            this.y.Controls.Add(this.nudPesto);
+            this.y.Controls.Add(this.lblPestoQuantity);
+            this.y.Controls.Add(this.nudPizza);
+            this.y.Controls.Add(this.lblPizzaQuantity);
+            this.y.Controls.Add(this.nudStuffedShells);
+            this.y.Controls.Add(this.lblStuffedShellsQuantity);
+            this.y.Controls.Add(this.nudFettAlfredo);
+            this.y.Controls.Add(this.lblFettAlfredoQuantity);
+            this.y.Controls.Add(this.label4);
+            this.y.Controls.Add(this.nudRatatouille);
+            this.y.Controls.Add(this.lblRatatouilleQuantity);
+            this.y.Controls.Add(this.nudLasagna);
+            this.y.Controls.Add(this.lblLasagnaQuantity);
+            this.y.Controls.Add(this.nudSpaghetti);
+            this.y.Controls.Add(this.lblSpaghettiQuantity);
+            this.y.Controls.Add(this.lblSeafoodPasta);
+            this.y.Controls.Add(this.lblMacaroni);
+            this.y.Controls.Add(this.lblPizza);
+            this.y.Controls.Add(this.lblStuffedShells);
+            this.y.Controls.Add(this.lblFettAlfredo);
+            this.y.Controls.Add(this.lblPesto);
+            this.y.Controls.Add(this.lblRavioli);
+            this.y.Controls.Add(this.lblRatatouille);
+            this.y.Controls.Add(this.lblLasagna);
+            this.y.Controls.Add(this.lblSpaghetti);
+            this.y.Controls.Add(this.picSeafoodPasta);
+            this.y.Controls.Add(this.picMacaroni);
+            this.y.Controls.Add(this.picPizza);
+            this.y.Controls.Add(this.picStuffedShells);
+            this.y.Controls.Add(this.picFettAlfredo);
+            this.y.Controls.Add(this.picPesto);
+            this.y.Controls.Add(this.picRavioli);
+            this.y.Controls.Add(this.picRatatouille);
+            this.y.Controls.Add(this.picLasagna);
+            this.y.Controls.Add(this.picSpaghetti);
+            this.y.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.y.Location = new System.Drawing.Point(4, 29);
+            this.y.Name = "y";
+            this.y.Padding = new System.Windows.Forms.Padding(3);
+            this.y.Size = new System.Drawing.Size(945, 606);
+            this.y.TabIndex = 0;
+            this.y.Text = "Main Course Meals";
+            this.y.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown1
+            // nudRavioli
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(791, 617);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown1.TabIndex = 84;
-            this.numericUpDown1.Visible = false;
+            this.nudRavioli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudRavioli.Location = new System.Drawing.Point(791, 617);
+            this.nudRavioli.Name = "nudRavioli";
+            this.nudRavioli.Size = new System.Drawing.Size(45, 22);
+            this.nudRavioli.TabIndex = 84;
+            this.nudRavioli.Visible = false;
+            this.nudRavioli.ValueChanged += new System.EventHandler(this.nudRavioli_ValueChanged);
             // 
-            // label1
+            // lblRavioliQuantity
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(719, 619);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 16);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "Quantity:";
-            this.label1.Visible = false;
+            this.lblRavioliQuantity.AutoSize = true;
+            this.lblRavioliQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRavioliQuantity.Location = new System.Drawing.Point(719, 619);
+            this.lblRavioliQuantity.Name = "lblRavioliQuantity";
+            this.lblRavioliQuantity.Size = new System.Drawing.Size(68, 16);
+            this.lblRavioliQuantity.TabIndex = 83;
+            this.lblRavioliQuantity.Text = "Quantity:";
+            this.lblRavioliQuantity.Visible = false;
             // 
-            // numericUpDown2
+            // nudSeafoodPasta
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(485, 617);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown2.TabIndex = 82;
-            this.numericUpDown2.Visible = false;
+            this.nudSeafoodPasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSeafoodPasta.Location = new System.Drawing.Point(485, 617);
+            this.nudSeafoodPasta.Name = "nudSeafoodPasta";
+            this.nudSeafoodPasta.Size = new System.Drawing.Size(45, 22);
+            this.nudSeafoodPasta.TabIndex = 82;
+            this.nudSeafoodPasta.Visible = false;
+            this.nudSeafoodPasta.ValueChanged += new System.EventHandler(this.nudSeafoodPasta_ValueChanged);
             // 
-            // label2
+            // lblSeafoodPastaQuantity
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(413, 619);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
-            this.label2.TabIndex = 81;
-            this.label2.Text = "Quantity:";
-            this.label2.Visible = false;
+            this.lblSeafoodPastaQuantity.AutoSize = true;
+            this.lblSeafoodPastaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeafoodPastaQuantity.Location = new System.Drawing.Point(413, 619);
+            this.lblSeafoodPastaQuantity.Name = "lblSeafoodPastaQuantity";
+            this.lblSeafoodPastaQuantity.Size = new System.Drawing.Size(68, 16);
+            this.lblSeafoodPastaQuantity.TabIndex = 81;
+            this.lblSeafoodPastaQuantity.Text = "Quantity:";
+            this.lblSeafoodPastaQuantity.Visible = false;
             // 
             // nudPesto
             // 
@@ -375,30 +377,12 @@ namespace FinalProjectGUIDraft
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(431, 1094);
+            this.label4.Location = new System.Drawing.Point(462, 1030);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(321, 60);
             this.label4.TabIndex = 21;
             this.label4.Text = "Assume this form will be displayed in a \r\n9.7\'\' screen (similar to a iPad Air), \r" +
     "\nI used the size 1024*768 ";
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown8.Location = new System.Drawing.Point(212, 1141);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown8.TabIndex = 55;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(140, 1143);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 16);
-            this.label8.TabIndex = 54;
-            this.label8.Text = "Quantity:";
             // 
             // nudRatatouille
             // 
@@ -463,25 +447,25 @@ namespace FinalProjectGUIDraft
             this.lblSpaghettiQuantity.Text = "Quantity:";
             this.lblSpaghettiQuantity.Visible = false;
             // 
-            // lblSeafood
+            // lblSeafoodPasta
             // 
-            this.lblSeafood.AutoSize = true;
-            this.lblSeafood.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeafood.Location = new System.Drawing.Point(412, 874);
-            this.lblSeafood.Name = "lblSeafood";
-            this.lblSeafood.Size = new System.Drawing.Size(101, 19);
-            this.lblSeafood.TabIndex = 39;
-            this.lblSeafood.Text = "Seafood Pasta";
+            this.lblSeafoodPasta.AutoSize = true;
+            this.lblSeafoodPasta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSeafoodPasta.Location = new System.Drawing.Point(412, 874);
+            this.lblSeafoodPasta.Name = "lblSeafoodPasta";
+            this.lblSeafoodPasta.Size = new System.Drawing.Size(101, 19);
+            this.lblSeafoodPasta.TabIndex = 39;
+            this.lblSeafoodPasta.Text = "Seafood Pasta";
             // 
-            // lblMacNCheese
+            // lblMacaroni
             // 
-            this.lblMacNCheese.AutoSize = true;
-            this.lblMacNCheese.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMacNCheese.Location = new System.Drawing.Point(1, 1200);
-            this.lblMacNCheese.Name = "lblMacNCheese";
-            this.lblMacNCheese.Size = new System.Drawing.Size(192, 19);
-            this.lblMacNCheese.TabIndex = 38;
-            this.lblMacNCheese.Text = "Macaroni with Cheesesauce";
+            this.lblMacaroni.AutoSize = true;
+            this.lblMacaroni.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMacaroni.Location = new System.Drawing.Point(71, 1169);
+            this.lblMacaroni.Name = "lblMacaroni";
+            this.lblMacaroni.Size = new System.Drawing.Size(192, 19);
+            this.lblMacaroni.TabIndex = 38;
+            this.lblMacaroni.Text = "Macaroni with Cheesesauce";
             // 
             // lblPizza
             // 
@@ -573,17 +557,19 @@ namespace FinalProjectGUIDraft
             this.picSeafoodPasta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSeafoodPasta.TabIndex = 29;
             this.picSeafoodPasta.TabStop = false;
+            this.picSeafoodPasta.Click += new System.EventHandler(this.picSeafoodPasta_Click);
             // 
-            // picMacNCheese
+            // picMacaroni
             // 
-            this.picMacNCheese.Image = ((System.Drawing.Image)(resources.GetObject("picMacNCheese.Image")));
-            this.picMacNCheese.InitialImage = null;
-            this.picMacNCheese.Location = new System.Drawing.Point(14, 1094);
-            this.picMacNCheese.Name = "picMacNCheese";
-            this.picMacNCheese.Size = new System.Drawing.Size(120, 103);
-            this.picMacNCheese.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMacNCheese.TabIndex = 28;
-            this.picMacNCheese.TabStop = false;
+            this.picMacaroni.Image = ((System.Drawing.Image)(resources.GetObject("picMacaroni.Image")));
+            this.picMacaroni.InitialImage = null;
+            this.picMacaroni.Location = new System.Drawing.Point(48, 949);
+            this.picMacaroni.Name = "picMacaroni";
+            this.picMacaroni.Size = new System.Drawing.Size(237, 210);
+            this.picMacaroni.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMacaroni.TabIndex = 28;
+            this.picMacaroni.TabStop = false;
+            this.picMacaroni.Click += new System.EventHandler(this.picMacaroni_Click);
             // 
             // picPizza
             // 
@@ -643,6 +629,7 @@ namespace FinalProjectGUIDraft
             this.picRavioli.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRavioli.TabIndex = 23;
             this.picRavioli.TabStop = false;
+            this.picRavioli.Click += new System.EventHandler(this.picRavioli_Click);
             // 
             // picRatatouille
             // 
@@ -1285,6 +1272,27 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName.TabIndex = 16;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
             // 
+            // nudMacaroni
+            // 
+            this.nudMacaroni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudMacaroni.Location = new System.Drawing.Point(173, 912);
+            this.nudMacaroni.Name = "nudMacaroni";
+            this.nudMacaroni.Size = new System.Drawing.Size(45, 22);
+            this.nudMacaroni.TabIndex = 96;
+            this.nudMacaroni.Visible = false;
+            this.nudMacaroni.ValueChanged += new System.EventHandler(this.nudMacaroni_ValueChanged);
+            // 
+            // lblMacaroniQuantity
+            // 
+            this.lblMacaroniQuantity.AutoSize = true;
+            this.lblMacaroniQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMacaroniQuantity.Location = new System.Drawing.Point(101, 914);
+            this.lblMacaroniQuantity.Name = "lblMacaroniQuantity";
+            this.lblMacaroniQuantity.Size = new System.Drawing.Size(68, 16);
+            this.lblMacaroniQuantity.TabIndex = 91;
+            this.lblMacaroniQuantity.Text = "Quantity:";
+            this.lblMacaroniQuantity.Visible = false;
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1300,20 +1308,19 @@ namespace FinalProjectGUIDraft
             this.Name = "frmMainMenu";
             this.Text = "Select Type";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.y.ResumeLayout(false);
+            this.y.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRavioli)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSeafoodPasta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPesto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPizza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStuffedShells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudFettAlfredo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRatatouille)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLasagna)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpaghetti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSeafoodPasta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMacNCheese)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMacaroni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPizza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picStuffedShells)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFettAlfredo)).EndInit();
@@ -1353,6 +1360,7 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1360,7 +1368,7 @@ namespace FinalProjectGUIDraft
 
         #endregion
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage y;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
@@ -1368,16 +1376,14 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Button btnViewOrder;
         private System.Windows.Forms.PictureBox picRestLogo;
         private System.Windows.Forms.Label lblRestaurantName;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown nudRatatouille;
         private System.Windows.Forms.Label lblRatatouilleQuantity;
         private System.Windows.Forms.NumericUpDown nudLasagna;
         private System.Windows.Forms.Label lblLasagnaQuantity;
         private System.Windows.Forms.NumericUpDown nudSpaghetti;
         private System.Windows.Forms.Label lblSpaghettiQuantity;
-        private System.Windows.Forms.Label lblSeafood;
-        private System.Windows.Forms.Label lblMacNCheese;
+        private System.Windows.Forms.Label lblSeafoodPasta;
+        private System.Windows.Forms.Label lblMacaroni;
         private System.Windows.Forms.Label lblPizza;
         private System.Windows.Forms.Label lblStuffedShells;
         private System.Windows.Forms.Label lblFettAlfredo;
@@ -1387,7 +1393,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblLasagna;
         private System.Windows.Forms.Label lblSpaghetti;
         private System.Windows.Forms.PictureBox picSeafoodPasta;
-        private System.Windows.Forms.PictureBox picMacNCheese;
+        private System.Windows.Forms.PictureBox picMacaroni;
         private System.Windows.Forms.PictureBox picPizza;
         private System.Windows.Forms.PictureBox picStuffedShells;
         private System.Windows.Forms.PictureBox picFettAlfredo;
@@ -1451,11 +1457,13 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblStuffedShellsQuantity;
         private System.Windows.Forms.NumericUpDown nudFettAlfredo;
         private System.Windows.Forms.Label lblFettAlfredoQuantity;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown nudRavioli;
+        private System.Windows.Forms.Label lblRavioliQuantity;
+        private System.Windows.Forms.NumericUpDown nudSeafoodPasta;
+        private System.Windows.Forms.Label lblSeafoodPastaQuantity;
         private System.Windows.Forms.NumericUpDown nudPesto;
         private System.Windows.Forms.Label lblPestoQuantity;
+        private System.Windows.Forms.NumericUpDown nudMacaroni;
+        private System.Windows.Forms.Label lblMacaroniQuantity;
     }
 }
