@@ -16,5 +16,21 @@ namespace FinalProjectGUIDraft
         {
             InitializeComponent();
         }
+
+        private void picCapreseSalad_Click(object sender, EventArgs e)
+        {
+            nudCapreseSalad.Value++;
+            nudCapreseSalad.Visible = true;
+            lblCapreseSaladQuantity.Visible = true;
+        }
+
+        private void nudCapreseSalad_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudCapreseSalad.Value == 0)
+            {
+                lblCapreseSaladQuantity.Visible = false;
+                nudCapreseSalad.Visible = false;
+            }
+        }
     }
 }
