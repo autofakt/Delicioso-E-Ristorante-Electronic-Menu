@@ -30,8 +30,8 @@ namespace FinalProjectGUIDraft
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.y = new System.Windows.Forms.TabPage();
+            this.tabSelection = new System.Windows.Forms.TabControl();
+            this.MainMenu = new System.Windows.Forms.TabPage();
             this.nudMacaroni = new System.Windows.Forms.NumericUpDown();
             this.lblMacaroniQuantity = new System.Windows.Forms.Label();
             this.nudRavioli = new System.Windows.Forms.NumericUpDown();
@@ -46,7 +46,6 @@ namespace FinalProjectGUIDraft
             this.lblStuffedShellsQuantity = new System.Windows.Forms.Label();
             this.nudFettAlfredo = new System.Windows.Forms.NumericUpDown();
             this.lblFettAlfredoQuantity = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.nudRatatouille = new System.Windows.Forms.NumericUpDown();
             this.lblRatatouilleQuantity = new System.Windows.Forms.Label();
             this.nudLasagna = new System.Windows.Forms.NumericUpDown();
@@ -73,7 +72,7 @@ namespace FinalProjectGUIDraft
             this.picRatatouille = new System.Windows.Forms.PictureBox();
             this.picLasagna = new System.Windows.Forms.PictureBox();
             this.picSpaghetti = new System.Windows.Forms.PictureBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabSalads = new System.Windows.Forms.TabPage();
             this.nudAntiPastoSalad = new System.Windows.Forms.NumericUpDown();
             this.lblAntiPastoSaladQuantity = new System.Windows.Forms.Label();
             this.nudBigGreenSalad = new System.Windows.Forms.NumericUpDown();
@@ -86,7 +85,7 @@ namespace FinalProjectGUIDraft
             this.picCapreseSalad = new System.Windows.Forms.PictureBox();
             this.picAntiPastoSalad = new System.Windows.Forms.PictureBox();
             this.picGreenSalad = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabDesserts = new System.Windows.Forms.TabPage();
             this.nudCannoli = new System.Windows.Forms.NumericUpDown();
             this.lblCannoliQuantity = new System.Windows.Forms.Label();
             this.nudGelato = new System.Windows.Forms.NumericUpDown();
@@ -99,19 +98,19 @@ namespace FinalProjectGUIDraft
             this.picTiramisu = new System.Windows.Forms.PictureBox();
             this.picCannoli = new System.Windows.Forms.PictureBox();
             this.picGelato = new System.Windows.Forms.PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
-            this.label23 = new System.Windows.Forms.Label();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
-            this.label19 = new System.Windows.Forms.Label();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
-            this.label18 = new System.Windows.Forms.Label();
+            this.tabBeverages = new System.Windows.Forms.TabPage();
+            this.nudCocaCola = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityCocaCola = new System.Windows.Forms.Label();
+            this.nudItalianSoda = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityItalianSoda = new System.Windows.Forms.Label();
+            this.nudPeregrinoWater = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityPeregrinoWater = new System.Windows.Forms.Label();
+            this.nudWhiteWine = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityWhiteWine = new System.Windows.Forms.Label();
+            this.nudSanPerregrino = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantitySanPerregrino = new System.Windows.Forms.Label();
+            this.nudRedWine = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityRedWine = new System.Windows.Forms.Label();
             this.lblCocaCola = new System.Windows.Forms.Label();
             this.lblPerregrinoWater = new System.Windows.Forms.Label();
             this.lblSanPerregrino = new System.Windows.Forms.Label();
@@ -119,7 +118,7 @@ namespace FinalProjectGUIDraft
             this.lblWhiteWine = new System.Windows.Forms.Label();
             this.lblRedWine = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picPerregrinoWater = new System.Windows.Forms.PictureBox();
             this.picSanPellegrino = new System.Windows.Forms.PictureBox();
             this.picItalianSoda = new System.Windows.Forms.PictureBox();
             this.picWhiteWine = new System.Windows.Forms.PictureBox();
@@ -128,8 +127,8 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder = new System.Windows.Forms.Button();
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.y.SuspendLayout();
+            this.tabSelection.SuspendLayout();
+            this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRavioli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSeafoodPasta)).BeginInit();
@@ -150,29 +149,29 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picRatatouille)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLasagna)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpaghetti)).BeginInit();
-            this.tabPage2.SuspendLayout();
+            this.tabSalads.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAntiPastoSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBigGreenSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCapreseSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCapreseSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAntiPastoSalad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenSalad)).BeginInit();
-            this.tabPage3.SuspendLayout();
+            this.tabDesserts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCannoli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGelato)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTiramisu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTiramisu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCannoli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGelato)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            this.tabBeverages.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCocaCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeregrinoWater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPerregrino)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerregrinoWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSanPellegrino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picItalianSoda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).BeginInit();
@@ -180,77 +179,76 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabSelection
             // 
-            this.tabControl1.Controls.Add(this.y);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(28, 78);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(953, 639);
-            this.tabControl1.TabIndex = 15;
+            this.tabSelection.Controls.Add(this.MainMenu);
+            this.tabSelection.Controls.Add(this.tabSalads);
+            this.tabSelection.Controls.Add(this.tabDesserts);
+            this.tabSelection.Controls.Add(this.tabBeverages);
+            this.tabSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabSelection.Location = new System.Drawing.Point(28, 78);
+            this.tabSelection.Name = "tabSelection";
+            this.tabSelection.SelectedIndex = 0;
+            this.tabSelection.Size = new System.Drawing.Size(953, 639);
+            this.tabSelection.TabIndex = 15;
             // 
-            // y
+            // MainMenu
             // 
-            this.y.AutoScroll = true;
-            this.y.Controls.Add(this.nudMacaroni);
-            this.y.Controls.Add(this.lblMacaroniQuantity);
-            this.y.Controls.Add(this.nudRavioli);
-            this.y.Controls.Add(this.lblRavioliQuantity);
-            this.y.Controls.Add(this.nudSeafoodPasta);
-            this.y.Controls.Add(this.lblSeafoodPastaQuantity);
-            this.y.Controls.Add(this.nudPesto);
-            this.y.Controls.Add(this.lblPestoQuantity);
-            this.y.Controls.Add(this.nudPizza);
-            this.y.Controls.Add(this.lblPizzaQuantity);
-            this.y.Controls.Add(this.nudStuffedShells);
-            this.y.Controls.Add(this.lblStuffedShellsQuantity);
-            this.y.Controls.Add(this.nudFettAlfredo);
-            this.y.Controls.Add(this.lblFettAlfredoQuantity);
-            this.y.Controls.Add(this.label4);
-            this.y.Controls.Add(this.nudRatatouille);
-            this.y.Controls.Add(this.lblRatatouilleQuantity);
-            this.y.Controls.Add(this.nudLasagna);
-            this.y.Controls.Add(this.lblLasagnaQuantity);
-            this.y.Controls.Add(this.nudSpaghetti);
-            this.y.Controls.Add(this.lblSpaghettiQuantity);
-            this.y.Controls.Add(this.lblSeafoodPasta);
-            this.y.Controls.Add(this.lblMacaroni);
-            this.y.Controls.Add(this.lblPizza);
-            this.y.Controls.Add(this.lblStuffedShells);
-            this.y.Controls.Add(this.lblFettAlfredo);
-            this.y.Controls.Add(this.lblPesto);
-            this.y.Controls.Add(this.lblRavioli);
-            this.y.Controls.Add(this.lblRatatouille);
-            this.y.Controls.Add(this.lblLasagna);
-            this.y.Controls.Add(this.lblSpaghetti);
-            this.y.Controls.Add(this.picSeafoodPasta);
-            this.y.Controls.Add(this.picMacaroni);
-            this.y.Controls.Add(this.picPizza);
-            this.y.Controls.Add(this.picStuffedShells);
-            this.y.Controls.Add(this.picFettAlfredo);
-            this.y.Controls.Add(this.picPesto);
-            this.y.Controls.Add(this.picRavioli);
-            this.y.Controls.Add(this.picRatatouille);
-            this.y.Controls.Add(this.picLasagna);
-            this.y.Controls.Add(this.picSpaghetti);
-            this.y.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.y.Location = new System.Drawing.Point(4, 29);
-            this.y.Name = "y";
-            this.y.Padding = new System.Windows.Forms.Padding(3);
-            this.y.Size = new System.Drawing.Size(945, 606);
-            this.y.TabIndex = 0;
-            this.y.Text = "Main Course Meals";
-            this.y.UseVisualStyleBackColor = true;
+            this.MainMenu.AutoScroll = true;
+            this.MainMenu.Controls.Add(this.nudMacaroni);
+            this.MainMenu.Controls.Add(this.lblMacaroniQuantity);
+            this.MainMenu.Controls.Add(this.nudRavioli);
+            this.MainMenu.Controls.Add(this.lblRavioliQuantity);
+            this.MainMenu.Controls.Add(this.nudSeafoodPasta);
+            this.MainMenu.Controls.Add(this.lblSeafoodPastaQuantity);
+            this.MainMenu.Controls.Add(this.nudPesto);
+            this.MainMenu.Controls.Add(this.lblPestoQuantity);
+            this.MainMenu.Controls.Add(this.nudPizza);
+            this.MainMenu.Controls.Add(this.lblPizzaQuantity);
+            this.MainMenu.Controls.Add(this.nudStuffedShells);
+            this.MainMenu.Controls.Add(this.lblStuffedShellsQuantity);
+            this.MainMenu.Controls.Add(this.nudFettAlfredo);
+            this.MainMenu.Controls.Add(this.lblFettAlfredoQuantity);
+            this.MainMenu.Controls.Add(this.nudRatatouille);
+            this.MainMenu.Controls.Add(this.lblRatatouilleQuantity);
+            this.MainMenu.Controls.Add(this.nudLasagna);
+            this.MainMenu.Controls.Add(this.lblLasagnaQuantity);
+            this.MainMenu.Controls.Add(this.nudSpaghetti);
+            this.MainMenu.Controls.Add(this.lblSpaghettiQuantity);
+            this.MainMenu.Controls.Add(this.lblSeafoodPasta);
+            this.MainMenu.Controls.Add(this.lblMacaroni);
+            this.MainMenu.Controls.Add(this.lblPizza);
+            this.MainMenu.Controls.Add(this.lblStuffedShells);
+            this.MainMenu.Controls.Add(this.lblFettAlfredo);
+            this.MainMenu.Controls.Add(this.lblPesto);
+            this.MainMenu.Controls.Add(this.lblRavioli);
+            this.MainMenu.Controls.Add(this.lblRatatouille);
+            this.MainMenu.Controls.Add(this.lblLasagna);
+            this.MainMenu.Controls.Add(this.lblSpaghetti);
+            this.MainMenu.Controls.Add(this.picSeafoodPasta);
+            this.MainMenu.Controls.Add(this.picMacaroni);
+            this.MainMenu.Controls.Add(this.picPizza);
+            this.MainMenu.Controls.Add(this.picStuffedShells);
+            this.MainMenu.Controls.Add(this.picFettAlfredo);
+            this.MainMenu.Controls.Add(this.picPesto);
+            this.MainMenu.Controls.Add(this.picRavioli);
+            this.MainMenu.Controls.Add(this.picRatatouille);
+            this.MainMenu.Controls.Add(this.picLasagna);
+            this.MainMenu.Controls.Add(this.picSpaghetti);
+            this.MainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainMenu.Location = new System.Drawing.Point(4, 29);
+            this.MainMenu.Name = "MainMenu";
+            this.MainMenu.Padding = new System.Windows.Forms.Padding(3);
+            this.MainMenu.Size = new System.Drawing.Size(945, 606);
+            this.MainMenu.TabIndex = 0;
+            this.MainMenu.Text = "Main Course Meals";
+            this.MainMenu.UseVisualStyleBackColor = true;
             // 
             // nudMacaroni
             // 
             this.nudMacaroni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudMacaroni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMacaroni.Location = new System.Drawing.Point(173, 919);
+            this.nudMacaroni.Location = new System.Drawing.Point(133, 919);
             this.nudMacaroni.Name = "nudMacaroni";
             this.nudMacaroni.Size = new System.Drawing.Size(45, 22);
             this.nudMacaroni.TabIndex = 96;
@@ -259,12 +257,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblMacaroniQuantity
             // 
-            this.lblMacaroniQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMacaroniQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblMacaroniQuantity.AutoSize = true;
             this.lblMacaroniQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMacaroniQuantity.Location = new System.Drawing.Point(101, 921);
+            this.lblMacaroniQuantity.Location = new System.Drawing.Point(59, 919);
             this.lblMacaroniQuantity.Name = "lblMacaroniQuantity";
             this.lblMacaroniQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblMacaroniQuantity.TabIndex = 91;
@@ -275,7 +271,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudRavioli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudRavioli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRavioli.Location = new System.Drawing.Point(791, 617);
+            this.nudRavioli.Location = new System.Drawing.Point(751, 617);
             this.nudRavioli.Name = "nudRavioli";
             this.nudRavioli.Size = new System.Drawing.Size(45, 22);
             this.nudRavioli.TabIndex = 84;
@@ -284,12 +280,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblRavioliQuantity
             // 
-            this.lblRavioliQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRavioliQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblRavioliQuantity.AutoSize = true;
             this.lblRavioliQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRavioliQuantity.Location = new System.Drawing.Point(719, 619);
+            this.lblRavioliQuantity.Location = new System.Drawing.Point(678, 619);
             this.lblRavioliQuantity.Name = "lblRavioliQuantity";
             this.lblRavioliQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblRavioliQuantity.TabIndex = 83;
@@ -300,7 +294,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudSeafoodPasta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudSeafoodPasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSeafoodPasta.Location = new System.Drawing.Point(485, 617);
+            this.nudSeafoodPasta.Location = new System.Drawing.Point(445, 617);
             this.nudSeafoodPasta.Name = "nudSeafoodPasta";
             this.nudSeafoodPasta.Size = new System.Drawing.Size(45, 22);
             this.nudSeafoodPasta.TabIndex = 82;
@@ -309,12 +303,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblSeafoodPastaQuantity
             // 
-            this.lblSeafoodPastaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSeafoodPastaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSeafoodPastaQuantity.AutoSize = true;
             this.lblSeafoodPastaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeafoodPastaQuantity.Location = new System.Drawing.Point(413, 619);
+            this.lblSeafoodPastaQuantity.Location = new System.Drawing.Point(371, 619);
             this.lblSeafoodPastaQuantity.Name = "lblSeafoodPastaQuantity";
             this.lblSeafoodPastaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblSeafoodPastaQuantity.TabIndex = 81;
@@ -325,7 +317,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudPesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudPesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPesto.Location = new System.Drawing.Point(173, 617);
+            this.nudPesto.Location = new System.Drawing.Point(133, 617);
             this.nudPesto.Name = "nudPesto";
             this.nudPesto.Size = new System.Drawing.Size(45, 22);
             this.nudPesto.TabIndex = 80;
@@ -334,12 +326,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblPestoQuantity
             // 
-            this.lblPestoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPestoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPestoQuantity.AutoSize = true;
             this.lblPestoQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPestoQuantity.Location = new System.Drawing.Point(101, 619);
+            this.lblPestoQuantity.Location = new System.Drawing.Point(59, 619);
             this.lblPestoQuantity.Name = "lblPestoQuantity";
             this.lblPestoQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblPestoQuantity.TabIndex = 79;
@@ -350,7 +340,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudPizza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPizza.Location = new System.Drawing.Point(791, 316);
+            this.nudPizza.Location = new System.Drawing.Point(751, 316);
             this.nudPizza.Name = "nudPizza";
             this.nudPizza.Size = new System.Drawing.Size(45, 22);
             this.nudPizza.TabIndex = 72;
@@ -359,12 +349,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblPizzaQuantity
             // 
-            this.lblPizzaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPizzaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPizzaQuantity.AutoSize = true;
             this.lblPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPizzaQuantity.Location = new System.Drawing.Point(719, 318);
+            this.lblPizzaQuantity.Location = new System.Drawing.Point(678, 318);
             this.lblPizzaQuantity.Name = "lblPizzaQuantity";
             this.lblPizzaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblPizzaQuantity.TabIndex = 71;
@@ -375,7 +363,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudStuffedShells.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudStuffedShells.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStuffedShells.Location = new System.Drawing.Point(485, 316);
+            this.nudStuffedShells.Location = new System.Drawing.Point(445, 316);
             this.nudStuffedShells.Name = "nudStuffedShells";
             this.nudStuffedShells.Size = new System.Drawing.Size(45, 22);
             this.nudStuffedShells.TabIndex = 70;
@@ -384,12 +372,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblStuffedShellsQuantity
             // 
-            this.lblStuffedShellsQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStuffedShellsQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblStuffedShellsQuantity.AutoSize = true;
             this.lblStuffedShellsQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStuffedShellsQuantity.Location = new System.Drawing.Point(413, 318);
+            this.lblStuffedShellsQuantity.Location = new System.Drawing.Point(374, 318);
             this.lblStuffedShellsQuantity.Name = "lblStuffedShellsQuantity";
             this.lblStuffedShellsQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblStuffedShellsQuantity.TabIndex = 69;
@@ -400,7 +386,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudFettAlfredo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudFettAlfredo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudFettAlfredo.Location = new System.Drawing.Point(173, 316);
+            this.nudFettAlfredo.Location = new System.Drawing.Point(133, 316);
             this.nudFettAlfredo.Name = "nudFettAlfredo";
             this.nudFettAlfredo.Size = new System.Drawing.Size(45, 22);
             this.nudFettAlfredo.TabIndex = 68;
@@ -409,35 +395,21 @@ namespace FinalProjectGUIDraft
             // 
             // lblFettAlfredoQuantity
             // 
-            this.lblFettAlfredoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFettAlfredoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblFettAlfredoQuantity.AutoSize = true;
             this.lblFettAlfredoQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFettAlfredoQuantity.Location = new System.Drawing.Point(101, 318);
+            this.lblFettAlfredoQuantity.Location = new System.Drawing.Point(59, 316);
             this.lblFettAlfredoQuantity.Name = "lblFettAlfredoQuantity";
             this.lblFettAlfredoQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblFettAlfredoQuantity.TabIndex = 67;
             this.lblFettAlfredoQuantity.Text = "Quantity:";
             this.lblFettAlfredoQuantity.Visible = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(462, 1030);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 60);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Assume this form will be displayed in a \r\n9.7\'\' screen (similar to a iPad Air), \r" +
-    "\nI used the size 1024*768 ";
-            // 
             // nudRatatouille
             // 
             this.nudRatatouille.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudRatatouille.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRatatouille.Location = new System.Drawing.Point(791, 19);
+            this.nudRatatouille.Location = new System.Drawing.Point(751, 19);
             this.nudRatatouille.Name = "nudRatatouille";
             this.nudRatatouille.Size = new System.Drawing.Size(45, 22);
             this.nudRatatouille.TabIndex = 49;
@@ -446,12 +418,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblRatatouilleQuantity
             // 
-            this.lblRatatouilleQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRatatouilleQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblRatatouilleQuantity.AutoSize = true;
             this.lblRatatouilleQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRatatouilleQuantity.Location = new System.Drawing.Point(719, 21);
+            this.lblRatatouilleQuantity.Location = new System.Drawing.Point(678, 21);
             this.lblRatatouilleQuantity.Name = "lblRatatouilleQuantity";
             this.lblRatatouilleQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblRatatouilleQuantity.TabIndex = 48;
@@ -462,7 +432,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudLasagna.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudLasagna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLasagna.Location = new System.Drawing.Point(485, 19);
+            this.nudLasagna.Location = new System.Drawing.Point(445, 19);
             this.nudLasagna.Name = "nudLasagna";
             this.nudLasagna.Size = new System.Drawing.Size(45, 22);
             this.nudLasagna.TabIndex = 45;
@@ -471,12 +441,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblLasagnaQuantity
             // 
-            this.lblLasagnaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLasagnaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLasagnaQuantity.AutoSize = true;
             this.lblLasagnaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLasagnaQuantity.Location = new System.Drawing.Point(413, 21);
+            this.lblLasagnaQuantity.Location = new System.Drawing.Point(374, 21);
             this.lblLasagnaQuantity.Name = "lblLasagnaQuantity";
             this.lblLasagnaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblLasagnaQuantity.TabIndex = 44;
@@ -487,7 +455,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudSpaghetti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudSpaghetti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSpaghetti.Location = new System.Drawing.Point(173, 19);
+            this.nudSpaghetti.Location = new System.Drawing.Point(133, 19);
             this.nudSpaghetti.Name = "nudSpaghetti";
             this.nudSpaghetti.Size = new System.Drawing.Size(45, 22);
             this.nudSpaghetti.TabIndex = 41;
@@ -496,12 +464,10 @@ namespace FinalProjectGUIDraft
             // 
             // lblSpaghettiQuantity
             // 
-            this.lblSpaghettiQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSpaghettiQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSpaghettiQuantity.AutoSize = true;
             this.lblSpaghettiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpaghettiQuantity.Location = new System.Drawing.Point(101, 21);
+            this.lblSpaghettiQuantity.Location = new System.Drawing.Point(59, 19);
             this.lblSpaghettiQuantity.Name = "lblSpaghettiQuantity";
             this.lblSpaghettiQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblSpaghettiQuantity.TabIndex = 40;
@@ -728,28 +694,28 @@ namespace FinalProjectGUIDraft
             this.picSpaghetti.TabStop = false;
             this.picSpaghetti.Click += new System.EventHandler(this.picSpaghetti_Click);
             // 
-            // tabPage2
+            // tabSalads
             // 
-            this.tabPage2.Controls.Add(this.nudAntiPastoSalad);
-            this.tabPage2.Controls.Add(this.lblAntiPastoSaladQuantity);
-            this.tabPage2.Controls.Add(this.nudBigGreenSalad);
-            this.tabPage2.Controls.Add(this.lblBigGreenSaladQuantity);
-            this.tabPage2.Controls.Add(this.nudCapreseSalad);
-            this.tabPage2.Controls.Add(this.lblCapreseSaladQuantity);
-            this.tabPage2.Controls.Add(this.lblAntiPastoSalad);
-            this.tabPage2.Controls.Add(this.lblGreenSalad);
-            this.tabPage2.Controls.Add(this.lblCapreseSalad);
-            this.tabPage2.Controls.Add(this.picCapreseSalad);
-            this.tabPage2.Controls.Add(this.picAntiPastoSalad);
-            this.tabPage2.Controls.Add(this.picGreenSalad);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(945, 606);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Salads";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabSalads.Controls.Add(this.nudAntiPastoSalad);
+            this.tabSalads.Controls.Add(this.lblAntiPastoSaladQuantity);
+            this.tabSalads.Controls.Add(this.nudBigGreenSalad);
+            this.tabSalads.Controls.Add(this.lblBigGreenSaladQuantity);
+            this.tabSalads.Controls.Add(this.nudCapreseSalad);
+            this.tabSalads.Controls.Add(this.lblCapreseSaladQuantity);
+            this.tabSalads.Controls.Add(this.lblAntiPastoSalad);
+            this.tabSalads.Controls.Add(this.lblGreenSalad);
+            this.tabSalads.Controls.Add(this.lblCapreseSalad);
+            this.tabSalads.Controls.Add(this.picCapreseSalad);
+            this.tabSalads.Controls.Add(this.picAntiPastoSalad);
+            this.tabSalads.Controls.Add(this.picGreenSalad);
+            this.tabSalads.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabSalads.Location = new System.Drawing.Point(4, 29);
+            this.tabSalads.Name = "tabSalads";
+            this.tabSalads.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSalads.Size = new System.Drawing.Size(945, 606);
+            this.tabSalads.TabIndex = 1;
+            this.tabSalads.Text = "Salads";
+            this.tabSalads.UseVisualStyleBackColor = true;
             // 
             // nudAntiPastoSalad
             // 
@@ -891,27 +857,27 @@ namespace FinalProjectGUIDraft
             this.picGreenSalad.TabStop = false;
             this.picGreenSalad.Click += new System.EventHandler(this.picGreenSalad_Click);
             // 
-            // tabPage3
+            // tabDesserts
             // 
-            this.tabPage3.Controls.Add(this.nudCannoli);
-            this.tabPage3.Controls.Add(this.lblCannoliQuantity);
-            this.tabPage3.Controls.Add(this.nudGelato);
-            this.tabPage3.Controls.Add(this.lblGelatoQuantity);
-            this.tabPage3.Controls.Add(this.nudTiramisu);
-            this.tabPage3.Controls.Add(this.lblTiramisuQuantity);
-            this.tabPage3.Controls.Add(this.lblCannoli);
-            this.tabPage3.Controls.Add(this.lblGelato);
-            this.tabPage3.Controls.Add(this.lblTiramisu);
-            this.tabPage3.Controls.Add(this.picTiramisu);
-            this.tabPage3.Controls.Add(this.picCannoli);
-            this.tabPage3.Controls.Add(this.picGelato);
-            this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(945, 606);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Deserts";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabDesserts.Controls.Add(this.nudCannoli);
+            this.tabDesserts.Controls.Add(this.lblCannoliQuantity);
+            this.tabDesserts.Controls.Add(this.nudGelato);
+            this.tabDesserts.Controls.Add(this.lblGelatoQuantity);
+            this.tabDesserts.Controls.Add(this.nudTiramisu);
+            this.tabDesserts.Controls.Add(this.lblTiramisuQuantity);
+            this.tabDesserts.Controls.Add(this.lblCannoli);
+            this.tabDesserts.Controls.Add(this.lblGelato);
+            this.tabDesserts.Controls.Add(this.lblTiramisu);
+            this.tabDesserts.Controls.Add(this.picTiramisu);
+            this.tabDesserts.Controls.Add(this.picCannoli);
+            this.tabDesserts.Controls.Add(this.picGelato);
+            this.tabDesserts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabDesserts.Location = new System.Drawing.Point(4, 29);
+            this.tabDesserts.Name = "tabDesserts";
+            this.tabDesserts.Size = new System.Drawing.Size(945, 606);
+            this.tabDesserts.TabIndex = 2;
+            this.tabDesserts.Text = "Desserts";
+            this.tabDesserts.UseVisualStyleBackColor = true;
             // 
             // nudCannoli
             // 
@@ -1057,183 +1023,201 @@ namespace FinalProjectGUIDraft
             this.picGelato.TabStop = false;
             this.picGelato.Click += new System.EventHandler(this.picGelato_Click);
             // 
-            // tabPage4
+            // tabBeverages
             // 
-            this.tabPage4.Controls.Add(this.numericUpDown22);
-            this.tabPage4.Controls.Add(this.label23);
-            this.tabPage4.Controls.Add(this.numericUpDown21);
-            this.tabPage4.Controls.Add(this.label22);
-            this.tabPage4.Controls.Add(this.numericUpDown20);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.numericUpDown19);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.numericUpDown18);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.numericUpDown17);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.lblCocaCola);
-            this.tabPage4.Controls.Add(this.lblPerregrinoWater);
-            this.tabPage4.Controls.Add(this.lblSanPerregrino);
-            this.tabPage4.Controls.Add(this.lblItalianSoda);
-            this.tabPage4.Controls.Add(this.lblWhiteWine);
-            this.tabPage4.Controls.Add(this.lblRedWine);
-            this.tabPage4.Controls.Add(this.pictureBox2);
-            this.tabPage4.Controls.Add(this.pictureBox1);
-            this.tabPage4.Controls.Add(this.picSanPellegrino);
-            this.tabPage4.Controls.Add(this.picItalianSoda);
-            this.tabPage4.Controls.Add(this.picWhiteWine);
-            this.tabPage4.Controls.Add(this.picRedWine);
-            this.tabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 29);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(945, 606);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Beverages";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabBeverages.Controls.Add(this.nudCocaCola);
+            this.tabBeverages.Controls.Add(this.lblQuantityCocaCola);
+            this.tabBeverages.Controls.Add(this.nudItalianSoda);
+            this.tabBeverages.Controls.Add(this.lblQuantityItalianSoda);
+            this.tabBeverages.Controls.Add(this.nudPeregrinoWater);
+            this.tabBeverages.Controls.Add(this.lblQuantityPeregrinoWater);
+            this.tabBeverages.Controls.Add(this.nudWhiteWine);
+            this.tabBeverages.Controls.Add(this.lblQuantityWhiteWine);
+            this.tabBeverages.Controls.Add(this.nudSanPerregrino);
+            this.tabBeverages.Controls.Add(this.lblQuantitySanPerregrino);
+            this.tabBeverages.Controls.Add(this.nudRedWine);
+            this.tabBeverages.Controls.Add(this.lblQuantityRedWine);
+            this.tabBeverages.Controls.Add(this.lblCocaCola);
+            this.tabBeverages.Controls.Add(this.lblPerregrinoWater);
+            this.tabBeverages.Controls.Add(this.lblSanPerregrino);
+            this.tabBeverages.Controls.Add(this.lblItalianSoda);
+            this.tabBeverages.Controls.Add(this.lblWhiteWine);
+            this.tabBeverages.Controls.Add(this.lblRedWine);
+            this.tabBeverages.Controls.Add(this.pictureBox2);
+            this.tabBeverages.Controls.Add(this.picPerregrinoWater);
+            this.tabBeverages.Controls.Add(this.picSanPellegrino);
+            this.tabBeverages.Controls.Add(this.picItalianSoda);
+            this.tabBeverages.Controls.Add(this.picWhiteWine);
+            this.tabBeverages.Controls.Add(this.picRedWine);
+            this.tabBeverages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabBeverages.Location = new System.Drawing.Point(4, 29);
+            this.tabBeverages.Name = "tabBeverages";
+            this.tabBeverages.Size = new System.Drawing.Size(945, 606);
+            this.tabBeverages.TabIndex = 3;
+            this.tabBeverages.Text = "Beverages";
+            this.tabBeverages.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown22
+            // nudCocaCola
             // 
-            this.numericUpDown22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudCocaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown22.Location = new System.Drawing.Point(854, 367);
-            this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown22.TabIndex = 63;
+            this.nudCocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCocaCola.Location = new System.Drawing.Point(763, 294);
+            this.nudCocaCola.Name = "nudCocaCola";
+            this.nudCocaCola.Size = new System.Drawing.Size(45, 22);
+            this.nudCocaCola.TabIndex = 63;
+            this.nudCocaCola.Visible = false;
+            this.nudCocaCola.ValueChanged += new System.EventHandler(this.nudCocaCola_ValueChanged);
             // 
-            // label23
+            // lblQuantityCocaCola
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityCocaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(782, 369);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 16);
-            this.label23.TabIndex = 62;
-            this.label23.Text = "Quantity:";
+            this.lblQuantityCocaCola.AutoSize = true;
+            this.lblQuantityCocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityCocaCola.Location = new System.Drawing.Point(691, 296);
+            this.lblQuantityCocaCola.Name = "lblQuantityCocaCola";
+            this.lblQuantityCocaCola.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityCocaCola.TabIndex = 62;
+            this.lblQuantityCocaCola.Text = "Quantity:";
+            this.lblQuantityCocaCola.Visible = false;
             // 
-            // numericUpDown21
+            // nudItalianSoda
             // 
-            this.numericUpDown21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudItalianSoda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown21.Location = new System.Drawing.Point(854, 161);
-            this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown21.TabIndex = 61;
+            this.nudItalianSoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudItalianSoda.Location = new System.Drawing.Point(763, 83);
+            this.nudItalianSoda.Name = "nudItalianSoda";
+            this.nudItalianSoda.Size = new System.Drawing.Size(45, 22);
+            this.nudItalianSoda.TabIndex = 61;
+            this.nudItalianSoda.Visible = false;
+            this.nudItalianSoda.ValueChanged += new System.EventHandler(this.nudItalianSoda_ValueChanged);
             // 
-            // label22
+            // lblQuantityItalianSoda
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityItalianSoda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(782, 163);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(68, 16);
-            this.label22.TabIndex = 60;
-            this.label22.Text = "Quantity:";
+            this.lblQuantityItalianSoda.AutoSize = true;
+            this.lblQuantityItalianSoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityItalianSoda.Location = new System.Drawing.Point(691, 85);
+            this.lblQuantityItalianSoda.Name = "lblQuantityItalianSoda";
+            this.lblQuantityItalianSoda.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityItalianSoda.TabIndex = 60;
+            this.lblQuantityItalianSoda.Text = "Quantity:";
+            this.lblQuantityItalianSoda.Visible = false;
             // 
-            // numericUpDown20
+            // nudPeregrinoWater
             // 
-            this.numericUpDown20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudPeregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown20.Location = new System.Drawing.Point(578, 363);
-            this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown20.TabIndex = 59;
+            this.nudPeregrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPeregrinoWater.Location = new System.Drawing.Point(472, 294);
+            this.nudPeregrinoWater.Name = "nudPeregrinoWater";
+            this.nudPeregrinoWater.Size = new System.Drawing.Size(45, 22);
+            this.nudPeregrinoWater.TabIndex = 59;
+            this.nudPeregrinoWater.Visible = false;
+            this.nudPeregrinoWater.ValueChanged += new System.EventHandler(this.nudPeregrinoWater_ValueChanged);
             // 
-            // label21
+            // lblQuantityPeregrinoWater
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityPeregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(506, 365);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 16);
-            this.label21.TabIndex = 58;
-            this.label21.Text = "Quantity:";
+            this.lblQuantityPeregrinoWater.AutoSize = true;
+            this.lblQuantityPeregrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityPeregrinoWater.Location = new System.Drawing.Point(400, 296);
+            this.lblQuantityPeregrinoWater.Name = "lblQuantityPeregrinoWater";
+            this.lblQuantityPeregrinoWater.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityPeregrinoWater.TabIndex = 58;
+            this.lblQuantityPeregrinoWater.Text = "Quantity:";
+            this.lblQuantityPeregrinoWater.Visible = false;
             // 
-            // numericUpDown19
+            // nudWhiteWine
             // 
-            this.numericUpDown19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudWhiteWine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown19.Location = new System.Drawing.Point(546, 161);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown19.TabIndex = 57;
+            this.nudWhiteWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudWhiteWine.Location = new System.Drawing.Point(463, 83);
+            this.nudWhiteWine.Name = "nudWhiteWine";
+            this.nudWhiteWine.Size = new System.Drawing.Size(45, 22);
+            this.nudWhiteWine.TabIndex = 57;
+            this.nudWhiteWine.Visible = false;
+            this.nudWhiteWine.ValueChanged += new System.EventHandler(this.nudWhiteWine_ValueChanged);
             // 
-            // label20
+            // lblQuantityWhiteWine
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityWhiteWine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(474, 163);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 16);
-            this.label20.TabIndex = 56;
-            this.label20.Text = "Quantity:";
+            this.lblQuantityWhiteWine.AutoSize = true;
+            this.lblQuantityWhiteWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityWhiteWine.Location = new System.Drawing.Point(391, 85);
+            this.lblQuantityWhiteWine.Name = "lblQuantityWhiteWine";
+            this.lblQuantityWhiteWine.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityWhiteWine.TabIndex = 56;
+            this.lblQuantityWhiteWine.Text = "Quantity:";
+            this.lblQuantityWhiteWine.Visible = false;
             // 
-            // numericUpDown18
+            // nudSanPerregrino
             // 
-            this.numericUpDown18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudSanPerregrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown18.Location = new System.Drawing.Point(248, 365);
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown18.TabIndex = 55;
+            this.nudSanPerregrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSanPerregrino.Location = new System.Drawing.Point(134, 290);
+            this.nudSanPerregrino.Name = "nudSanPerregrino";
+            this.nudSanPerregrino.Size = new System.Drawing.Size(45, 22);
+            this.nudSanPerregrino.TabIndex = 55;
+            this.nudSanPerregrino.Visible = false;
+            this.nudSanPerregrino.ValueChanged += new System.EventHandler(this.nudSanPerregrino_ValueChanged);
             // 
-            // label19
+            // lblQuantitySanPerregrino
             // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantitySanPerregrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(176, 367);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 16);
-            this.label19.TabIndex = 54;
-            this.label19.Text = "Quantity:";
+            this.lblQuantitySanPerregrino.AutoSize = true;
+            this.lblQuantitySanPerregrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantitySanPerregrino.Location = new System.Drawing.Point(62, 292);
+            this.lblQuantitySanPerregrino.Name = "lblQuantitySanPerregrino";
+            this.lblQuantitySanPerregrino.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantitySanPerregrino.TabIndex = 54;
+            this.lblQuantitySanPerregrino.Text = "Quantity:";
+            this.lblQuantitySanPerregrino.Visible = false;
             // 
-            // numericUpDown17
+            // nudRedWine
             // 
-            this.numericUpDown17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudRedWine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown17.Location = new System.Drawing.Point(209, 163);
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(45, 22);
-            this.numericUpDown17.TabIndex = 53;
+            this.nudRedWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudRedWine.Location = new System.Drawing.Point(105, 85);
+            this.nudRedWine.Name = "nudRedWine";
+            this.nudRedWine.Size = new System.Drawing.Size(45, 22);
+            this.nudRedWine.TabIndex = 53;
+            this.nudRedWine.Visible = false;
+            this.nudRedWine.ValueChanged += new System.EventHandler(this.nudRedWine_ValueChanged);
             // 
-            // label18
+            // lblQuantityRedWine
             // 
-            this.label18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityRedWine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(137, 165);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 16);
-            this.label18.TabIndex = 52;
-            this.label18.Text = "Quantity:";
+            this.lblQuantityRedWine.AutoSize = true;
+            this.lblQuantityRedWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityRedWine.Location = new System.Drawing.Point(33, 87);
+            this.lblQuantityRedWine.Name = "lblQuantityRedWine";
+            this.lblQuantityRedWine.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityRedWine.TabIndex = 52;
+            this.lblQuantityRedWine.Text = "Quantity:";
+            this.lblQuantityRedWine.Visible = false;
             // 
             // lblCocaCola
             // 
@@ -1255,7 +1239,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPerregrinoWater.AutoSize = true;
             this.lblPerregrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerregrinoWater.Location = new System.Drawing.Point(411, 427);
+            this.lblPerregrinoWater.Location = new System.Drawing.Point(399, 427);
             this.lblPerregrinoWater.Name = "lblPerregrinoWater";
             this.lblPerregrinoWater.Size = new System.Drawing.Size(119, 19);
             this.lblPerregrinoWater.TabIndex = 29;
@@ -1325,19 +1309,21 @@ namespace FinalProjectGUIDraft
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 24;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
+            // picPerregrinoWater
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.picPerregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(404, 318);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
+            this.picPerregrinoWater.Image = ((System.Drawing.Image)(resources.GetObject("picPerregrinoWater.Image")));
+            this.picPerregrinoWater.Location = new System.Drawing.Point(404, 318);
+            this.picPerregrinoWater.Name = "picPerregrinoWater";
+            this.picPerregrinoWater.Size = new System.Drawing.Size(96, 106);
+            this.picPerregrinoWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPerregrinoWater.TabIndex = 23;
+            this.picPerregrinoWater.TabStop = false;
+            this.picPerregrinoWater.Click += new System.EventHandler(this.picPerregrinoWater_Click);
             // 
             // picSanPellegrino
             // 
@@ -1351,6 +1337,7 @@ namespace FinalProjectGUIDraft
             this.picSanPellegrino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSanPellegrino.TabIndex = 22;
             this.picSanPellegrino.TabStop = false;
+            this.picSanPellegrino.Click += new System.EventHandler(this.picSanPellegrino_Click);
             // 
             // picItalianSoda
             // 
@@ -1364,6 +1351,7 @@ namespace FinalProjectGUIDraft
             this.picItalianSoda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picItalianSoda.TabIndex = 21;
             this.picItalianSoda.TabStop = false;
+            this.picItalianSoda.Click += new System.EventHandler(this.picItalianSoda_Click);
             // 
             // picWhiteWine
             // 
@@ -1377,6 +1365,7 @@ namespace FinalProjectGUIDraft
             this.picWhiteWine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWhiteWine.TabIndex = 20;
             this.picWhiteWine.TabStop = false;
+            this.picWhiteWine.Click += new System.EventHandler(this.picWhiteWine_Click);
             // 
             // picRedWine
             // 
@@ -1390,6 +1379,7 @@ namespace FinalProjectGUIDraft
             this.picRedWine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRedWine.TabIndex = 19;
             this.picRedWine.TabStop = false;
+            this.picRedWine.Click += new System.EventHandler(this.picRedWine_Click);
             // 
             // button1
             // 
@@ -1449,12 +1439,12 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.btnViewOrder);
             this.Controls.Add(this.picRestLogo);
             this.Controls.Add(this.lblRestaurantName);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabSelection);
             this.Name = "frmMainMenu";
             this.Text = "Select Type";
-            this.tabControl1.ResumeLayout(false);
-            this.y.ResumeLayout(false);
-            this.y.PerformLayout();
+            this.tabSelection.ResumeLayout(false);
+            this.MainMenu.ResumeLayout(false);
+            this.MainMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRavioli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSeafoodPasta)).EndInit();
@@ -1475,32 +1465,32 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picRatatouille)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLasagna)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSpaghetti)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabSalads.ResumeLayout(false);
+            this.tabSalads.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAntiPastoSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudBigGreenSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCapreseSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCapreseSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAntiPastoSalad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreenSalad)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.tabDesserts.ResumeLayout(false);
+            this.tabDesserts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCannoli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudGelato)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudTiramisu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTiramisu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCannoli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGelato)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            this.tabBeverages.ResumeLayout(false);
+            this.tabBeverages.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCocaCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeregrinoWater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPerregrino)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPerregrinoWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSanPellegrino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picItalianSoda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).EndInit();
@@ -1512,11 +1502,11 @@ namespace FinalProjectGUIDraft
         }
 
         #endregion
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage y;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabControl tabSelection;
+        private System.Windows.Forms.TabPage MainMenu;
+        private System.Windows.Forms.TabPage tabSalads;
+        private System.Windows.Forms.TabPage tabDesserts;
+        private System.Windows.Forms.TabPage tabBeverages;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnViewOrder;
         private System.Windows.Forms.PictureBox picRestLogo;
@@ -1547,7 +1537,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.PictureBox picRatatouille;
         private System.Windows.Forms.PictureBox picLasagna;
         private System.Windows.Forms.PictureBox picSpaghetti;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown nudAntiPastoSalad;
         private System.Windows.Forms.Label lblAntiPastoSaladQuantity;
         private System.Windows.Forms.NumericUpDown nudBigGreenSalad;
@@ -1572,18 +1561,18 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.PictureBox picTiramisu;
         private System.Windows.Forms.PictureBox picCannoli;
         private System.Windows.Forms.PictureBox picGelato;
-        private System.Windows.Forms.NumericUpDown numericUpDown22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.NumericUpDown numericUpDown21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.NumericUpDown numericUpDown20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown numericUpDown18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.NumericUpDown numericUpDown17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.NumericUpDown nudCocaCola;
+        private System.Windows.Forms.Label lblQuantityCocaCola;
+        private System.Windows.Forms.NumericUpDown nudItalianSoda;
+        private System.Windows.Forms.Label lblQuantityItalianSoda;
+        private System.Windows.Forms.NumericUpDown nudPeregrinoWater;
+        private System.Windows.Forms.Label lblQuantityPeregrinoWater;
+        private System.Windows.Forms.NumericUpDown nudWhiteWine;
+        private System.Windows.Forms.Label lblQuantityWhiteWine;
+        private System.Windows.Forms.NumericUpDown nudSanPerregrino;
+        private System.Windows.Forms.Label lblQuantitySanPerregrino;
+        private System.Windows.Forms.NumericUpDown nudRedWine;
+        private System.Windows.Forms.Label lblQuantityRedWine;
         private System.Windows.Forms.Label lblCocaCola;
         private System.Windows.Forms.Label lblPerregrinoWater;
         private System.Windows.Forms.Label lblSanPerregrino;
@@ -1591,7 +1580,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblWhiteWine;
         private System.Windows.Forms.Label lblRedWine;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picPerregrinoWater;
         private System.Windows.Forms.PictureBox picSanPellegrino;
         private System.Windows.Forms.PictureBox picItalianSoda;
         private System.Windows.Forms.PictureBox picWhiteWine;

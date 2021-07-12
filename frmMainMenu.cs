@@ -17,6 +17,7 @@ namespace FinalProjectGUIDraft
             InitializeComponent();
         }
 
+        // Salad Selection //
         private void picCapreseSalad_Click(object sender, EventArgs e)
         {
             nudCapreseSalad.Value++;
@@ -65,6 +66,7 @@ namespace FinalProjectGUIDraft
             }
         }
 
+        // Main Menu Selection //
         private void picSpaghetti_Click(object sender, EventArgs e)
         {
             nudSpaghetti.Value++;
@@ -113,55 +115,6 @@ namespace FinalProjectGUIDraft
                 lblRatatouilleQuantity.Visible = false;
                 nudRatatouille.Visible = false;
             }
-        }
-
-        private void picTiramisu_Click(object sender, EventArgs e)
-        {
-            nudTiramisu.Value++;
-            nudTiramisu.Visible = true;
-            lblTiramisuQuantity.Visible = true;
-        }
-
-        private void nudTiramisu_ValueChanged(object sender, EventArgs e)
-        {
-            if (nudTiramisu.Value == 0)
-            {
-                lblTiramisuQuantity.Visible = false;
-                nudTiramisu.Visible = false;
-            }
-        }
-
-        private void picGelato_Click(object sender, EventArgs e)
-        {
-            nudGelato.Value++;
-            nudGelato.Visible = true;
-            lblGelatoQuantity.Visible = true;
-        }
-
-        private void nudGelato_ValueChanged(object sender, EventArgs e)
-        {
-            if (nudGelato.Value == 0)
-            {
-                lblGelatoQuantity.Visible = false;
-                nudGelato.Visible = false;
-            }
-        }
-
-        private void picCannoli_Click(object sender, EventArgs e)
-        {
-            nudCannoli.Value++;
-            nudCannoli.Visible = true;
-            lblCannoliQuantity.Visible = true;
-        }
-
-        private void nudCannoli_ValueChanged(object sender, EventArgs e)
-        {
-            if (nudCannoli.Value == 0)
-            {
-                lblCannoliQuantity.Visible = false;
-                nudCannoli.Visible = false;
-            }
-
         }
 
         private void picFettAlfredo_Click(object sender, EventArgs e)
@@ -276,6 +229,154 @@ namespace FinalProjectGUIDraft
                 nudRavioli.Visible = false;
             }
         }
+
+        // Dessert Selection //
+        private void picTiramisu_Click(object sender, EventArgs e)
+        {
+            nudTiramisu.Value++;
+            nudTiramisu.Visible = true;
+            lblTiramisuQuantity.Visible = true;
+        }
+
+        private void nudTiramisu_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudTiramisu.Value == 0)
+            {
+                lblTiramisuQuantity.Visible = false;
+                nudTiramisu.Visible = false;
+            }
+        }
+
+        private void picGelato_Click(object sender, EventArgs e)
+        {
+            nudGelato.Value++;
+            nudGelato.Visible = true;
+            lblGelatoQuantity.Visible = true;
+        }
+
+        private void nudGelato_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudGelato.Value == 0)
+            {
+                lblGelatoQuantity.Visible = false;
+                nudGelato.Visible = false;
+            }
+        }
+
+        private void picCannoli_Click(object sender, EventArgs e)
+        {
+            nudCannoli.Value++;
+            nudCannoli.Visible = true;
+            lblCannoliQuantity.Visible = true;
+        }
+
+        private void nudCannoli_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudCannoli.Value == 0)
+            {
+                lblCannoliQuantity.Visible = false;
+                nudCannoli.Visible = false;
+            }
+
+        }
+
+        // Beverages Selection //
+        private void picRedWine_Click(object sender, EventArgs e)
+        {
+            nudRedWine.Value++;
+            nudRedWine.Visible = true;
+            lblQuantityRedWine.Visible = true;
+        }
+
+        private void nudRedWine_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudRedWine.Value == 0)
+            {
+                lblQuantityRedWine.Visible = false;
+                nudRedWine.Visible = false;
+            }
+        }
+
+        private void picWhiteWine_Click(object sender, EventArgs e)
+        {
+            nudWhiteWine.Value++;
+            nudWhiteWine.Visible = true;
+            lblQuantityWhiteWine.Visible = true;
+        }
+
+        private void nudWhiteWine_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudWhiteWine.Value == 0)
+            {
+                lblQuantityWhiteWine.Visible = false;
+                nudWhiteWine.Visible = false;
+            }
+        }
+
+        private void picItalianSoda_Click(object sender, EventArgs e)
+        {
+            nudItalianSoda.Value++;
+            nudItalianSoda.Visible = true;
+            lblQuantityItalianSoda.Visible = true;
+        }
+
+        private void nudItalianSoda_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudItalianSoda.Value == 0)
+            {
+                lblQuantityItalianSoda.Visible = false;
+                nudItalianSoda.Visible = false;
+            }
+        }
+
+        private void picSanPellegrino_Click(object sender, EventArgs e) // Mispelled Perregrino //
+        {
+            nudSanPerregrino.Value++;
+            nudSanPerregrino.Visible = true;
+            lblQuantityRedWine.Visible = true;
+        }
+        private void nudSanPerregrino_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudSanPerregrino.Value == 0)
+            {
+                lblQuantitySanPerregrino.Visible = false;
+                nudSanPerregrino.Visible = false;
+            }
+        }
+
+        private void picPerregrinoWater_Click(object sender, EventArgs e)
+        {
+            nudPeregrinoWater.Value++;
+            nudPeregrinoWater.Visible = true;
+            lblQuantityPeregrinoWater.Visible = true;
+        }
+
+        private void nudPeregrinoWater_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudPeregrinoWater.Value == 0)
+            {
+                lblQuantityPeregrinoWater.Visible = false;
+                nudPeregrinoWater.Visible = false;
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e) // Coca Cola pic wasn't named //
+        {
+            nudCocaCola.Value++;
+            nudCocaCola.Visible = true;
+            lblQuantityCocaCola.Visible = true;
+        }
+
+        private void nudCocaCola_ValueChanged(object sender, EventArgs e)
+        {
+            if (nudCocaCola.Value == 0)
+            {
+                lblQuantityCocaCola.Visible = false;
+                nudCocaCola.Visible = false;
+            }
+        }
+
+
 
         private void btnViewOrder_Click(object sender, EventArgs e)
         {
