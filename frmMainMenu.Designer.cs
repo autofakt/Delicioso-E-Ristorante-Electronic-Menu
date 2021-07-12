@@ -103,12 +103,11 @@ namespace FinalProjectGUIDraft
             this.lblQuantityCocaCola = new System.Windows.Forms.Label();
             this.nudItalianSoda = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityItalianSoda = new System.Windows.Forms.Label();
-            this.nudPeregrinoWater = new System.Windows.Forms.NumericUpDown();
-            this.lblQuantityPeregrinoWater = new System.Windows.Forms.Label();
+            this.nudPellegrinoWater = new System.Windows.Forms.NumericUpDown();
+            this.lblQuantityPellegrinoWater = new System.Windows.Forms.Label();
             this.nudWhiteWine = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityWhiteWine = new System.Windows.Forms.Label();
-            this.nudSanPerregrino = new System.Windows.Forms.NumericUpDown();
-            this.lblQuantitySanPerregrino = new System.Windows.Forms.Label();
+            this.lblQuantitySanPellegrino = new System.Windows.Forms.Label();
             this.nudRedWine = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityRedWine = new System.Windows.Forms.Label();
             this.lblCocaCola = new System.Windows.Forms.Label();
@@ -117,8 +116,8 @@ namespace FinalProjectGUIDraft
             this.lblItalianSoda = new System.Windows.Forms.Label();
             this.lblWhiteWine = new System.Windows.Forms.Label();
             this.lblRedWine = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.picPerregrinoWater = new System.Windows.Forms.PictureBox();
+            this.picCocaCola = new System.Windows.Forms.PictureBox();
+            this.picPellegrinoWater = new System.Windows.Forms.PictureBox();
             this.picSanPellegrino = new System.Windows.Forms.PictureBox();
             this.picItalianSoda = new System.Windows.Forms.PictureBox();
             this.picWhiteWine = new System.Windows.Forms.PictureBox();
@@ -127,6 +126,10 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder = new System.Windows.Forms.Button();
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
+            this.nudSanPellegrino = new System.Windows.Forms.NumericUpDown();
+            this.lblSanPellegrino = new System.Windows.Forms.Label();
+            this.lblPellegrinoWater = new System.Windows.Forms.Label();
+            this.lblCocaCola2 = new System.Windows.Forms.Label();
             this.tabSelection.SuspendLayout();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
@@ -166,17 +169,17 @@ namespace FinalProjectGUIDraft
             this.tabBeverages.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCocaCola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPeregrinoWater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPellegrinoWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPerregrino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPerregrinoWater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCocaCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPellegrinoWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSanPellegrino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picItalianSoda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).BeginInit();
             this.SuspendLayout();
             // 
             // tabSelection
@@ -1025,16 +1028,19 @@ namespace FinalProjectGUIDraft
             // 
             // tabBeverages
             // 
+            this.tabBeverages.Controls.Add(this.lblCocaCola2);
+            this.tabBeverages.Controls.Add(this.lblPellegrinoWater);
+            this.tabBeverages.Controls.Add(this.lblSanPellegrino);
             this.tabBeverages.Controls.Add(this.nudCocaCola);
             this.tabBeverages.Controls.Add(this.lblQuantityCocaCola);
             this.tabBeverages.Controls.Add(this.nudItalianSoda);
             this.tabBeverages.Controls.Add(this.lblQuantityItalianSoda);
-            this.tabBeverages.Controls.Add(this.nudPeregrinoWater);
-            this.tabBeverages.Controls.Add(this.lblQuantityPeregrinoWater);
+            this.tabBeverages.Controls.Add(this.nudPellegrinoWater);
+            this.tabBeverages.Controls.Add(this.lblQuantityPellegrinoWater);
             this.tabBeverages.Controls.Add(this.nudWhiteWine);
             this.tabBeverages.Controls.Add(this.lblQuantityWhiteWine);
-            this.tabBeverages.Controls.Add(this.nudSanPerregrino);
-            this.tabBeverages.Controls.Add(this.lblQuantitySanPerregrino);
+            this.tabBeverages.Controls.Add(this.nudSanPellegrino);
+            this.tabBeverages.Controls.Add(this.lblQuantitySanPellegrino);
             this.tabBeverages.Controls.Add(this.nudRedWine);
             this.tabBeverages.Controls.Add(this.lblQuantityRedWine);
             this.tabBeverages.Controls.Add(this.lblCocaCola);
@@ -1043,8 +1049,8 @@ namespace FinalProjectGUIDraft
             this.tabBeverages.Controls.Add(this.lblItalianSoda);
             this.tabBeverages.Controls.Add(this.lblWhiteWine);
             this.tabBeverages.Controls.Add(this.lblRedWine);
-            this.tabBeverages.Controls.Add(this.pictureBox2);
-            this.tabBeverages.Controls.Add(this.picPerregrinoWater);
+            this.tabBeverages.Controls.Add(this.picCocaCola);
+            this.tabBeverages.Controls.Add(this.picPellegrinoWater);
             this.tabBeverages.Controls.Add(this.picSanPellegrino);
             this.tabBeverages.Controls.Add(this.picItalianSoda);
             this.tabBeverages.Controls.Add(this.picWhiteWine);
@@ -1063,7 +1069,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nudCocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudCocaCola.Location = new System.Drawing.Point(763, 294);
+            this.nudCocaCola.Location = new System.Drawing.Point(791, 316);
             this.nudCocaCola.Name = "nudCocaCola";
             this.nudCocaCola.Size = new System.Drawing.Size(45, 22);
             this.nudCocaCola.TabIndex = 63;
@@ -1077,7 +1083,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuantityCocaCola.AutoSize = true;
             this.lblQuantityCocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityCocaCola.Location = new System.Drawing.Point(691, 296);
+            this.lblQuantityCocaCola.Location = new System.Drawing.Point(719, 318);
             this.lblQuantityCocaCola.Name = "lblQuantityCocaCola";
             this.lblQuantityCocaCola.Size = new System.Drawing.Size(68, 16);
             this.lblQuantityCocaCola.TabIndex = 62;
@@ -1090,7 +1096,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nudItalianSoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudItalianSoda.Location = new System.Drawing.Point(763, 83);
+            this.nudItalianSoda.Location = new System.Drawing.Point(791, 19);
             this.nudItalianSoda.Name = "nudItalianSoda";
             this.nudItalianSoda.Size = new System.Drawing.Size(45, 22);
             this.nudItalianSoda.TabIndex = 61;
@@ -1104,39 +1110,39 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuantityItalianSoda.AutoSize = true;
             this.lblQuantityItalianSoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityItalianSoda.Location = new System.Drawing.Point(691, 85);
+            this.lblQuantityItalianSoda.Location = new System.Drawing.Point(719, 21);
             this.lblQuantityItalianSoda.Name = "lblQuantityItalianSoda";
             this.lblQuantityItalianSoda.Size = new System.Drawing.Size(68, 16);
             this.lblQuantityItalianSoda.TabIndex = 60;
             this.lblQuantityItalianSoda.Text = "Quantity:";
             this.lblQuantityItalianSoda.Visible = false;
             // 
-            // nudPeregrinoWater
+            // nudPellegrinoWater
             // 
-            this.nudPeregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.nudPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudPeregrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPeregrinoWater.Location = new System.Drawing.Point(472, 294);
-            this.nudPeregrinoWater.Name = "nudPeregrinoWater";
-            this.nudPeregrinoWater.Size = new System.Drawing.Size(45, 22);
-            this.nudPeregrinoWater.TabIndex = 59;
-            this.nudPeregrinoWater.Visible = false;
-            this.nudPeregrinoWater.ValueChanged += new System.EventHandler(this.nudPeregrinoWater_ValueChanged);
+            this.nudPellegrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPellegrinoWater.Location = new System.Drawing.Point(485, 316);
+            this.nudPellegrinoWater.Name = "nudPellegrinoWater";
+            this.nudPellegrinoWater.Size = new System.Drawing.Size(45, 22);
+            this.nudPellegrinoWater.TabIndex = 59;
+            this.nudPellegrinoWater.Visible = false;
+            this.nudPellegrinoWater.ValueChanged += new System.EventHandler(this.nudPeregrinoWater_ValueChanged);
             // 
-            // lblQuantityPeregrinoWater
+            // lblQuantityPellegrinoWater
             // 
-            this.lblQuantityPeregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantityPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblQuantityPeregrinoWater.AutoSize = true;
-            this.lblQuantityPeregrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityPeregrinoWater.Location = new System.Drawing.Point(400, 296);
-            this.lblQuantityPeregrinoWater.Name = "lblQuantityPeregrinoWater";
-            this.lblQuantityPeregrinoWater.Size = new System.Drawing.Size(68, 16);
-            this.lblQuantityPeregrinoWater.TabIndex = 58;
-            this.lblQuantityPeregrinoWater.Text = "Quantity:";
-            this.lblQuantityPeregrinoWater.Visible = false;
+            this.lblQuantityPellegrinoWater.AutoSize = true;
+            this.lblQuantityPellegrinoWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantityPellegrinoWater.Location = new System.Drawing.Point(413, 318);
+            this.lblQuantityPellegrinoWater.Name = "lblQuantityPellegrinoWater";
+            this.lblQuantityPellegrinoWater.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantityPellegrinoWater.TabIndex = 58;
+            this.lblQuantityPellegrinoWater.Text = "Quantity:";
+            this.lblQuantityPellegrinoWater.Visible = false;
             // 
             // nudWhiteWine
             // 
@@ -1144,7 +1150,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nudWhiteWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudWhiteWine.Location = new System.Drawing.Point(463, 83);
+            this.nudWhiteWine.Location = new System.Drawing.Point(485, 19);
             this.nudWhiteWine.Name = "nudWhiteWine";
             this.nudWhiteWine.Size = new System.Drawing.Size(45, 22);
             this.nudWhiteWine.TabIndex = 57;
@@ -1158,39 +1164,26 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuantityWhiteWine.AutoSize = true;
             this.lblQuantityWhiteWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityWhiteWine.Location = new System.Drawing.Point(391, 85);
+            this.lblQuantityWhiteWine.Location = new System.Drawing.Point(413, 21);
             this.lblQuantityWhiteWine.Name = "lblQuantityWhiteWine";
             this.lblQuantityWhiteWine.Size = new System.Drawing.Size(68, 16);
             this.lblQuantityWhiteWine.TabIndex = 56;
             this.lblQuantityWhiteWine.Text = "Quantity:";
             this.lblQuantityWhiteWine.Visible = false;
             // 
-            // nudSanPerregrino
+            // lblQuantitySanPellegrino
             // 
-            this.nudSanPerregrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lblQuantitySanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSanPerregrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSanPerregrino.Location = new System.Drawing.Point(134, 290);
-            this.nudSanPerregrino.Name = "nudSanPerregrino";
-            this.nudSanPerregrino.Size = new System.Drawing.Size(45, 22);
-            this.nudSanPerregrino.TabIndex = 55;
-            this.nudSanPerregrino.Visible = false;
-            this.nudSanPerregrino.ValueChanged += new System.EventHandler(this.nudSanPerregrino_ValueChanged);
-            // 
-            // lblQuantitySanPerregrino
-            // 
-            this.lblQuantitySanPerregrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblQuantitySanPerregrino.AutoSize = true;
-            this.lblQuantitySanPerregrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantitySanPerregrino.Location = new System.Drawing.Point(62, 292);
-            this.lblQuantitySanPerregrino.Name = "lblQuantitySanPerregrino";
-            this.lblQuantitySanPerregrino.Size = new System.Drawing.Size(68, 16);
-            this.lblQuantitySanPerregrino.TabIndex = 54;
-            this.lblQuantitySanPerregrino.Text = "Quantity:";
-            this.lblQuantitySanPerregrino.Visible = false;
+            this.lblQuantitySanPellegrino.AutoSize = true;
+            this.lblQuantitySanPellegrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantitySanPellegrino.Location = new System.Drawing.Point(101, 318);
+            this.lblQuantitySanPellegrino.Name = "lblQuantitySanPellegrino";
+            this.lblQuantitySanPellegrino.Size = new System.Drawing.Size(68, 16);
+            this.lblQuantitySanPellegrino.TabIndex = 54;
+            this.lblQuantitySanPellegrino.Text = "Quantity:";
+            this.lblQuantitySanPellegrino.Visible = false;
             // 
             // nudRedWine
             // 
@@ -1198,7 +1191,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nudRedWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRedWine.Location = new System.Drawing.Point(105, 85);
+            this.nudRedWine.Location = new System.Drawing.Point(173, 19);
             this.nudRedWine.Name = "nudRedWine";
             this.nudRedWine.Size = new System.Drawing.Size(45, 22);
             this.nudRedWine.TabIndex = 53;
@@ -1212,7 +1205,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblQuantityRedWine.AutoSize = true;
             this.lblQuantityRedWine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantityRedWine.Location = new System.Drawing.Point(33, 87);
+            this.lblQuantityRedWine.Location = new System.Drawing.Point(101, 21);
             this.lblQuantityRedWine.Name = "lblQuantityRedWine";
             this.lblQuantityRedWine.Size = new System.Drawing.Size(68, 16);
             this.lblQuantityRedWine.TabIndex = 52;
@@ -1226,7 +1219,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCocaCola.AutoSize = true;
             this.lblCocaCola.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCocaCola.Location = new System.Drawing.Point(706, 427);
+            this.lblCocaCola.Location = new System.Drawing.Point(768, 657);
             this.lblCocaCola.Name = "lblCocaCola";
             this.lblCocaCola.Size = new System.Drawing.Size(70, 19);
             this.lblCocaCola.TabIndex = 30;
@@ -1239,7 +1232,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPerregrinoWater.AutoSize = true;
             this.lblPerregrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerregrinoWater.Location = new System.Drawing.Point(399, 427);
+            this.lblPerregrinoWater.Location = new System.Drawing.Point(461, 657);
             this.lblPerregrinoWater.Name = "lblPerregrinoWater";
             this.lblPerregrinoWater.Size = new System.Drawing.Size(119, 19);
             this.lblPerregrinoWater.TabIndex = 29;
@@ -1252,7 +1245,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSanPerregrino.AutoSize = true;
             this.lblSanPerregrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPerregrino.Location = new System.Drawing.Point(61, 427);
+            this.lblSanPerregrino.Location = new System.Drawing.Point(123, 657);
             this.lblSanPerregrino.Name = "lblSanPerregrino";
             this.lblSanPerregrino.Size = new System.Drawing.Size(99, 19);
             this.lblSanPerregrino.TabIndex = 28;
@@ -1265,7 +1258,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblItalianSoda.AutoSize = true;
             this.lblItalianSoda.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItalianSoda.Location = new System.Drawing.Point(692, 222);
+            this.lblItalianSoda.Location = new System.Drawing.Point(747, 276);
             this.lblItalianSoda.Name = "lblItalianSoda";
             this.lblItalianSoda.Size = new System.Drawing.Size(85, 19);
             this.lblItalianSoda.TabIndex = 27;
@@ -1278,7 +1271,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWhiteWine.AutoSize = true;
             this.lblWhiteWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhiteWine.Location = new System.Drawing.Point(400, 222);
+            this.lblWhiteWine.Location = new System.Drawing.Point(433, 276);
             this.lblWhiteWine.Name = "lblWhiteWine";
             this.lblWhiteWine.Size = new System.Drawing.Size(86, 19);
             this.lblWhiteWine.TabIndex = 26;
@@ -1291,39 +1284,39 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRedWine.AutoSize = true;
             this.lblRedWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRedWine.Location = new System.Drawing.Point(61, 222);
+            this.lblRedWine.Location = new System.Drawing.Point(117, 276);
             this.lblRedWine.Name = "lblRedWine";
             this.lblRedWine.Size = new System.Drawing.Size(72, 19);
             this.lblRedWine.TabIndex = 25;
             this.lblRedWine.Text = "Red Wine";
             // 
-            // pictureBox2
+            // picCocaCola
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.picCocaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(710, 318);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(60, 106);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picCocaCola.Image = ((System.Drawing.Image)(resources.GetObject("picCocaCola.Image")));
+            this.picCocaCola.Location = new System.Drawing.Point(723, 344);
+            this.picCocaCola.Name = "picCocaCola";
+            this.picCocaCola.Size = new System.Drawing.Size(127, 226);
+            this.picCocaCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCocaCola.TabIndex = 24;
+            this.picCocaCola.TabStop = false;
+            this.picCocaCola.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // picPerregrinoWater
+            // picPellegrinoWater
             // 
-            this.picPerregrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.picPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.picPerregrinoWater.Image = ((System.Drawing.Image)(resources.GetObject("picPerregrinoWater.Image")));
-            this.picPerregrinoWater.Location = new System.Drawing.Point(404, 318);
-            this.picPerregrinoWater.Name = "picPerregrinoWater";
-            this.picPerregrinoWater.Size = new System.Drawing.Size(96, 106);
-            this.picPerregrinoWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picPerregrinoWater.TabIndex = 23;
-            this.picPerregrinoWater.TabStop = false;
-            this.picPerregrinoWater.Click += new System.EventHandler(this.picPerregrinoWater_Click);
+            this.picPellegrinoWater.Image = ((System.Drawing.Image)(resources.GetObject("picPellegrinoWater.Image")));
+            this.picPellegrinoWater.Location = new System.Drawing.Point(392, 344);
+            this.picPellegrinoWater.Name = "picPellegrinoWater";
+            this.picPellegrinoWater.Size = new System.Drawing.Size(165, 226);
+            this.picPellegrinoWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPellegrinoWater.TabIndex = 23;
+            this.picPellegrinoWater.TabStop = false;
+            this.picPellegrinoWater.Click += new System.EventHandler(this.picPerregrinoWater_Click);
             // 
             // picSanPellegrino
             // 
@@ -1331,9 +1324,9 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picSanPellegrino.Image = ((System.Drawing.Image)(resources.GetObject("picSanPellegrino.Image")));
-            this.picSanPellegrino.Location = new System.Drawing.Point(64, 318);
+            this.picSanPellegrino.Location = new System.Drawing.Point(84, 344);
             this.picSanPellegrino.Name = "picSanPellegrino";
-            this.picSanPellegrino.Size = new System.Drawing.Size(96, 106);
+            this.picSanPellegrino.Size = new System.Drawing.Size(154, 226);
             this.picSanPellegrino.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSanPellegrino.TabIndex = 22;
             this.picSanPellegrino.TabStop = false;
@@ -1345,9 +1338,9 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picItalianSoda.Image = ((System.Drawing.Image)(resources.GetObject("picItalianSoda.Image")));
-            this.picItalianSoda.Location = new System.Drawing.Point(694, 113);
+            this.picItalianSoda.Location = new System.Drawing.Point(705, 47);
             this.picItalianSoda.Name = "picItalianSoda";
-            this.picItalianSoda.Size = new System.Drawing.Size(82, 106);
+            this.picItalianSoda.Size = new System.Drawing.Size(154, 226);
             this.picItalianSoda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picItalianSoda.TabIndex = 21;
             this.picItalianSoda.TabStop = false;
@@ -1359,9 +1352,9 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picWhiteWine.Image = ((System.Drawing.Image)(resources.GetObject("picWhiteWine.Image")));
-            this.picWhiteWine.Location = new System.Drawing.Point(415, 113);
+            this.picWhiteWine.Location = new System.Drawing.Point(411, 47);
             this.picWhiteWine.Name = "picWhiteWine";
-            this.picWhiteWine.Size = new System.Drawing.Size(53, 106);
+            this.picWhiteWine.Size = new System.Drawing.Size(127, 226);
             this.picWhiteWine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWhiteWine.TabIndex = 20;
             this.picWhiteWine.TabStop = false;
@@ -1373,9 +1366,9 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picRedWine.Image = ((System.Drawing.Image)(resources.GetObject("picRedWine.Image")));
-            this.picRedWine.Location = new System.Drawing.Point(65, 113);
+            this.picRedWine.Location = new System.Drawing.Point(99, 47);
             this.picRedWine.Name = "picRedWine";
-            this.picRedWine.Size = new System.Drawing.Size(53, 106);
+            this.picRedWine.Size = new System.Drawing.Size(127, 226);
             this.picRedWine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRedWine.TabIndex = 19;
             this.picRedWine.TabStop = false;
@@ -1427,6 +1420,58 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
             this.lblRestaurantName.TabIndex = 16;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
+            // 
+            // nudSanPellegrino
+            // 
+            this.nudSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudSanPellegrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSanPellegrino.Location = new System.Drawing.Point(175, 316);
+            this.nudSanPellegrino.Name = "nudSanPellegrino";
+            this.nudSanPellegrino.Size = new System.Drawing.Size(45, 22);
+            this.nudSanPellegrino.TabIndex = 55;
+            this.nudSanPellegrino.Visible = false;
+            this.nudSanPellegrino.ValueChanged += new System.EventHandler(this.nudSanPerregrino_ValueChanged);
+            // 
+            // lblSanPellegrino
+            // 
+            this.lblSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSanPellegrino.AutoSize = true;
+            this.lblSanPellegrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSanPellegrino.Location = new System.Drawing.Point(112, 573);
+            this.lblSanPellegrino.Name = "lblSanPellegrino";
+            this.lblSanPellegrino.Size = new System.Drawing.Size(101, 19);
+            this.lblSanPellegrino.TabIndex = 76;
+            this.lblSanPellegrino.Text = "San Pellegrino";
+            // 
+            // lblPellegrinoWater
+            // 
+            this.lblPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPellegrinoWater.AutoSize = true;
+            this.lblPellegrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPellegrinoWater.Location = new System.Drawing.Point(417, 573);
+            this.lblPellegrinoWater.Name = "lblPellegrinoWater";
+            this.lblPellegrinoWater.Size = new System.Drawing.Size(117, 19);
+            this.lblPellegrinoWater.TabIndex = 77;
+            this.lblPellegrinoWater.Text = "Pellegrino Water";
+            // 
+            // lblCocaCola2
+            // 
+            this.lblCocaCola2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCocaCola2.AutoSize = true;
+            this.lblCocaCola2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCocaCola2.Location = new System.Drawing.Point(753, 573);
+            this.lblCocaCola2.Name = "lblCocaCola2";
+            this.lblCocaCola2.Size = new System.Drawing.Size(74, 19);
+            this.lblCocaCola2.TabIndex = 78;
+            this.lblCocaCola2.Text = "Coca Cola";
             // 
             // frmMainMenu
             // 
@@ -1485,17 +1530,17 @@ namespace FinalProjectGUIDraft
             this.tabBeverages.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudCocaCola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudPeregrinoWater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPellegrinoWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPerregrino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPerregrinoWater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCocaCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPellegrinoWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSanPellegrino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picItalianSoda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1565,12 +1610,11 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblQuantityCocaCola;
         private System.Windows.Forms.NumericUpDown nudItalianSoda;
         private System.Windows.Forms.Label lblQuantityItalianSoda;
-        private System.Windows.Forms.NumericUpDown nudPeregrinoWater;
-        private System.Windows.Forms.Label lblQuantityPeregrinoWater;
+        private System.Windows.Forms.NumericUpDown nudPellegrinoWater;
+        private System.Windows.Forms.Label lblQuantityPellegrinoWater;
         private System.Windows.Forms.NumericUpDown nudWhiteWine;
         private System.Windows.Forms.Label lblQuantityWhiteWine;
-        private System.Windows.Forms.NumericUpDown nudSanPerregrino;
-        private System.Windows.Forms.Label lblQuantitySanPerregrino;
+        private System.Windows.Forms.Label lblQuantitySanPellegrino;
         private System.Windows.Forms.NumericUpDown nudRedWine;
         private System.Windows.Forms.Label lblQuantityRedWine;
         private System.Windows.Forms.Label lblCocaCola;
@@ -1579,8 +1623,8 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblItalianSoda;
         private System.Windows.Forms.Label lblWhiteWine;
         private System.Windows.Forms.Label lblRedWine;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox picPerregrinoWater;
+        private System.Windows.Forms.PictureBox picCocaCola;
+        private System.Windows.Forms.PictureBox picPellegrinoWater;
         private System.Windows.Forms.PictureBox picSanPellegrino;
         private System.Windows.Forms.PictureBox picItalianSoda;
         private System.Windows.Forms.PictureBox picWhiteWine;
@@ -1599,5 +1643,9 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblPestoQuantity;
         private System.Windows.Forms.NumericUpDown nudMacaroni;
         private System.Windows.Forms.Label lblMacaroniQuantity;
+        private System.Windows.Forms.NumericUpDown nudSanPellegrino;
+        private System.Windows.Forms.Label lblPellegrinoWater;
+        private System.Windows.Forms.Label lblSanPellegrino;
+        private System.Windows.Forms.Label lblCocaCola2;
     }
 }
