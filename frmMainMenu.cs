@@ -331,32 +331,32 @@ namespace FinalProjectGUIDraft
 
         private void picSanPellegrino_Click(object sender, EventArgs e) // Mispelled Perregrino //
         {
-            nudSanPerregrino.Value++;
-            nudSanPerregrino.Visible = true;
-            lblQuantityRedWine.Visible = true;
+            nudSanPellegrino.Value++;
+            nudSanPellegrino.Visible = true;
+            lblQuantitySanPellegrino.Visible = true;
         }
         private void nudSanPerregrino_ValueChanged(object sender, EventArgs e)
         {
-            if (nudSanPerregrino.Value == 0)
+            if (nudSanPellegrino.Value == 0)
             {
-                lblQuantitySanPerregrino.Visible = false;
-                nudSanPerregrino.Visible = false;
+                lblQuantitySanPellegrino.Visible = false;
+                nudSanPellegrino.Visible = false;
             }
         }
 
         private void picPerregrinoWater_Click(object sender, EventArgs e)
         {
-            nudPeregrinoWater.Value++;
-            nudPeregrinoWater.Visible = true;
-            lblQuantityPeregrinoWater.Visible = true;
+            nudPellegrinoWater.Value++;
+            nudPellegrinoWater.Visible = true;
+            lblQuantityPellegrinoWater.Visible = true;
         }
 
         private void nudPeregrinoWater_ValueChanged(object sender, EventArgs e)
         {
-            if (nudPeregrinoWater.Value == 0)
+            if (nudPellegrinoWater.Value == 0)
             {
-                lblQuantityPeregrinoWater.Visible = false;
-                nudPeregrinoWater.Visible = false;
+                lblQuantityPellegrinoWater.Visible = false;
+                nudPellegrinoWater.Visible = false;
             }
         }
 
