@@ -43,12 +43,13 @@ namespace FinalProjectGUIDraft
             this.btnOrderMore = new System.Windows.Forms.Button();
             this.btnSubmitOrder = new System.Windows.Forms.Button();
             this.gbxEstTotal = new System.Windows.Forms.GroupBox();
-            this.lblEstimatedTotal = new System.Windows.Forms.Label();
             this.lblNoTaxOrTip = new System.Windows.Forms.Label();
+            this.lblEstimatedTotal = new System.Windows.Forms.Label();
             this.btnRequestCheck = new System.Windows.Forms.Button();
             this.lblReqChkPrompt = new System.Windows.Forms.Label();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             this.lblOrderMorePrompt = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             this.gbxEditOrder.SuspendLayout();
@@ -194,15 +195,6 @@ namespace FinalProjectGUIDraft
             this.gbxEstTotal.TabStop = false;
             this.gbxEstTotal.Text = "Estimated Total";
             // 
-            // lblEstimatedTotal
-            // 
-            this.lblEstimatedTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstimatedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstimatedTotal.Location = new System.Drawing.Point(33, 36);
-            this.lblEstimatedTotal.Name = "lblEstimatedTotal";
-            this.lblEstimatedTotal.Size = new System.Drawing.Size(360, 35);
-            this.lblEstimatedTotal.TabIndex = 0;
-            // 
             // lblNoTaxOrTip
             // 
             this.lblNoTaxOrTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -211,6 +203,15 @@ namespace FinalProjectGUIDraft
             this.lblNoTaxOrTip.Size = new System.Drawing.Size(194, 25);
             this.lblNoTaxOrTip.TabIndex = 1;
             this.lblNoTaxOrTip.Text = "does not include tax or tip.";
+            // 
+            // lblEstimatedTotal
+            // 
+            this.lblEstimatedTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEstimatedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstimatedTotal.Location = new System.Drawing.Point(33, 36);
+            this.lblEstimatedTotal.Name = "lblEstimatedTotal";
+            this.lblEstimatedTotal.Size = new System.Drawing.Size(360, 35);
+            this.lblEstimatedTotal.TabIndex = 0;
             // 
             // btnRequestCheck
             // 
@@ -252,12 +253,23 @@ namespace FinalProjectGUIDraft
             this.lblOrderMorePrompt.TabIndex = 28;
             this.lblOrderMorePrompt.Text = "Want more food?";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(700, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 41);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "TestButton";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frmViewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblOrderMorePrompt);
             this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.lblReqChkPrompt);
@@ -301,5 +313,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.Label lblOrderMorePrompt;
+        private System.Windows.Forms.Button button1;
     }
 }
