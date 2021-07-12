@@ -99,6 +99,9 @@ namespace FinalProjectGUIDraft
             this.picCannoli = new System.Windows.Forms.PictureBox();
             this.picGelato = new System.Windows.Forms.PictureBox();
             this.tabBeverages = new System.Windows.Forms.TabPage();
+            this.lblCocaCola2 = new System.Windows.Forms.Label();
+            this.lblPellegrinoWater = new System.Windows.Forms.Label();
+            this.lblSanPellegrino = new System.Windows.Forms.Label();
             this.nudCocaCola = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityCocaCola = new System.Windows.Forms.Label();
             this.nudItalianSoda = new System.Windows.Forms.NumericUpDown();
@@ -107,6 +110,7 @@ namespace FinalProjectGUIDraft
             this.lblQuantityPellegrinoWater = new System.Windows.Forms.Label();
             this.nudWhiteWine = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityWhiteWine = new System.Windows.Forms.Label();
+            this.nudSanPellegrino = new System.Windows.Forms.NumericUpDown();
             this.lblQuantitySanPellegrino = new System.Windows.Forms.Label();
             this.nudRedWine = new System.Windows.Forms.NumericUpDown();
             this.lblQuantityRedWine = new System.Windows.Forms.Label();
@@ -126,10 +130,6 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder = new System.Windows.Forms.Button();
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
-            this.nudSanPellegrino = new System.Windows.Forms.NumericUpDown();
-            this.lblSanPellegrino = new System.Windows.Forms.Label();
-            this.lblPellegrinoWater = new System.Windows.Forms.Label();
-            this.lblCocaCola2 = new System.Windows.Forms.Label();
             this.tabSelection.SuspendLayout();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
@@ -171,6 +171,7 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPellegrinoWater)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCocaCola)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPellegrinoWater)).BeginInit();
@@ -179,7 +180,6 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).BeginInit();
             this.SuspendLayout();
             // 
             // tabSelection
@@ -246,6 +246,7 @@ namespace FinalProjectGUIDraft
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "Main Course Meals";
             this.MainMenu.UseVisualStyleBackColor = true;
+            this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
             // nudMacaroni
             // 
@@ -1063,6 +1064,45 @@ namespace FinalProjectGUIDraft
             this.tabBeverages.Text = "Beverages";
             this.tabBeverages.UseVisualStyleBackColor = true;
             // 
+            // lblCocaCola2
+            // 
+            this.lblCocaCola2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCocaCola2.AutoSize = true;
+            this.lblCocaCola2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCocaCola2.Location = new System.Drawing.Point(753, 573);
+            this.lblCocaCola2.Name = "lblCocaCola2";
+            this.lblCocaCola2.Size = new System.Drawing.Size(74, 19);
+            this.lblCocaCola2.TabIndex = 78;
+            this.lblCocaCola2.Text = "Coca Cola";
+            // 
+            // lblPellegrinoWater
+            // 
+            this.lblPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPellegrinoWater.AutoSize = true;
+            this.lblPellegrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPellegrinoWater.Location = new System.Drawing.Point(417, 573);
+            this.lblPellegrinoWater.Name = "lblPellegrinoWater";
+            this.lblPellegrinoWater.Size = new System.Drawing.Size(117, 19);
+            this.lblPellegrinoWater.TabIndex = 77;
+            this.lblPellegrinoWater.Text = "Pellegrino Water";
+            // 
+            // lblSanPellegrino
+            // 
+            this.lblSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSanPellegrino.AutoSize = true;
+            this.lblSanPellegrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSanPellegrino.Location = new System.Drawing.Point(112, 573);
+            this.lblSanPellegrino.Name = "lblSanPellegrino";
+            this.lblSanPellegrino.Size = new System.Drawing.Size(101, 19);
+            this.lblSanPellegrino.TabIndex = 76;
+            this.lblSanPellegrino.Text = "San Pellegrino";
+            // 
             // nudCocaCola
             // 
             this.nudCocaCola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1170,6 +1210,19 @@ namespace FinalProjectGUIDraft
             this.lblQuantityWhiteWine.TabIndex = 56;
             this.lblQuantityWhiteWine.Text = "Quantity:";
             this.lblQuantityWhiteWine.Visible = false;
+            // 
+            // nudSanPellegrino
+            // 
+            this.nudSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nudSanPellegrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSanPellegrino.Location = new System.Drawing.Point(175, 316);
+            this.nudSanPellegrino.Name = "nudSanPellegrino";
+            this.nudSanPellegrino.Size = new System.Drawing.Size(45, 22);
+            this.nudSanPellegrino.TabIndex = 55;
+            this.nudSanPellegrino.Visible = false;
+            this.nudSanPellegrino.ValueChanged += new System.EventHandler(this.nudSanPerregrino_ValueChanged);
             // 
             // lblQuantitySanPellegrino
             // 
@@ -1421,58 +1474,6 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName.TabIndex = 16;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
             // 
-            // nudSanPellegrino
-            // 
-            this.nudSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudSanPellegrino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSanPellegrino.Location = new System.Drawing.Point(175, 316);
-            this.nudSanPellegrino.Name = "nudSanPellegrino";
-            this.nudSanPellegrino.Size = new System.Drawing.Size(45, 22);
-            this.nudSanPellegrino.TabIndex = 55;
-            this.nudSanPellegrino.Visible = false;
-            this.nudSanPellegrino.ValueChanged += new System.EventHandler(this.nudSanPerregrino_ValueChanged);
-            // 
-            // lblSanPellegrino
-            // 
-            this.lblSanPellegrino.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSanPellegrino.AutoSize = true;
-            this.lblSanPellegrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPellegrino.Location = new System.Drawing.Point(112, 573);
-            this.lblSanPellegrino.Name = "lblSanPellegrino";
-            this.lblSanPellegrino.Size = new System.Drawing.Size(101, 19);
-            this.lblSanPellegrino.TabIndex = 76;
-            this.lblSanPellegrino.Text = "San Pellegrino";
-            // 
-            // lblPellegrinoWater
-            // 
-            this.lblPellegrinoWater.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPellegrinoWater.AutoSize = true;
-            this.lblPellegrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPellegrinoWater.Location = new System.Drawing.Point(417, 573);
-            this.lblPellegrinoWater.Name = "lblPellegrinoWater";
-            this.lblPellegrinoWater.Size = new System.Drawing.Size(117, 19);
-            this.lblPellegrinoWater.TabIndex = 77;
-            this.lblPellegrinoWater.Text = "Pellegrino Water";
-            // 
-            // lblCocaCola2
-            // 
-            this.lblCocaCola2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCocaCola2.AutoSize = true;
-            this.lblCocaCola2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCocaCola2.Location = new System.Drawing.Point(753, 573);
-            this.lblCocaCola2.Name = "lblCocaCola2";
-            this.lblCocaCola2.Size = new System.Drawing.Size(74, 19);
-            this.lblCocaCola2.TabIndex = 78;
-            this.lblCocaCola2.Text = "Coca Cola";
-            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1532,6 +1533,7 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.nudItalianSoda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPellegrinoWater)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudWhiteWine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudRedWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCocaCola)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPellegrinoWater)).EndInit();
@@ -1540,7 +1542,6 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picWhiteWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRedWine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSanPellegrino)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

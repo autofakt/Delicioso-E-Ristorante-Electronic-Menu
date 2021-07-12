@@ -384,5 +384,10 @@ namespace FinalProjectGUIDraft
             orderForm.Show();
             
         }
+
+        private void MainMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
