@@ -29,7 +29,7 @@ namespace FinalProjectGUIDraft
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReceipt));
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,23 +39,16 @@ namespace FinalProjectGUIDraft
             this.label8 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.picRestLogo = new System.Windows.Forms.PictureBox();
+            this.lblRestaurantName = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(301, 573);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "To be continued......";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(126, 519);
+            this.label7.Location = new System.Drawing.Point(324, 606);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(195, 24);
             this.label7.TabIndex = 17;
@@ -65,7 +58,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(191, 475);
+            this.label6.Location = new System.Drawing.Point(389, 562);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 24);
             this.label6.TabIndex = 16;
@@ -75,7 +68,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(270, 439);
+            this.label5.Location = new System.Drawing.Point(468, 526);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 24);
             this.label5.TabIndex = 15;
@@ -85,7 +78,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(270, 401);
+            this.label4.Location = new System.Drawing.Point(468, 488);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 24);
             this.label4.TabIndex = 14;
@@ -95,7 +88,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(230, 363);
+            this.label3.Location = new System.Drawing.Point(428, 450);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 13;
@@ -105,7 +98,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(217, 23);
+            this.label2.Location = new System.Drawing.Point(415, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 24);
             this.label2.TabIndex = 18;
@@ -115,7 +108,7 @@ namespace FinalProjectGUIDraft
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(155, 57);
+            this.label8.Location = new System.Drawing.Point(353, 144);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 24);
             this.label8.TabIndex = 19;
@@ -131,7 +124,7 @@ namespace FinalProjectGUIDraft
             "Dish2   *   2   $32.50",
             "Dish3   *   2   $32.50",
             "Dish4   *   2   $32.50"});
-            this.listBox1.Location = new System.Drawing.Point(173, 151);
+            this.listBox1.Location = new System.Drawing.Point(386, 239);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(469, 196);
             this.listBox1.TabIndex = 20;
@@ -140,17 +133,42 @@ namespace FinalProjectGUIDraft
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(195, 109);
+            this.label9.Location = new System.Drawing.Point(393, 196);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(121, 24);
             this.label9.TabIndex = 21;
             this.label9.Text = "Orde Detail:";
             // 
+            // picRestLogo
+            // 
+            this.picRestLogo.Image = ((System.Drawing.Image)(resources.GetObject("picRestLogo.Image")));
+            this.picRestLogo.InitialImage = null;
+            this.picRestLogo.Location = new System.Drawing.Point(24, 21);
+            this.picRestLogo.Name = "picRestLogo";
+            this.picRestLogo.Size = new System.Drawing.Size(64, 56);
+            this.picRestLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picRestLogo.TabIndex = 23;
+            this.picRestLogo.TabStop = false;
+            // 
+            // lblRestaurantName
+            // 
+            this.lblRestaurantName.AutoSize = true;
+            this.lblRestaurantName.BackColor = System.Drawing.Color.White;
+            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestaurantName.Location = new System.Drawing.Point(94, 26);
+            this.lblRestaurantName.Name = "lblRestaurantName";
+            this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
+            this.lblRestaurantName.TabIndex = 22;
+            this.lblRestaurantName.Text = "Delicioso E-Ristorante";
+            // 
             // frmReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 622);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.picRestLogo);
+            this.Controls.Add(this.lblRestaurantName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label8);
@@ -160,17 +178,15 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
             this.Name = "frmReceipt";
             this.Text = "Receipt";
+            ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -180,5 +196,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox picRestLogo;
+        private System.Windows.Forms.Label lblRestaurantName;
     }
 }
