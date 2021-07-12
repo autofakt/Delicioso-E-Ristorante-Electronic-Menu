@@ -276,5 +276,12 @@ namespace FinalProjectGUIDraft
                 nudRavioli.Visible = false;
             }
         }
+
+        private void btnViewOrder_Click(object sender, EventArgs e)
+        {
+            frmViewOrder orderForm = new frmViewOrder();
+            orderForm.Show();
+            
+        }
     }
 }

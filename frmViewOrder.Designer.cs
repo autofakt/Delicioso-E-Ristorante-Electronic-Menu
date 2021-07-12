@@ -32,7 +32,7 @@ namespace FinalProjectGUIDraft
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxOrderForm = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -69,20 +69,20 @@ namespace FinalProjectGUIDraft
             this.button2.Text = "Order more";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbxOrderForm
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 24;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbxOrderForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxOrderForm.FormattingEnabled = true;
+            this.lbxOrderForm.ItemHeight = 24;
+            this.lbxOrderForm.Items.AddRange(new object[] {
             "Dish1   *   2   $32.50",
             "Dish2   *   2   $32.50",
             "Dish3   *   2   $32.50",
             "Dish4   *   2   $32.50"});
-            this.listBox1.Location = new System.Drawing.Point(115, 106);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(469, 196);
-            this.listBox1.TabIndex = 4;
+            this.lbxOrderForm.Location = new System.Drawing.Point(115, 106);
+            this.lbxOrderForm.Name = "lbxOrderForm";
+            this.lbxOrderForm.Size = new System.Drawing.Size(469, 196);
+            this.lbxOrderForm.TabIndex = 4;
             // 
             // label2
             // 
@@ -131,7 +131,7 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxOrderForm);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -147,7 +147,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxOrderForm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
