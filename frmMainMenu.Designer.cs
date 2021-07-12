@@ -1414,6 +1414,7 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder.TabIndex = 19;
             this.btnViewOrder.Text = "View My Order";
             this.btnViewOrder.UseVisualStyleBackColor = false;
+            this.btnViewOrder.Click += new System.EventHandler(this.btnViewOrder_Click);
             // 
             // picRestLogo
             // 
