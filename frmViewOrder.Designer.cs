@@ -222,6 +222,7 @@ namespace FinalProjectGUIDraft
             this.btnRequestCheck.TabIndex = 25;
             this.btnRequestCheck.Text = "Request Check";
             this.btnRequestCheck.UseVisualStyleBackColor = true;
+            this.btnRequestCheck.Click += new System.EventHandler(this.btnRequestCheck_Click);
             // 
             // lblReqChkPrompt
             // 

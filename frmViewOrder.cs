@@ -23,5 +23,12 @@ namespace FinalProjectGUIDraft
         {
             this.Close();
         }
+
+        private void btnRequestCheck_Click(object sender, EventArgs e)
+        {
+            frmBillAndPayment paymentForm = new frmBillAndPayment();
+            
+            paymentForm.ShowDialog();
+        }
     }
 }

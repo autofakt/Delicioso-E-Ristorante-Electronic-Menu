@@ -16,5 +16,26 @@ namespace FinalProjectGUIDraft
         {
             InitializeComponent();
         }
+
+        private void rbtnCreditCard_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCardNumber.ReadOnly = false;
+            txtExpDate.ReadOnly = false;
+            txtPinNumber.ReadOnly = false;
+        }
+
+        private void rbtnCash_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCardNumber.ReadOnly = true;
+            txtExpDate.ReadOnly = true;
+            txtPinNumber.ReadOnly = true;
+        }
+
+        private void rbtnDebitCard_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCardNumber.ReadOnly = false;
+            txtExpDate.ReadOnly = false;
+            txtPinNumber.ReadOnly = false;
+        }
     }
 }
