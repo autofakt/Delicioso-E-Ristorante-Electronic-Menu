@@ -12,6 +12,25 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmMainMenu : Form
     {
+        const int MAX_ITEMS = 22;
+        int itemCounter = 0;
+        double estimate = 0;
+
+        string[] items = new string[MAX_ITEMS];
+        int[] quantity = new int[MAX_ITEMS];
+        double[] price = new double[MAX_ITEMS];
+
+        public double estimateCalculator()
+        {
+            double sum = 0;
+            for(int i =0; i < itemCounter; i++)
+            {
+                sum += price[i];
+            }
+
+            return sum;
+        }
+
         public frmMainMenu()
         {
             InitializeComponent();
@@ -379,13 +398,101 @@ namespace FinalProjectGUIDraft
 
 
 
-        private void btnViewOrder_Click(object sender, EventArgs e)
+        public void btnViewOrder_Click(object sender, EventArgs e)
         {
+            itemCounter = 0;
+            Array.Clear(items, 0, items.Length);
+            Array.Clear(quantity, 0, items.Length);
+            Array.Clear(price, 0, items.Length);
+
             frmViewOrder orderForm = new frmViewOrder();
+
             if (nudSpaghetti.Value >= 1)
             {
-                orderForm.lstItemsOrdered.Items.Add(lblSpaghetti.Text + " - " + nudSpaghetti.Value);
+                //orderForm.lstItemsOrdered.Items.Add(lblSpaghetti.Text + " - " + nudSpaghetti.Value);
+                items[itemCounter] =(lblSpaghetti.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudSpaghetti.Value));
+                price[itemCounter] = (double.Parse(lblPriceSpaghetti.Text));
+                itemCounter++;
             }
+
+            if (nudLasagna.Value >= 1)
+            {
+                items[itemCounter] = (lblLasagna.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudLasagna.Value));
+                price[itemCounter] = (double.Parse(lblPriceLasagna.Text));
+                itemCounter++;
+            }
+
+            if (nudRatatouille.Value >= 1)
+            {
+                items[itemCounter] = (lblRatatouille.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudRatatouille.Value));
+                price[itemCounter] = (double.Parse(lblPriceRatatouille.Text));
+                itemCounter++;
+            }
+
+            if (nudFettAlfredo.Value >= 1)
+            {
+                items[itemCounter] = (lblFettAlfredo.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudFettAlfredo.Value));
+                price[itemCounter] = (double.Parse(lblPriceFettAlfredo.Text));
+                itemCounter++;
+            }
+
+            if (nudStuffedShells.Value >= 1)
+            {
+                items[itemCounter] = (lblStuffedShells.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudStuffedShells.Value));
+                price[itemCounter] = (double.Parse(lblPriceStuffedShells.Text));
+                itemCounter++;
+            }
+
+            if (nudPizza.Value >= 1)
+            {
+                items[itemCounter] = (lblPizza.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudPizza.Value));
+                price[itemCounter] = (double.Parse(lblPricePizza.Text));
+                itemCounter++;
+            }
+
+            if (nudPesto.Value >= 1)
+            {
+                items[itemCounter] = (lblPesto.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudPesto.Value));
+                price[itemCounter] = (double.Parse(lblPricePesto.Text));
+                itemCounter++;
+            }
+
+            if (nudSeafoodPasta.Value >= 1)
+            {
+                items[itemCounter] = (lblSeafoodPasta.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudSeafoodPasta.Value));
+                price[itemCounter] = (double.Parse(lblPriceSeafoodPasta.Text));
+                itemCounter++;
+            }
+
+            if (nudRavioli.Value >= 1)
+            {
+                items[itemCounter] = (lblRavioli.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudRavioli.Value));
+                price[itemCounter] = (double.Parse(lblPriceRavioli.Text));
+                itemCounter++;
+            }
+
+            if (nudMacaroni.Value >= 1)
+            {
+                items[itemCounter] = (lblMacaroni.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudMacaroni.Value));
+                price[itemCounter] = (double.Parse(lblPriceMacaroni.Text));
+                itemCounter++;
+            }
+
+            for (int i = 0; i < itemCounter; i++)
+                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i] + " @ $" + price[i] + " each");
+
+            estimate = estimateCalculator();
+            orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
             orderForm.ShowDialog();
             
         }
