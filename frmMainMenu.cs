@@ -381,6 +381,10 @@ namespace FinalProjectGUIDraft
         private void btnViewOrder_Click(object sender, EventArgs e)
         {
             frmViewOrder orderForm = new frmViewOrder();
+            if (nudSpaghetti.Value >= 1)
+            {
+                orderForm.lstItemsOrdered.Items.Add(lblSpaghetti.Text + " - " + nudSpaghetti.Value);
+            }
             orderForm.Show();
             
         }

@@ -297,7 +297,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.PictureBox picRestLogo;
         private System.Windows.Forms.Label lblRestaurantName;
         private System.Windows.Forms.GroupBox gbxYourOrder;
-        private System.Windows.Forms.ListBox lstItemsOrdered;
+        public System.Windows.Forms.ListBox lstItemsOrdered; //made this public
         private System.Windows.Forms.GroupBox gbxEditOrder;
         private System.Windows.Forms.Label lblRemoveOne;
         private System.Windows.Forms.Label lblAddOne;

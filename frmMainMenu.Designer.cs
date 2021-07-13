@@ -1561,7 +1561,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblRatatouilleQuantity;
         private System.Windows.Forms.NumericUpDown nudLasagna;
         private System.Windows.Forms.Label lblLasagnaQuantity;
-        private System.Windows.Forms.NumericUpDown nudSpaghetti;
+        public System.Windows.Forms.NumericUpDown nudSpaghetti;
         private System.Windows.Forms.Label lblSpaghettiQuantity;
         private System.Windows.Forms.Label lblSeafoodPasta;
         private System.Windows.Forms.Label lblMacaroni;
@@ -1572,7 +1572,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblRavioli;
         private System.Windows.Forms.Label lblRatatouille;
         private System.Windows.Forms.Label lblLasagna;
-        private System.Windows.Forms.Label lblSpaghetti;
+        public System.Windows.Forms.Label lblSpaghetti;  //
         private System.Windows.Forms.PictureBox picSeafoodPasta;
         private System.Windows.Forms.PictureBox picMacaroni;
         private System.Windows.Forms.PictureBox picPizza;
@@ -1582,7 +1582,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.PictureBox picRavioli;
         private System.Windows.Forms.PictureBox picRatatouille;
         private System.Windows.Forms.PictureBox picLasagna;
-        private System.Windows.Forms.PictureBox picSpaghetti;
+        public System.Windows.Forms.PictureBox picSpaghetti; //changed to public
         private System.Windows.Forms.NumericUpDown nudAntiPastoSalad;
         private System.Windows.Forms.Label lblAntiPastoSaladQuantity;
         private System.Windows.Forms.NumericUpDown nudBigGreenSalad;
