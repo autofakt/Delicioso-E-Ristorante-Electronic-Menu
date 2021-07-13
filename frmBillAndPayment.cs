@@ -38,6 +38,11 @@ namespace FinalProjectGUIDraft
             txtPinNumber.ReadOnly = false;
         }
 
-       
+        private void btnPayBill_Click(object sender, EventArgs e)
+        {
+            frmReceipt receiptForm = new frmReceipt();
+
+            receiptForm.ShowDialog();
+        }
     }
 }
