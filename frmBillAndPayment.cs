@@ -21,7 +21,7 @@ namespace FinalProjectGUIDraft
         {
             txtCardNumber.ReadOnly = false;
             txtExpDate.ReadOnly = false;
-            txtPinNumber.ReadOnly = false;
+            txtPinNumber.ReadOnly = true;
         }
 
         private void rbtnCash_CheckedChanged(object sender, EventArgs e)
