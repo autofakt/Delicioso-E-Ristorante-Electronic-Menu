@@ -92,9 +92,9 @@ namespace FinalProjectGUIDraft
             // 
             this.lstItemsOrdered.FormattingEnabled = true;
             this.lstItemsOrdered.ItemHeight = 20;
-            this.lstItemsOrdered.Location = new System.Drawing.Point(40, 57);
+            this.lstItemsOrdered.Location = new System.Drawing.Point(21, 57);
             this.lstItemsOrdered.Name = "lstItemsOrdered";
-            this.lstItemsOrdered.Size = new System.Drawing.Size(340, 444);
+            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 444);
             this.lstItemsOrdered.TabIndex = 0;
             // 
             // gbxEditOrder
@@ -207,11 +207,12 @@ namespace FinalProjectGUIDraft
             // lblEstimatedTotal
             // 
             this.lblEstimatedTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstimatedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstimatedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstimatedTotal.Location = new System.Drawing.Point(33, 36);
             this.lblEstimatedTotal.Name = "lblEstimatedTotal";
             this.lblEstimatedTotal.Size = new System.Drawing.Size(360, 35);
             this.lblEstimatedTotal.TabIndex = 0;
+            this.lblEstimatedTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRequestCheck
             // 
@@ -296,9 +297,9 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblEditPrompt;
         private System.Windows.Forms.Button btnOrderMore;
         private System.Windows.Forms.Button btnSubmitOrder;
-        private System.Windows.Forms.GroupBox gbxEstTotal;
+        public System.Windows.Forms.GroupBox gbxEstTotal; //made public
         private System.Windows.Forms.Label lblNoTaxOrTip;
-        private System.Windows.Forms.Label lblEstimatedTotal;
+        public System.Windows.Forms.Label lblEstimatedTotal; //made public
         private System.Windows.Forms.Button btnRequestCheck;
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
