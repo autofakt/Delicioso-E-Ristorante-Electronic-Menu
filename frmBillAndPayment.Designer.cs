@@ -35,6 +35,7 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill = new System.Windows.Forms.GroupBox();
             this.lstItemizedBill = new System.Windows.Forms.ListBox();
             this.gbxPaymentMethod = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnPayBill = new System.Windows.Forms.Button();
             this.lblPinNum = new System.Windows.Forms.Label();
             this.txtPinNumber = new System.Windows.Forms.TextBox();
@@ -47,11 +48,11 @@ namespace FinalProjectGUIDraft
             this.rbtnCreditCard = new System.Windows.Forms.RadioButton();
             this.rbtnCash = new System.Windows.Forms.RadioButton();
             this.gbxAddTip = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.rbtn25 = new System.Windows.Forms.RadioButton();
             this.rbtn20 = new System.Windows.Forms.RadioButton();
             this.rbtn15 = new System.Windows.Forms.RadioButton();
             this.rbtn10 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxItemizedBill.SuspendLayout();
             this.gbxPaymentMethod.SuspendLayout();
@@ -103,6 +104,7 @@ namespace FinalProjectGUIDraft
             // 
             // gbxPaymentMethod
             // 
+            this.gbxPaymentMethod.Controls.Add(this.label1);
             this.gbxPaymentMethod.Controls.Add(this.btnPayBill);
             this.gbxPaymentMethod.Controls.Add(this.lblPinNum);
             this.gbxPaymentMethod.Controls.Add(this.txtPinNumber);
@@ -122,6 +124,16 @@ namespace FinalProjectGUIDraft
             this.gbxPaymentMethod.TabStop = false;
             this.gbxPaymentMethod.Text = "Method of Payment";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(407, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 20);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "No Checks";
+            // 
             // btnPayBill
             // 
             this.btnPayBill.Location = new System.Drawing.Point(158, 322);
@@ -134,7 +146,7 @@ namespace FinalProjectGUIDraft
             // lblPinNum
             // 
             this.lblPinNum.AutoSize = true;
-            this.lblPinNum.Location = new System.Drawing.Point(87, 251);
+            this.lblPinNum.Location = new System.Drawing.Point(77, 253);
             this.lblPinNum.Name = "lblPinNum";
             this.lblPinNum.Size = new System.Drawing.Size(111, 20);
             this.lblPinNum.TabIndex = 12;
@@ -142,7 +154,7 @@ namespace FinalProjectGUIDraft
             // 
             // txtPinNumber
             // 
-            this.txtPinNumber.Location = new System.Drawing.Point(217, 251);
+            this.txtPinNumber.Location = new System.Drawing.Point(207, 253);
             this.txtPinNumber.Name = "txtPinNumber";
             this.txtPinNumber.ReadOnly = true;
             this.txtPinNumber.Size = new System.Drawing.Size(97, 26);
@@ -152,7 +164,7 @@ namespace FinalProjectGUIDraft
             // lblExpDate
             // 
             this.lblExpDate.AutoSize = true;
-            this.lblExpDate.Location = new System.Drawing.Point(73, 200);
+            this.lblExpDate.Location = new System.Drawing.Point(63, 202);
             this.lblExpDate.Name = "lblExpDate";
             this.lblExpDate.Size = new System.Drawing.Size(138, 20);
             this.lblExpDate.TabIndex = 10;
@@ -160,7 +172,7 @@ namespace FinalProjectGUIDraft
             // 
             // txtExpDate
             // 
-            this.txtExpDate.Location = new System.Drawing.Point(217, 200);
+            this.txtExpDate.Location = new System.Drawing.Point(207, 202);
             this.txtExpDate.Name = "txtExpDate";
             this.txtExpDate.ReadOnly = true;
             this.txtExpDate.Size = new System.Drawing.Size(58, 26);
@@ -170,7 +182,7 @@ namespace FinalProjectGUIDraft
             // lblCardNumber
             // 
             this.lblCardNumber.AutoSize = true;
-            this.lblCardNumber.Location = new System.Drawing.Point(87, 151);
+            this.lblCardNumber.Location = new System.Drawing.Point(77, 153);
             this.lblCardNumber.Name = "lblCardNumber";
             this.lblCardNumber.Size = new System.Drawing.Size(124, 20);
             this.lblCardNumber.TabIndex = 8;
@@ -178,7 +190,7 @@ namespace FinalProjectGUIDraft
             // 
             // txtCardNumber
             // 
-            this.txtCardNumber.Location = new System.Drawing.Point(217, 151);
+            this.txtCardNumber.Location = new System.Drawing.Point(207, 153);
             this.txtCardNumber.Name = "txtCardNumber";
             this.txtCardNumber.ReadOnly = true;
             this.txtCardNumber.Size = new System.Drawing.Size(223, 26);
@@ -189,7 +201,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPymtMthdPrompt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblPymtMthdPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPymtMthdPrompt.Location = new System.Drawing.Point(38, 94);
+            this.lblPymtMthdPrompt.Location = new System.Drawing.Point(28, 96);
             this.lblPymtMthdPrompt.Name = "lblPymtMthdPrompt";
             this.lblPymtMthdPrompt.Size = new System.Drawing.Size(440, 33);
             this.lblPymtMthdPrompt.TabIndex = 6;
@@ -198,7 +210,7 @@ namespace FinalProjectGUIDraft
             // rbtnDebitCard
             // 
             this.rbtnDebitCard.AutoSize = true;
-            this.rbtnDebitCard.Location = new System.Drawing.Point(365, 42);
+            this.rbtnDebitCard.Location = new System.Drawing.Point(275, 44);
             this.rbtnDebitCard.Name = "rbtnDebitCard";
             this.rbtnDebitCard.Size = new System.Drawing.Size(113, 24);
             this.rbtnDebitCard.TabIndex = 5;
@@ -210,7 +222,7 @@ namespace FinalProjectGUIDraft
             // rbtnCreditCard
             // 
             this.rbtnCreditCard.AutoSize = true;
-            this.rbtnCreditCard.Location = new System.Drawing.Point(168, 42);
+            this.rbtnCreditCard.Location = new System.Drawing.Point(122, 44);
             this.rbtnCreditCard.Name = "rbtnCreditCard";
             this.rbtnCreditCard.Size = new System.Drawing.Size(118, 24);
             this.rbtnCreditCard.TabIndex = 4;
@@ -222,7 +234,7 @@ namespace FinalProjectGUIDraft
             // rbtnCash
             // 
             this.rbtnCash.AutoSize = true;
-            this.rbtnCash.Location = new System.Drawing.Point(38, 42);
+            this.rbtnCash.Location = new System.Drawing.Point(28, 44);
             this.rbtnCash.Name = "rbtnCash";
             this.rbtnCash.Size = new System.Drawing.Size(68, 24);
             this.rbtnCash.TabIndex = 3;
@@ -245,6 +257,17 @@ namespace FinalProjectGUIDraft
             this.gbxAddTip.TabIndex = 24;
             this.gbxAddTip.TabStop = false;
             this.gbxAddTip.Text = "Add a Tip";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(421, 41);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(78, 24);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "No Tip";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // rbtn25
             // 
@@ -289,17 +312,6 @@ namespace FinalProjectGUIDraft
             this.rbtn10.TabStop = true;
             this.rbtn10.Text = "10%";
             this.rbtn10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(421, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 24);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "No Tip";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // frmBillAndPayment
             // 
@@ -349,5 +361,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.RadioButton rbtn10;
         private System.Windows.Forms.Button btnPayBill;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label label1;
     }
 }
