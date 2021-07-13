@@ -115,6 +115,7 @@ namespace FinalProjectGUIDraft
             this.tbxGrandTotal.ReadOnly = true;
             this.tbxGrandTotal.Size = new System.Drawing.Size(100, 26);
             this.tbxGrandTotal.TabIndex = 32;
+            this.tbxGrandTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblGrandTotal
             // 
@@ -132,6 +133,7 @@ namespace FinalProjectGUIDraft
             this.tbxTip.ReadOnly = true;
             this.tbxTip.Size = new System.Drawing.Size(100, 26);
             this.tbxTip.TabIndex = 30;
+            this.tbxTip.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTip
             // 
@@ -149,6 +151,7 @@ namespace FinalProjectGUIDraft
             this.tbxTax.ReadOnly = true;
             this.tbxTax.Size = new System.Drawing.Size(100, 26);
             this.tbxTax.TabIndex = 28;
+            this.tbxTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTax
             // 
@@ -166,6 +169,7 @@ namespace FinalProjectGUIDraft
             this.tbxSubTotal.ReadOnly = true;
             this.tbxSubTotal.Size = new System.Drawing.Size(100, 26);
             this.tbxSubTotal.TabIndex = 26;
+            this.tbxSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblSubTotal
             // 
