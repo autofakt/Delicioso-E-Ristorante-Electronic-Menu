@@ -25,7 +25,7 @@ namespace FinalProjectGUIDraft
             double sum = 0;
             for(int i =0; i < itemCounter; i++)
             {
-                sum += price[i];
+                sum += price[i] * quantity[i];
             }
 
             return sum;
