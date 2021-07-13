@@ -87,19 +87,19 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxItemizedBill.Location = new System.Drawing.Point(35, 117);
             this.gbxItemizedBill.Name = "gbxItemizedBill";
-            this.gbxItemizedBill.Size = new System.Drawing.Size(370, 565);
+            this.gbxItemizedBill.Size = new System.Drawing.Size(388, 565);
             this.gbxItemizedBill.TabIndex = 22;
             this.gbxItemizedBill.TabStop = false;
             this.gbxItemizedBill.Text = "Itemized Bill";
             // 
             // lstItemizedBill
             // 
-            this.lstItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstItemizedBill.FormattingEnabled = true;
             this.lstItemizedBill.ItemHeight = 20;
-            this.lstItemizedBill.Location = new System.Drawing.Point(23, 41);
+            this.lstItemizedBill.Location = new System.Drawing.Point(6, 41);
             this.lstItemizedBill.Name = "lstItemizedBill";
-            this.lstItemizedBill.Size = new System.Drawing.Size(321, 484);
+            this.lstItemizedBill.Size = new System.Drawing.Size(376, 484);
             this.lstItemizedBill.TabIndex = 0;
             // 
             // gbxPaymentMethod
@@ -343,7 +343,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.PictureBox picRestLogo;
         private System.Windows.Forms.Label lblRestaurantName;
         private System.Windows.Forms.GroupBox gbxItemizedBill;
-        private System.Windows.Forms.ListBox lstItemizedBill;
+        public System.Windows.Forms.ListBox lstItemizedBill; //made public
         private System.Windows.Forms.GroupBox gbxPaymentMethod;
         private System.Windows.Forms.Label lblPinNum;
         private System.Windows.Forms.TextBox txtPinNumber;

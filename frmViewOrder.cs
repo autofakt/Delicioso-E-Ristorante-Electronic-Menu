@@ -27,7 +27,8 @@ namespace FinalProjectGUIDraft
         private void btnRequestCheck_Click(object sender, EventArgs e)
         {
             frmBillAndPayment paymentForm = new frmBillAndPayment();
-            
+            for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
+                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] + " @ $" + frmMainMenu.price[i] + " each");
             paymentForm.ShowDialog();
         }
 

@@ -13,12 +13,24 @@ namespace FinalProjectGUIDraft
     public partial class frmMainMenu : Form
     {
         const int MAX_ITEMS = 22;
-        int itemCounter = 0;
-        double estimate = 0;
+        static int itemCounter = 0;
+        static double estimate = 0;
 
-        string[] items = new string[MAX_ITEMS];
-        int[] quantity = new int[MAX_ITEMS];
-        double[] price = new double[MAX_ITEMS];
+        public static int getItemCounter()
+        {
+                return itemCounter; 
+        }
+
+        public static double getEstimate()
+        {
+            return estimate;
+        }
+
+
+        public static string[] items = new string[MAX_ITEMS];
+        public static int[] quantity = new int[MAX_ITEMS];
+        public static double[] price = new double[MAX_ITEMS];
+
 
         public double estimateCalculator()
         {
