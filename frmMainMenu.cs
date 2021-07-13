@@ -280,6 +280,7 @@ namespace FinalProjectGUIDraft
 
         }
 
+        // Lee //
         // Beverages Selection //
         private void picRedWine_Click(object sender, EventArgs e)
         {
@@ -385,13 +386,13 @@ namespace FinalProjectGUIDraft
             {
                 orderForm.lstItemsOrdered.Items.Add(lblSpaghetti.Text + " - " + nudSpaghetti.Value);
             }
-            orderForm.Show();
+            orderForm.ShowDialog();
             
         }
 
-        private void MainMenu_Click(object sender, EventArgs e)
+        private void MainMenu_Click(object sender, EventArgs e) 
         {
-
+            // Accidental MainMenu Click created //
         }
     }
 }

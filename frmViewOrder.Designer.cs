@@ -49,7 +49,6 @@ namespace FinalProjectGUIDraft
             this.lblReqChkPrompt = new System.Windows.Forms.Label();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             this.lblOrderMorePrompt = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             this.gbxEditOrder.SuspendLayout();
@@ -170,6 +169,7 @@ namespace FinalProjectGUIDraft
             this.btnOrderMore.TabIndex = 23;
             this.btnOrderMore.Text = "Order More";
             this.btnOrderMore.UseVisualStyleBackColor = false;
+            this.btnOrderMore.Click += new System.EventHandler(this.btnOrderMore_Click);
             // 
             // btnSubmitOrder
             // 
@@ -253,23 +253,12 @@ namespace FinalProjectGUIDraft
             this.lblOrderMorePrompt.TabIndex = 28;
             this.lblOrderMorePrompt.Text = "Want more food?";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(700, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 41);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "TestButton";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // frmViewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblOrderMorePrompt);
             this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.lblReqChkPrompt);
@@ -313,6 +302,5 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.Label lblOrderMorePrompt;
-        private System.Windows.Forms.Button button1;
     }
 }
