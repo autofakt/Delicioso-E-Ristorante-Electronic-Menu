@@ -500,6 +500,15 @@ namespace FinalProjectGUIDraft
                 itemCounter++;
             }
 
+            //SALADS
+            if (nudCapreseSalad .Value >= 1)
+            {
+                items[itemCounter] = (lblCapreseSalad.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudCapreseSalad.Value));
+                price[itemCounter] = (double.Parse(lblPriceCapreseSalad.Text));
+                itemCounter++;
+            }
+
             for (int i = 0; i < itemCounter; i++)
                 orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i] + " @ $" + price[i] + " each");
 
