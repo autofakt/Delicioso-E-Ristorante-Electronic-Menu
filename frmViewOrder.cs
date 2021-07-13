@@ -30,5 +30,10 @@ namespace FinalProjectGUIDraft
             
             paymentForm.ShowDialog();
         }
+
+        private void btnSubmitOrder_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for placing your order, the kitchen is preparing your food, you can continue ordering.");
+        }
     }
 }

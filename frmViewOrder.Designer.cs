@@ -49,6 +49,8 @@ namespace FinalProjectGUIDraft
             this.lblReqChkPrompt = new System.Windows.Forms.Label();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             this.lblOrderMorePrompt = new System.Windows.Forms.Label();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             this.gbxEditOrder.SuspendLayout();
@@ -163,9 +165,9 @@ namespace FinalProjectGUIDraft
             this.btnOrderMore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnOrderMore.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrderMore.ForeColor = System.Drawing.Color.Black;
-            this.btnOrderMore.Location = new System.Drawing.Point(836, 83);
+            this.btnOrderMore.Location = new System.Drawing.Point(842, 83);
             this.btnOrderMore.Name = "btnOrderMore";
-            this.btnOrderMore.Size = new System.Drawing.Size(124, 37);
+            this.btnOrderMore.Size = new System.Drawing.Size(118, 37);
             this.btnOrderMore.TabIndex = 23;
             this.btnOrderMore.Text = "Order More";
             this.btnOrderMore.UseVisualStyleBackColor = false;
@@ -176,12 +178,13 @@ namespace FinalProjectGUIDraft
             this.btnSubmitOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSubmitOrder.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnSubmitOrder.Location = new System.Drawing.Point(542, 75);
+            this.btnSubmitOrder.Location = new System.Drawing.Point(693, 83);
             this.btnSubmitOrder.Name = "btnSubmitOrder";
-            this.btnSubmitOrder.Size = new System.Drawing.Size(123, 37);
+            this.btnSubmitOrder.Size = new System.Drawing.Size(127, 37);
             this.btnSubmitOrder.TabIndex = 22;
             this.btnSubmitOrder.Text = "Submit Order";
             this.btnSubmitOrder.UseVisualStyleBackColor = false;
+            this.btnSubmitOrder.Click += new System.EventHandler(this.btnSubmitOrder_Click);
             // 
             // gbxEstTotal
             // 
@@ -239,21 +242,39 @@ namespace FinalProjectGUIDraft
             // 
             this.lblSubmitOrderPrompt.AutoSize = true;
             this.lblSubmitOrderPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(552, 52);
+            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(538, 52);
             this.lblSubmitOrderPrompt.Name = "lblSubmitOrderPrompt";
-            this.lblSubmitOrderPrompt.Size = new System.Drawing.Size(113, 20);
+            this.lblSubmitOrderPrompt.Size = new System.Drawing.Size(130, 20);
             this.lblSubmitOrderPrompt.TabIndex = 27;
-            this.lblSubmitOrderPrompt.Text = "Ready to eat? ";
+            this.lblSubmitOrderPrompt.Text = "Enter your name:";
             // 
             // lblOrderMorePrompt
             // 
             this.lblOrderMorePrompt.AutoSize = true;
             this.lblOrderMorePrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderMorePrompt.Location = new System.Drawing.Point(832, 60);
+            this.lblOrderMorePrompt.Location = new System.Drawing.Point(838, 52);
             this.lblOrderMorePrompt.Name = "lblOrderMorePrompt";
             this.lblOrderMorePrompt.Size = new System.Drawing.Size(132, 20);
             this.lblOrderMorePrompt.TabIndex = 28;
             this.lblOrderMorePrompt.Text = "Want more food?";
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Location = new System.Drawing.Point(542, 89);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(126, 27);
+            this.txtCustomerName.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(700, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Ready to eat?";
             // 
             // frmViewOrder
             // 
@@ -261,6 +282,8 @@ namespace FinalProjectGUIDraft
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.lblOrderMorePrompt);
             this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.lblReqChkPrompt);
@@ -304,5 +327,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.Label lblOrderMorePrompt;
+        private System.Windows.Forms.TextBox txtCustomerName;
+        private System.Windows.Forms.Label label1;
     }
 }
