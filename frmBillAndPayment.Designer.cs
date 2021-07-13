@@ -33,6 +33,14 @@ namespace FinalProjectGUIDraft
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.gbxItemizedBill = new System.Windows.Forms.GroupBox();
+            this.tbxGrandTotal = new System.Windows.Forms.TextBox();
+            this.lblGrandTotal = new System.Windows.Forms.Label();
+            this.tbxTip = new System.Windows.Forms.TextBox();
+            this.lblTip = new System.Windows.Forms.Label();
+            this.tbxTax = new System.Windows.Forms.TextBox();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.tbxSubTotal = new System.Windows.Forms.TextBox();
+            this.lblSubTotal = new System.Windows.Forms.Label();
             this.lstItemizedBill = new System.Windows.Forms.ListBox();
             this.gbxPaymentMethod = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +56,7 @@ namespace FinalProjectGUIDraft
             this.rbtnCreditCard = new System.Windows.Forms.RadioButton();
             this.rbtnCash = new System.Windows.Forms.RadioButton();
             this.gbxAddTip = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbtn0 = new System.Windows.Forms.RadioButton();
             this.rbtn25 = new System.Windows.Forms.RadioButton();
             this.rbtn20 = new System.Windows.Forms.RadioButton();
             this.rbtn15 = new System.Windows.Forms.RadioButton();
@@ -83,6 +91,14 @@ namespace FinalProjectGUIDraft
             // 
             // gbxItemizedBill
             // 
+            this.gbxItemizedBill.Controls.Add(this.tbxGrandTotal);
+            this.gbxItemizedBill.Controls.Add(this.lblGrandTotal);
+            this.gbxItemizedBill.Controls.Add(this.tbxTip);
+            this.gbxItemizedBill.Controls.Add(this.lblTip);
+            this.gbxItemizedBill.Controls.Add(this.tbxTax);
+            this.gbxItemizedBill.Controls.Add(this.lblTax);
+            this.gbxItemizedBill.Controls.Add(this.tbxSubTotal);
+            this.gbxItemizedBill.Controls.Add(this.lblSubTotal);
             this.gbxItemizedBill.Controls.Add(this.lstItemizedBill);
             this.gbxItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxItemizedBill.Location = new System.Drawing.Point(35, 117);
@@ -92,6 +108,74 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill.TabStop = false;
             this.gbxItemizedBill.Text = "Itemized Bill";
             // 
+            // tbxGrandTotal
+            // 
+            this.tbxGrandTotal.Location = new System.Drawing.Point(173, 483);
+            this.tbxGrandTotal.Name = "tbxGrandTotal";
+            this.tbxGrandTotal.ReadOnly = true;
+            this.tbxGrandTotal.Size = new System.Drawing.Size(100, 26);
+            this.tbxGrandTotal.TabIndex = 32;
+            // 
+            // lblGrandTotal
+            // 
+            this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.Location = new System.Drawing.Point(76, 486);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(54, 20);
+            this.lblGrandTotal.TabIndex = 31;
+            this.lblGrandTotal.Text = "Total:";
+            // 
+            // tbxTip
+            // 
+            this.tbxTip.Location = new System.Drawing.Point(173, 440);
+            this.tbxTip.Name = "tbxTip";
+            this.tbxTip.ReadOnly = true;
+            this.tbxTip.Size = new System.Drawing.Size(100, 26);
+            this.tbxTip.TabIndex = 30;
+            // 
+            // lblTip
+            // 
+            this.lblTip.AutoSize = true;
+            this.lblTip.Location = new System.Drawing.Point(76, 443);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(38, 20);
+            this.lblTip.TabIndex = 29;
+            this.lblTip.Text = "Tip:";
+            // 
+            // tbxTax
+            // 
+            this.tbxTax.Location = new System.Drawing.Point(173, 396);
+            this.tbxTax.Name = "tbxTax";
+            this.tbxTax.ReadOnly = true;
+            this.tbxTax.Size = new System.Drawing.Size(100, 26);
+            this.tbxTax.TabIndex = 28;
+            // 
+            // lblTax
+            // 
+            this.lblTax.AutoSize = true;
+            this.lblTax.Location = new System.Drawing.Point(76, 399);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(42, 20);
+            this.lblTax.TabIndex = 27;
+            this.lblTax.Text = "Tax:";
+            // 
+            // tbxSubTotal
+            // 
+            this.tbxSubTotal.Location = new System.Drawing.Point(173, 351);
+            this.tbxSubTotal.Name = "tbxSubTotal";
+            this.tbxSubTotal.ReadOnly = true;
+            this.tbxSubTotal.Size = new System.Drawing.Size(100, 26);
+            this.tbxSubTotal.TabIndex = 26;
+            // 
+            // lblSubTotal
+            // 
+            this.lblSubTotal.AutoSize = true;
+            this.lblSubTotal.Location = new System.Drawing.Point(76, 354);
+            this.lblSubTotal.Name = "lblSubTotal";
+            this.lblSubTotal.Size = new System.Drawing.Size(91, 20);
+            this.lblSubTotal.TabIndex = 25;
+            this.lblSubTotal.Text = "Sub Total:";
+            // 
             // lstItemizedBill
             // 
             this.lstItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,7 +183,7 @@ namespace FinalProjectGUIDraft
             this.lstItemizedBill.ItemHeight = 20;
             this.lstItemizedBill.Location = new System.Drawing.Point(6, 41);
             this.lstItemizedBill.Name = "lstItemizedBill";
-            this.lstItemizedBill.Size = new System.Drawing.Size(376, 484);
+            this.lstItemizedBill.Size = new System.Drawing.Size(376, 284);
             this.lstItemizedBill.TabIndex = 0;
             // 
             // gbxPaymentMethod
@@ -246,7 +330,7 @@ namespace FinalProjectGUIDraft
             // 
             // gbxAddTip
             // 
-            this.gbxAddTip.Controls.Add(this.radioButton1);
+            this.gbxAddTip.Controls.Add(this.rbtn0);
             this.gbxAddTip.Controls.Add(this.rbtn25);
             this.gbxAddTip.Controls.Add(this.rbtn20);
             this.gbxAddTip.Controls.Add(this.rbtn15);
@@ -259,16 +343,17 @@ namespace FinalProjectGUIDraft
             this.gbxAddTip.TabStop = false;
             this.gbxAddTip.Text = "Add a Tip";
             // 
-            // radioButton1
+            // rbtn0
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(421, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(78, 24);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "No Tip";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtn0.AutoSize = true;
+            this.rbtn0.Location = new System.Drawing.Point(421, 41);
+            this.rbtn0.Name = "rbtn0";
+            this.rbtn0.Size = new System.Drawing.Size(78, 24);
+            this.rbtn0.TabIndex = 4;
+            this.rbtn0.TabStop = true;
+            this.rbtn0.Text = "No Tip";
+            this.rbtn0.UseVisualStyleBackColor = true;
+            this.rbtn0.CheckedChanged += new System.EventHandler(this.rbtn0_CheckedChanged);
             // 
             // rbtn25
             // 
@@ -280,6 +365,7 @@ namespace FinalProjectGUIDraft
             this.rbtn25.TabStop = true;
             this.rbtn25.Text = "25%";
             this.rbtn25.UseVisualStyleBackColor = true;
+            this.rbtn25.CheckedChanged += new System.EventHandler(this.rbtn25_CheckedChanged);
             // 
             // rbtn20
             // 
@@ -291,6 +377,7 @@ namespace FinalProjectGUIDraft
             this.rbtn20.TabStop = true;
             this.rbtn20.Text = "20%";
             this.rbtn20.UseVisualStyleBackColor = true;
+            this.rbtn20.CheckedChanged += new System.EventHandler(this.rbtn20_CheckedChanged);
             // 
             // rbtn15
             // 
@@ -302,6 +389,7 @@ namespace FinalProjectGUIDraft
             this.rbtn15.TabStop = true;
             this.rbtn15.Text = "15%";
             this.rbtn15.UseVisualStyleBackColor = true;
+            this.rbtn15.CheckedChanged += new System.EventHandler(this.rbtn15_CheckedChanged);
             // 
             // rbtn10
             // 
@@ -313,6 +401,7 @@ namespace FinalProjectGUIDraft
             this.rbtn10.TabStop = true;
             this.rbtn10.Text = "10%";
             this.rbtn10.UseVisualStyleBackColor = true;
+            this.rbtn10.CheckedChanged += new System.EventHandler(this.rbtn10_CheckedChanged);
             // 
             // frmBillAndPayment
             // 
@@ -329,6 +418,7 @@ namespace FinalProjectGUIDraft
             this.Text = "Itemized Bill";
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxItemizedBill.ResumeLayout(false);
+            this.gbxItemizedBill.PerformLayout();
             this.gbxPaymentMethod.ResumeLayout(false);
             this.gbxPaymentMethod.PerformLayout();
             this.gbxAddTip.ResumeLayout(false);
@@ -356,12 +446,20 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.RadioButton rbtnCreditCard;
         private System.Windows.Forms.RadioButton rbtnCash;
         private System.Windows.Forms.GroupBox gbxAddTip;
-        private System.Windows.Forms.RadioButton rbtn25;
-        private System.Windows.Forms.RadioButton rbtn20;
-        private System.Windows.Forms.RadioButton rbtn15;
-        private System.Windows.Forms.RadioButton rbtn10;
+        public System.Windows.Forms.RadioButton rbtn25;
+        public System.Windows.Forms.RadioButton rbtn20;
+        public System.Windows.Forms.RadioButton rbtn15;
+        public System.Windows.Forms.RadioButton rbtn10;
         private System.Windows.Forms.Button btnPayBill;
-        private System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.RadioButton rbtn0;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox tbxGrandTotal;
+        private System.Windows.Forms.Label lblGrandTotal;
+        public System.Windows.Forms.TextBox tbxTip;
+        private System.Windows.Forms.Label lblTip;
+        public System.Windows.Forms.TextBox tbxTax;
+        private System.Windows.Forms.Label lblTax;
+        public System.Windows.Forms.TextBox tbxSubTotal;
+        private System.Windows.Forms.Label lblSubTotal;
     }
 }

@@ -44,5 +44,61 @@ namespace FinalProjectGUIDraft
 
             receiptForm.ShowDialog();
         }
+
+        private void rbtn10_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbtn10.Checked)
+            {
+                double percent10 = .10;
+                double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent10);
+                tbxTip.Text = newTip.ToString("C");
+                double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+                double tax = double.Parse(tbxTax.Text.Substring(1));
+                tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+
+                
+            }
+                
+        }
+
+        private void rbtn15_CheckedChanged(object sender, EventArgs e)
+        {
+            double percent15 = .15;
+            double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent15);
+            tbxTip.Text = newTip.ToString("C");
+            double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+            double tax = double.Parse(tbxTax.Text.Substring(1));
+            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+        }
+
+        private void rbtn20_CheckedChanged(object sender, EventArgs e)
+        {
+            double percent20 = .20;
+            double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent20);
+            tbxTip.Text = newTip.ToString("C");
+            double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+            double tax = double.Parse(tbxTax.Text.Substring(1));
+            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+        }
+
+        private void rbtn25_CheckedChanged(object sender, EventArgs e)
+        {
+            double percent25 = .25;
+            double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent25);
+            tbxTip.Text = newTip.ToString("C");
+            double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+            double tax = double.Parse(tbxTax.Text.Substring(1));
+            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+        }
+
+        private void rbtn0_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            double newTip = 0;
+            tbxTip.Text = newTip.ToString("C");
+            double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+            double tax = double.Parse(tbxTax.Text.Substring(1));
+            tbxGrandTotal.Text = (subTotal + tax).ToString("C");
+        }
     }
 }

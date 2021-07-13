@@ -28,7 +28,20 @@ namespace FinalProjectGUIDraft
         {
             frmBillAndPayment paymentForm = new frmBillAndPayment();
             for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
-                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] + " @ $" + frmMainMenu.price[i] + " each");
+                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] +"\t" + (frmMainMenu.quantity[i] * frmMainMenu.price[i]));
+            double subTotal = frmMainMenu.getEstimate();
+            paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
+            double taxRate = 0.095;
+            double tax = subTotal * taxRate;
+            paymentForm.tbxTax.Text = tax.ToString("C");
+           
+            double tip = 0;
+            paymentForm.tbxTip.Text = tip.ToString("C");
+            paymentForm.rbtn0.Checked = true;
+
+            double grandTotal = subTotal + tax;
+            paymentForm.tbxGrandTotal.Text = grandTotal.ToString("C");
+
             paymentForm.ShowDialog();
         }
 
