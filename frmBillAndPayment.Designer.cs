@@ -142,6 +142,7 @@ namespace FinalProjectGUIDraft
             this.btnPayBill.TabIndex = 13;
             this.btnPayBill.Text = "Pay Bill";
             this.btnPayBill.UseVisualStyleBackColor = true;
+            this.btnPayBill.Click += new System.EventHandler(this.btnPayBill_Click);
             // 
             // lblPinNum
             // 
