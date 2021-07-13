@@ -16,5 +16,12 @@ namespace FinalProjectGUIDraft
         {
             InitializeComponent();
         }
+
+        // Lee //
+        // Added event handler to OrderMore button which closes form //
+        private void btnOrderMore_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
