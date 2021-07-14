@@ -46,6 +46,7 @@ namespace FinalProjectGUIDraft
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             this.picItaly = new System.Windows.Forms.PictureBox();
+            this.lblEditMenuPrompt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             this.gbxEstTotal.SuspendLayout();
@@ -76,11 +77,12 @@ namespace FinalProjectGUIDraft
             // 
             // gbxYourOrder
             // 
+            this.gbxYourOrder.Controls.Add(this.lblEditMenuPrompt);
             this.gbxYourOrder.Controls.Add(this.lstItemsOrdered);
             this.gbxYourOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxYourOrder.Location = new System.Drawing.Point(52, 152);
+            this.gbxYourOrder.Location = new System.Drawing.Point(52, 112);
             this.gbxYourOrder.Name = "gbxYourOrder";
-            this.gbxYourOrder.Size = new System.Drawing.Size(439, 542);
+            this.gbxYourOrder.Size = new System.Drawing.Size(439, 558);
             this.gbxYourOrder.TabIndex = 20;
             this.gbxYourOrder.TabStop = false;
             this.gbxYourOrder.Text = "Your Order";
@@ -89,9 +91,9 @@ namespace FinalProjectGUIDraft
             // 
             this.lstItemsOrdered.FormattingEnabled = true;
             this.lstItemsOrdered.ItemHeight = 20;
-            this.lstItemsOrdered.Location = new System.Drawing.Point(21, 57);
+            this.lstItemsOrdered.Location = new System.Drawing.Point(21, 37);
             this.lstItemsOrdered.Name = "lstItemsOrdered";
-            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 444);
+            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 464);
             this.lstItemsOrdered.TabIndex = 0;
             // 
             // btnOrderMore
@@ -135,11 +137,11 @@ namespace FinalProjectGUIDraft
             // lblNoTaxOrTip
             // 
             this.lblNoTaxOrTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoTaxOrTip.Location = new System.Drawing.Point(199, 71);
+            this.lblNoTaxOrTip.Location = new System.Drawing.Point(192, 71);
             this.lblNoTaxOrTip.Name = "lblNoTaxOrTip";
-            this.lblNoTaxOrTip.Size = new System.Drawing.Size(194, 25);
+            this.lblNoTaxOrTip.Size = new System.Drawing.Size(201, 25);
             this.lblNoTaxOrTip.TabIndex = 1;
-            this.lblNoTaxOrTip.Text = "does not include tax or tip.";
+            this.lblNoTaxOrTip.Text = "*does not include tax or tip.";
             // 
             // lblEstimatedTotal
             // 
@@ -220,6 +222,15 @@ namespace FinalProjectGUIDraft
             this.picItaly.TabIndex = 31;
             this.picItaly.TabStop = false;
             // 
+            // lblEditMenuPrompt
+            // 
+            this.lblEditMenuPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditMenuPrompt.Location = new System.Drawing.Point(21, 504);
+            this.lblEditMenuPrompt.Name = "lblEditMenuPrompt";
+            this.lblEditMenuPrompt.Size = new System.Drawing.Size(400, 31);
+            this.lblEditMenuPrompt.TabIndex = 1;
+            this.lblEditMenuPrompt.Text = "*You can edit your order by returning to the Main Menu";
+            // 
             // frmViewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,5 +278,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.PictureBox picItaly;
+        private System.Windows.Forms.Label lblEditMenuPrompt;
     }
 }
