@@ -50,6 +50,7 @@ namespace FinalProjectGUIDraft
             this.lblTipInfo = new System.Windows.Forms.Label();
             this.lblGrandTotalInfo = new System.Windows.Forms.Label();
             this.lblMethodPymtInfo = new System.Windows.Forms.Label();
+            this.lblCustNameInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).BeginInit();
@@ -193,7 +194,7 @@ namespace FinalProjectGUIDraft
             this.lblDateInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateInfo.Location = new System.Drawing.Point(777, 49);
             this.lblDateInfo.Name = "lblDateInfo";
-            this.lblDateInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblDateInfo.Size = new System.Drawing.Size(120, 23);
             this.lblDateInfo.TabIndex = 27;
             this.lblDateInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -203,7 +204,7 @@ namespace FinalProjectGUIDraft
             this.lblReceiptNumInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReceiptNumInfo.Location = new System.Drawing.Point(777, 112);
             this.lblReceiptNumInfo.Name = "lblReceiptNumInfo";
-            this.lblReceiptNumInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblReceiptNumInfo.Size = new System.Drawing.Size(120, 23);
             this.lblReceiptNumInfo.TabIndex = 28;
             this.lblReceiptNumInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -213,7 +214,7 @@ namespace FinalProjectGUIDraft
             this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSubtotal.Location = new System.Drawing.Point(777, 168);
             this.lblSubtotal.Name = "lblSubtotal";
-            this.lblSubtotal.Size = new System.Drawing.Size(100, 23);
+            this.lblSubtotal.Size = new System.Drawing.Size(120, 23);
             this.lblSubtotal.TabIndex = 29;
             this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -223,7 +224,7 @@ namespace FinalProjectGUIDraft
             this.lblTaxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTaxInfo.Location = new System.Drawing.Point(777, 205);
             this.lblTaxInfo.Name = "lblTaxInfo";
-            this.lblTaxInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblTaxInfo.Size = new System.Drawing.Size(120, 23);
             this.lblTaxInfo.TabIndex = 30;
             this.lblTaxInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -233,7 +234,7 @@ namespace FinalProjectGUIDraft
             this.lblTipInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipInfo.Location = new System.Drawing.Point(777, 244);
             this.lblTipInfo.Name = "lblTipInfo";
-            this.lblTipInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblTipInfo.Size = new System.Drawing.Size(120, 23);
             this.lblTipInfo.TabIndex = 31;
             this.lblTipInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -243,7 +244,7 @@ namespace FinalProjectGUIDraft
             this.lblGrandTotalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGrandTotalInfo.Location = new System.Drawing.Point(777, 280);
             this.lblGrandTotalInfo.Name = "lblGrandTotalInfo";
-            this.lblGrandTotalInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblGrandTotalInfo.Size = new System.Drawing.Size(120, 23);
             this.lblGrandTotalInfo.TabIndex = 32;
             this.lblGrandTotalInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -253,9 +254,19 @@ namespace FinalProjectGUIDraft
             this.lblMethodPymtInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMethodPymtInfo.Location = new System.Drawing.Point(777, 319);
             this.lblMethodPymtInfo.Name = "lblMethodPymtInfo";
-            this.lblMethodPymtInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblMethodPymtInfo.Size = new System.Drawing.Size(120, 23);
             this.lblMethodPymtInfo.TabIndex = 33;
             this.lblMethodPymtInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblCustNameInfo
+            // 
+            this.lblCustNameInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCustNameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustNameInfo.Location = new System.Drawing.Point(216, 102);
+            this.lblCustNameInfo.Name = "lblCustNameInfo";
+            this.lblCustNameInfo.Size = new System.Drawing.Size(145, 23);
+            this.lblCustNameInfo.TabIndex = 34;
+            this.lblCustNameInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmReceipt
             // 
@@ -263,6 +274,7 @@ namespace FinalProjectGUIDraft
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.lblCustNameInfo);
             this.Controls.Add(this.lblMethodPymtInfo);
             this.Controls.Add(this.lblGrandTotalInfo);
             this.Controls.Add(this.lblTipInfo);
@@ -313,5 +325,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblTipInfo;
         private System.Windows.Forms.Label lblGrandTotalInfo;
         private System.Windows.Forms.Label lblMethodPymtInfo;
+        private System.Windows.Forms.Label lblCustNameInfo;
     }
 }
