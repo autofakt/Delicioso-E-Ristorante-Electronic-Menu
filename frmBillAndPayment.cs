@@ -19,6 +19,11 @@ namespace FinalProjectGUIDraft
 
         private void rbtnCreditCard_CheckedChanged(object sender, EventArgs e)
         {
+            // Lee //
+            // Added Payment method Prompt which becomes visible after user selects Credit Card //
+            lblPymtMthdPrompt.Visible = true;
+            lblPymtMthdPrompt.Text = "Please enter your Credit Card information.";
+
             txtCardNumber.ReadOnly = false;
             txtExpDate.ReadOnly = false;
             txtPinNumber.ReadOnly = true;
@@ -26,6 +31,10 @@ namespace FinalProjectGUIDraft
 
         private void rbtnCash_CheckedChanged(object sender, EventArgs e)
         {
+            // Added Payment method Prompt which becomes visible after user selects Cash //
+            lblPymtMthdPrompt.Visible = true;
+            lblPymtMthdPrompt.Text = "Please wait for the waiter to return to pay in cash.";
+
             txtCardNumber.ReadOnly = true;
             txtExpDate.ReadOnly = true;
             txtPinNumber.ReadOnly = true;
@@ -33,6 +42,10 @@ namespace FinalProjectGUIDraft
 
         private void rbtnDebitCard_CheckedChanged(object sender, EventArgs e)
         {
+            // Added Payment method Prompt which becomes visible after user selects Debit Card //
+            lblPymtMthdPrompt.Visible = true;
+            lblPymtMthdPrompt.Text = "Please enter your Debit Card information.";
+
             txtCardNumber.ReadOnly = false;
             txtExpDate.ReadOnly = false;
             txtPinNumber.ReadOnly = false;

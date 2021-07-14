@@ -51,6 +51,8 @@ namespace FinalProjectGUIDraft
             this.lblGrandTotalInfo = new System.Windows.Forms.Label();
             this.lblMethodPymtInfo = new System.Windows.Forms.Label();
             this.lblCustNameInfo = new System.Windows.Forms.Label();
+            this.btnSaveReceipt = new System.Windows.Forms.Button();
+            this.lblResetPrompt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).BeginInit();
@@ -181,7 +183,7 @@ namespace FinalProjectGUIDraft
             // picGrazie
             // 
             this.picGrazie.Image = ((System.Drawing.Image)(resources.GetObject("picGrazie.Image")));
-            this.picGrazie.Location = new System.Drawing.Point(579, 399);
+            this.picGrazie.Location = new System.Drawing.Point(579, 358);
             this.picGrazie.Name = "picGrazie";
             this.picGrazie.Size = new System.Drawing.Size(318, 291);
             this.picGrazie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -268,12 +270,34 @@ namespace FinalProjectGUIDraft
             this.lblCustNameInfo.TabIndex = 34;
             this.lblCustNameInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnSaveReceipt
+            // 
+            this.btnSaveReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveReceipt.Location = new System.Drawing.Point(650, 644);
+            this.btnSaveReceipt.Name = "btnSaveReceipt";
+            this.btnSaveReceipt.Size = new System.Drawing.Size(193, 37);
+            this.btnSaveReceipt.TabIndex = 35;
+            this.btnSaveReceipt.Text = "Save Receipt ";
+            this.btnSaveReceipt.UseVisualStyleBackColor = true;
+            // 
+            // lblResetPrompt
+            // 
+            this.lblResetPrompt.AutoSize = true;
+            this.lblResetPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResetPrompt.Location = new System.Drawing.Point(646, 684);
+            this.lblResetPrompt.Name = "lblResetPrompt";
+            this.lblResetPrompt.Size = new System.Drawing.Size(198, 20);
+            this.lblResetPrompt.TabIndex = 36;
+            this.lblResetPrompt.Text = "And reset electronic menu.";
+            // 
             // frmReceipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.lblResetPrompt);
+            this.Controls.Add(this.btnSaveReceipt);
             this.Controls.Add(this.lblCustNameInfo);
             this.Controls.Add(this.lblMethodPymtInfo);
             this.Controls.Add(this.lblGrandTotalInfo);
@@ -326,5 +350,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblGrandTotalInfo;
         private System.Windows.Forms.Label lblMethodPymtInfo;
         private System.Windows.Forms.Label lblCustNameInfo;
+        private System.Windows.Forms.Button btnSaveReceipt;
+        private System.Windows.Forms.Label lblResetPrompt;
     }
 }
