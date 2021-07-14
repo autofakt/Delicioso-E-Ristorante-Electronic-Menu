@@ -34,12 +34,6 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.gbxYourOrder = new System.Windows.Forms.GroupBox();
             this.lstItemsOrdered = new System.Windows.Forms.ListBox();
-            this.gbxEditOrder = new System.Windows.Forms.GroupBox();
-            this.lblRemoveOne = new System.Windows.Forms.Label();
-            this.lblAddOne = new System.Windows.Forms.Label();
-            this.btnRemoveOne = new System.Windows.Forms.Button();
-            this.btnAddOne = new System.Windows.Forms.Button();
-            this.lblEditPrompt = new System.Windows.Forms.Label();
             this.btnOrderMore = new System.Windows.Forms.Button();
             this.btnSubmitOrder = new System.Windows.Forms.Button();
             this.gbxEstTotal = new System.Windows.Forms.GroupBox();
@@ -47,13 +41,12 @@ namespace FinalProjectGUIDraft
             this.lblEstimatedTotal = new System.Windows.Forms.Label();
             this.btnRequestCheck = new System.Windows.Forms.Button();
             this.lblReqChkPrompt = new System.Windows.Forms.Label();
-            this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
+            this.lblEnterNamePrompt = new System.Windows.Forms.Label();
             this.lblOrderMorePrompt = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
-            this.gbxEditOrder.SuspendLayout();
             this.gbxEstTotal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,67 +92,6 @@ namespace FinalProjectGUIDraft
             this.lstItemsOrdered.Size = new System.Drawing.Size(400, 444);
             this.lstItemsOrdered.TabIndex = 0;
             // 
-            // gbxEditOrder
-            // 
-            this.gbxEditOrder.Controls.Add(this.lblRemoveOne);
-            this.gbxEditOrder.Controls.Add(this.lblAddOne);
-            this.gbxEditOrder.Controls.Add(this.btnRemoveOne);
-            this.gbxEditOrder.Controls.Add(this.btnAddOne);
-            this.gbxEditOrder.Controls.Add(this.lblEditPrompt);
-            this.gbxEditOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxEditOrder.Location = new System.Drawing.Point(542, 152);
-            this.gbxEditOrder.Name = "gbxEditOrder";
-            this.gbxEditOrder.Size = new System.Drawing.Size(419, 253);
-            this.gbxEditOrder.TabIndex = 21;
-            this.gbxEditOrder.TabStop = false;
-            this.gbxEditOrder.Text = "Edit Your Order";
-            // 
-            // lblRemoveOne
-            // 
-            this.lblRemoveOne.AutoSize = true;
-            this.lblRemoveOne.Location = new System.Drawing.Point(266, 179);
-            this.lblRemoveOne.Name = "lblRemoveOne";
-            this.lblRemoveOne.Size = new System.Drawing.Size(112, 20);
-            this.lblRemoveOne.TabIndex = 4;
-            this.lblRemoveOne.Text = "Remove One";
-            // 
-            // lblAddOne
-            // 
-            this.lblAddOne.AutoSize = true;
-            this.lblAddOne.Location = new System.Drawing.Point(68, 179);
-            this.lblAddOne.Name = "lblAddOne";
-            this.lblAddOne.Size = new System.Drawing.Size(79, 20);
-            this.lblAddOne.TabIndex = 3;
-            this.lblAddOne.Text = "Add One";
-            // 
-            // btnRemoveOne
-            // 
-            this.btnRemoveOne.Location = new System.Drawing.Point(282, 109);
-            this.btnRemoveOne.Name = "btnRemoveOne";
-            this.btnRemoveOne.Size = new System.Drawing.Size(83, 67);
-            this.btnRemoveOne.TabIndex = 2;
-            this.btnRemoveOne.Text = "-1";
-            this.btnRemoveOne.UseVisualStyleBackColor = true;
-            // 
-            // btnAddOne
-            // 
-            this.btnAddOne.Location = new System.Drawing.Point(67, 109);
-            this.btnAddOne.Name = "btnAddOne";
-            this.btnAddOne.Size = new System.Drawing.Size(80, 67);
-            this.btnAddOne.TabIndex = 1;
-            this.btnAddOne.Text = "+1";
-            this.btnAddOne.UseVisualStyleBackColor = true;
-            // 
-            // lblEditPrompt
-            // 
-            this.lblEditPrompt.AutoSize = true;
-            this.lblEditPrompt.Location = new System.Drawing.Point(29, 38);
-            this.lblEditPrompt.Name = "lblEditPrompt";
-            this.lblEditPrompt.Size = new System.Drawing.Size(364, 40);
-            this.lblEditPrompt.TabIndex = 0;
-            this.lblEditPrompt.Text = "Select the item you wish to edit from the list.\r\nUse the buttons to change the qu" +
-    "antity.";
-            // 
             // btnOrderMore
             // 
             this.btnOrderMore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -169,7 +101,7 @@ namespace FinalProjectGUIDraft
             this.btnOrderMore.Name = "btnOrderMore";
             this.btnOrderMore.Size = new System.Drawing.Size(118, 37);
             this.btnOrderMore.TabIndex = 23;
-            this.btnOrderMore.Text = "Order More";
+            this.btnOrderMore.Text = "Main Menu";
             this.btnOrderMore.UseVisualStyleBackColor = false;
             this.btnOrderMore.Click += new System.EventHandler(this.btnOrderMore_Click);
             // 
@@ -238,15 +170,15 @@ namespace FinalProjectGUIDraft
             this.lblReqChkPrompt.TabIndex = 26;
             this.lblReqChkPrompt.Text = "All done eating? Click here to request your check.";
             // 
-            // lblSubmitOrderPrompt
+            // lblEnterNamePrompt
             // 
-            this.lblSubmitOrderPrompt.AutoSize = true;
-            this.lblSubmitOrderPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(538, 52);
-            this.lblSubmitOrderPrompt.Name = "lblSubmitOrderPrompt";
-            this.lblSubmitOrderPrompt.Size = new System.Drawing.Size(130, 20);
-            this.lblSubmitOrderPrompt.TabIndex = 27;
-            this.lblSubmitOrderPrompt.Text = "Enter your name:";
+            this.lblEnterNamePrompt.AutoSize = true;
+            this.lblEnterNamePrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnterNamePrompt.Location = new System.Drawing.Point(538, 52);
+            this.lblEnterNamePrompt.Name = "lblEnterNamePrompt";
+            this.lblEnterNamePrompt.Size = new System.Drawing.Size(130, 20);
+            this.lblEnterNamePrompt.TabIndex = 27;
+            this.lblEnterNamePrompt.Text = "Enter your name:";
             // 
             // lblOrderMorePrompt
             // 
@@ -254,9 +186,9 @@ namespace FinalProjectGUIDraft
             this.lblOrderMorePrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderMorePrompt.Location = new System.Drawing.Point(838, 52);
             this.lblOrderMorePrompt.Name = "lblOrderMorePrompt";
-            this.lblOrderMorePrompt.Size = new System.Drawing.Size(132, 20);
+            this.lblOrderMorePrompt.Size = new System.Drawing.Size(137, 20);
             this.lblOrderMorePrompt.TabIndex = 28;
-            this.lblOrderMorePrompt.Text = "Want more food?";
+            this.lblOrderMorePrompt.Text = "Want more Food?";
             // 
             // txtCustomerName
             // 
@@ -266,15 +198,15 @@ namespace FinalProjectGUIDraft
             this.txtCustomerName.Size = new System.Drawing.Size(126, 27);
             this.txtCustomerName.TabIndex = 29;
             // 
-            // label1
+            // lblSubmitOrderPrompt
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(700, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Ready to eat?";
+            this.lblSubmitOrderPrompt.AutoSize = true;
+            this.lblSubmitOrderPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(700, 52);
+            this.lblSubmitOrderPrompt.Name = "lblSubmitOrderPrompt";
+            this.lblSubmitOrderPrompt.Size = new System.Drawing.Size(109, 20);
+            this.lblSubmitOrderPrompt.TabIndex = 30;
+            this.lblSubmitOrderPrompt.Text = "Ready to eat?";
             // 
             // frmViewOrder
             // 
@@ -282,16 +214,15 @@ namespace FinalProjectGUIDraft
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.lblOrderMorePrompt);
-            this.Controls.Add(this.lblSubmitOrderPrompt);
+            this.Controls.Add(this.lblEnterNamePrompt);
             this.Controls.Add(this.lblReqChkPrompt);
             this.Controls.Add(this.btnRequestCheck);
             this.Controls.Add(this.gbxEstTotal);
             this.Controls.Add(this.btnOrderMore);
             this.Controls.Add(this.btnSubmitOrder);
-            this.Controls.Add(this.gbxEditOrder);
             this.Controls.Add(this.gbxYourOrder);
             this.Controls.Add(this.picRestLogo);
             this.Controls.Add(this.lblRestaurantName);
@@ -299,8 +230,6 @@ namespace FinalProjectGUIDraft
             this.Text = "View My Order";
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxYourOrder.ResumeLayout(false);
-            this.gbxEditOrder.ResumeLayout(false);
-            this.gbxEditOrder.PerformLayout();
             this.gbxEstTotal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,12 +241,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblRestaurantName;
         private System.Windows.Forms.GroupBox gbxYourOrder;
         public System.Windows.Forms.ListBox lstItemsOrdered; //made this public
-        private System.Windows.Forms.GroupBox gbxEditOrder;
-        private System.Windows.Forms.Label lblRemoveOne;
-        private System.Windows.Forms.Label lblAddOne;
-        private System.Windows.Forms.Button btnRemoveOne;
-        private System.Windows.Forms.Button btnAddOne;
-        private System.Windows.Forms.Label lblEditPrompt;
         private System.Windows.Forms.Button btnOrderMore;
         private System.Windows.Forms.Button btnSubmitOrder;
         public System.Windows.Forms.GroupBox gbxEstTotal; //made public
@@ -325,9 +248,9 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.Label lblEstimatedTotal; //made public
         private System.Windows.Forms.Button btnRequestCheck;
         private System.Windows.Forms.Label lblReqChkPrompt;
-        private System.Windows.Forms.Label lblSubmitOrderPrompt;
+        private System.Windows.Forms.Label lblEnterNamePrompt;
         private System.Windows.Forms.Label lblOrderMorePrompt;
         private System.Windows.Forms.TextBox txtCustomerName;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSubmitOrderPrompt;
     }
 }
