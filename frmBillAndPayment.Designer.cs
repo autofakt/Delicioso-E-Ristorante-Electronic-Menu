@@ -248,7 +248,6 @@ namespace FinalProjectGUIDraft
             this.txtPinNumber.ReadOnly = true;
             this.txtPinNumber.Size = new System.Drawing.Size(97, 26);
             this.txtPinNumber.TabIndex = 11;
-            this.txtPinNumber.Text = "1 - 2 - 3 - 4";
             // 
             // lblExpDate
             // 
@@ -266,7 +265,6 @@ namespace FinalProjectGUIDraft
             this.txtExpDate.ReadOnly = true;
             this.txtExpDate.Size = new System.Drawing.Size(58, 26);
             this.txtExpDate.TabIndex = 9;
-            this.txtExpDate.Text = "07/21";
             // 
             // lblCardNumber
             // 
@@ -284,17 +282,17 @@ namespace FinalProjectGUIDraft
             this.txtCardNumber.ReadOnly = true;
             this.txtCardNumber.Size = new System.Drawing.Size(223, 26);
             this.txtCardNumber.TabIndex = 7;
-            this.txtCardNumber.Text = "1111 - 2222 - 3333 - 4444";
             // 
             // lblPymtMthdPrompt
             // 
             this.lblPymtMthdPrompt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblPymtMthdPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPymtMthdPrompt.Location = new System.Drawing.Point(28, 96);
+            this.lblPymtMthdPrompt.Location = new System.Drawing.Point(28, 94);
             this.lblPymtMthdPrompt.Name = "lblPymtMthdPrompt";
             this.lblPymtMthdPrompt.Size = new System.Drawing.Size(440, 33);
             this.lblPymtMthdPrompt.TabIndex = 6;
-            this.lblPymtMthdPrompt.Text = "*if cash, ask them to wait for waiter, if card ask for card info";
+            this.lblPymtMthdPrompt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPymtMthdPrompt.Visible = false;
             // 
             // rbtnDebitCard
             // 
