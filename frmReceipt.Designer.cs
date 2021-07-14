@@ -45,7 +45,7 @@ namespace FinalProjectGUIDraft
             this.picGrazie = new System.Windows.Forms.PictureBox();
             this.lblDateInfo = new System.Windows.Forms.Label();
             this.lblReceiptNumInfo = new System.Windows.Forms.Label();
-            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblSubTotal = new System.Windows.Forms.Label();
             this.lblTaxInfo = new System.Windows.Forms.Label();
             this.lblTipInfo = new System.Windows.Forms.Label();
             this.lblGrandTotalInfo = new System.Windows.Forms.Label();
@@ -174,7 +174,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(713, 49);
+            this.lblDate.Location = new System.Drawing.Point(644, 54);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(58, 24);
             this.lblDate.TabIndex = 25;
@@ -194,9 +194,9 @@ namespace FinalProjectGUIDraft
             // 
             this.lblDateInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDateInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateInfo.Location = new System.Drawing.Point(777, 49);
+            this.lblDateInfo.Location = new System.Drawing.Point(708, 54);
             this.lblDateInfo.Name = "lblDateInfo";
-            this.lblDateInfo.Size = new System.Drawing.Size(120, 23);
+            this.lblDateInfo.Size = new System.Drawing.Size(189, 23);
             this.lblDateInfo.TabIndex = 27;
             this.lblDateInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -210,15 +210,15 @@ namespace FinalProjectGUIDraft
             this.lblReceiptNumInfo.TabIndex = 28;
             this.lblReceiptNumInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSubtotal
+            // lblSubTotal
             // 
-            this.lblSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotal.Location = new System.Drawing.Point(777, 168);
-            this.lblSubtotal.Name = "lblSubtotal";
-            this.lblSubtotal.Size = new System.Drawing.Size(120, 23);
-            this.lblSubtotal.TabIndex = 29;
-            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubTotal.Location = new System.Drawing.Point(777, 168);
+            this.lblSubTotal.Name = "lblSubTotal";
+            this.lblSubTotal.Size = new System.Drawing.Size(120, 23);
+            this.lblSubTotal.TabIndex = 29;
+            this.lblSubTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTaxInfo
             // 
@@ -279,6 +279,7 @@ namespace FinalProjectGUIDraft
             this.btnSaveReceipt.TabIndex = 35;
             this.btnSaveReceipt.Text = "Save Receipt ";
             this.btnSaveReceipt.UseVisualStyleBackColor = true;
+            this.btnSaveReceipt.Click += new System.EventHandler(this.btnSaveReceipt_Click);
             // 
             // lblResetPrompt
             // 
@@ -303,7 +304,7 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.lblGrandTotalInfo);
             this.Controls.Add(this.lblTipInfo);
             this.Controls.Add(this.lblTaxInfo);
-            this.Controls.Add(this.lblSubtotal);
+            this.Controls.Add(this.lblSubTotal);
             this.Controls.Add(this.lblReceiptNumInfo);
             this.Controls.Add(this.lblDateInfo);
             this.Controls.Add(this.picGrazie);
@@ -342,13 +343,13 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.ListBox lstItemsOrdered;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox picGrazie;
-        private System.Windows.Forms.Label lblDateInfo;
+        public System.Windows.Forms.Label lblDateInfo;  //made public
         private System.Windows.Forms.Label lblReceiptNumInfo;
-        private System.Windows.Forms.Label lblSubtotal;
-        private System.Windows.Forms.Label lblTaxInfo;
-        private System.Windows.Forms.Label lblTipInfo;
-        private System.Windows.Forms.Label lblGrandTotalInfo;
-        private System.Windows.Forms.Label lblMethodPymtInfo;
+        public System.Windows.Forms.Label lblSubTotal; //made public
+        public System.Windows.Forms.Label lblTaxInfo; //made public
+        public System.Windows.Forms.Label lblTipInfo; //made public
+        public System.Windows.Forms.Label lblGrandTotalInfo; //made public
+        public System.Windows.Forms.Label lblMethodPymtInfo; //made public
         private System.Windows.Forms.Label lblCustNameInfo;
         private System.Windows.Forms.Button btnSaveReceipt;
         private System.Windows.Forms.Label lblResetPrompt;
