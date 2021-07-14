@@ -12,6 +12,8 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmBillAndPayment : Form
     {
+        public static string paymentType = "";
+
         public frmBillAndPayment()
         {
             InitializeComponent();
@@ -19,6 +21,8 @@ namespace FinalProjectGUIDraft
 
         private void rbtnCreditCard_CheckedChanged(object sender, EventArgs e)
         {
+
+            paymentType = "Credit Card";
             // Lee //
             // Added Payment method Prompt which becomes visible after user selects Credit Card //
             lblPymtMthdPrompt.Visible = true;
@@ -31,6 +35,7 @@ namespace FinalProjectGUIDraft
 
         private void rbtnCash_CheckedChanged(object sender, EventArgs e)
         {
+            paymentType = "Cash";
             // Added Payment method Prompt which becomes visible after user selects Cash //
             lblPymtMthdPrompt.Visible = true;
             lblPymtMthdPrompt.Text = "Please wait for the waiter to return to pay in cash.";
@@ -42,6 +47,8 @@ namespace FinalProjectGUIDraft
 
         private void rbtnDebitCard_CheckedChanged(object sender, EventArgs e)
         {
+            paymentType = "Debit Card";
+
             // Added Payment method Prompt which becomes visible after user selects Debit Card //
             lblPymtMthdPrompt.Visible = true;
             lblPymtMthdPrompt.Text = "Please enter your Debit Card information.";
@@ -54,6 +61,26 @@ namespace FinalProjectGUIDraft
         private void btnPayBill_Click(object sender, EventArgs e)
         {
             frmReceipt receiptForm = new frmReceipt();
+            DateTime now = DateTime.Now;
+            string format = "MMM ddd d HH:mm yyyy";
+            receiptForm.lblDateInfo.Text = now.ToString(format);
+
+            for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
+                receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] + "\t" + (frmMainMenu.quantity[i] * frmMainMenu.price[i]));
+            double subTotal = frmMainMenu.getEstimate();
+            receiptForm.lblSubTotal.Text = subTotal.ToString("C");
+            double taxRate = 0.095;
+            double tax = subTotal * taxRate;
+            receiptForm.lblTaxInfo.Text = tax.ToString("C");
+
+            double tip = double.Parse(tbxTip.Text.Substring(1));
+            receiptForm.lblTipInfo.Text = tip.ToString("C");
+            
+
+            double grandTotal = subTotal + tax + tip;
+            receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
+
+            receiptForm.lblMethodPymtInfo.Text = paymentType;
 
             receiptForm.ShowDialog();
         }

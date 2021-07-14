@@ -16,5 +16,10 @@ namespace FinalProjectGUIDraft
         {
             InitializeComponent();
         }
+
+        private void btnSaveReceipt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
