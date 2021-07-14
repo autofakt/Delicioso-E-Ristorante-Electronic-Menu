@@ -275,7 +275,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblEnterNamePrompt;
         private System.Windows.Forms.Label lblOrderMorePrompt;
-        private System.Windows.Forms.TextBox txtCustomerName;
+        public System.Windows.Forms.TextBox txtCustomerName;  // made public // Lee
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.PictureBox picItaly;
         private System.Windows.Forms.Label lblEditMenuPrompt;
