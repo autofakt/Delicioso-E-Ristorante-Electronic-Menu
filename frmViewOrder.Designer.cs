@@ -45,9 +45,11 @@ namespace FinalProjectGUIDraft
             this.lblOrderMorePrompt = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
+            this.picItaly = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             this.gbxEstTotal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picItaly)).BeginInit();
             this.SuspendLayout();
             // 
             // picRestLogo
@@ -208,12 +210,23 @@ namespace FinalProjectGUIDraft
             this.lblSubmitOrderPrompt.TabIndex = 30;
             this.lblSubmitOrderPrompt.Text = "Ready to eat?";
             // 
+            // picItaly
+            // 
+            this.picItaly.Image = ((System.Drawing.Image)(resources.GetObject("picItaly.Image")));
+            this.picItaly.Location = new System.Drawing.Point(609, 152);
+            this.picItaly.Name = "picItaly";
+            this.picItaly.Size = new System.Drawing.Size(298, 273);
+            this.picItaly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picItaly.TabIndex = 31;
+            this.picItaly.TabStop = false;
+            // 
             // frmViewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.picItaly);
             this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.lblOrderMorePrompt);
@@ -231,6 +244,7 @@ namespace FinalProjectGUIDraft
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxYourOrder.ResumeLayout(false);
             this.gbxEstTotal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picItaly)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +266,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblOrderMorePrompt;
         private System.Windows.Forms.TextBox txtCustomerName;
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
+        private System.Windows.Forms.PictureBox picItaly;
     }
 }

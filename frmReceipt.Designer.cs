@@ -30,105 +30,100 @@ namespace FinalProjectGUIDraft
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReceipt));
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblReceiptNumber = new System.Windows.Forms.Label();
+            this.lblMethodPayment = new System.Windows.Forms.Label();
+            this.lblGrandTotal = new System.Windows.Forms.Label();
+            this.lblTip = new System.Windows.Forms.Label();
+            this.lblTax = new System.Windows.Forms.Label();
+            this.lblSubtotalInfo = new System.Windows.Forms.Label();
+            this.lblReceiptNumbers = new System.Windows.Forms.Label();
             this.lblcustomerName = new System.Windows.Forms.Label();
-            this.lstDetailOnReceipt = new System.Windows.Forms.ListBox();
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
-            this.gbxOrderDetailOnReceipt = new System.Windows.Forms.GroupBox();
+            this.gbxYourOrder = new System.Windows.Forms.GroupBox();
+            this.lstItemsOrdered = new System.Windows.Forms.ListBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.picGrazie = new System.Windows.Forms.PictureBox();
+            this.lblDateInfo = new System.Windows.Forms.Label();
+            this.lblReceiptNumInfo = new System.Windows.Forms.Label();
+            this.lblSubtotal = new System.Windows.Forms.Label();
+            this.lblTaxInfo = new System.Windows.Forms.Label();
+            this.lblTipInfo = new System.Windows.Forms.Label();
+            this.lblGrandTotalInfo = new System.Windows.Forms.Label();
+            this.lblMethodPymtInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
-            this.gbxOrderDetailOnReceipt.SuspendLayout();
+            this.gbxYourOrder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).BeginInit();
             this.SuspendLayout();
             // 
-            // label7
+            // lblMethodPayment
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(297, 615);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(195, 24);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Method of Payment:";
+            this.lblMethodPayment.AutoSize = true;
+            this.lblMethodPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMethodPayment.Location = new System.Drawing.Point(576, 317);
+            this.lblMethodPayment.Name = "lblMethodPayment";
+            this.lblMethodPayment.Size = new System.Drawing.Size(195, 24);
+            this.lblMethodPayment.TabIndex = 17;
+            this.lblMethodPayment.Text = "Method of Payment:";
             // 
-            // label6
+            // lblGrandTotal
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(367, 578);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 24);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Grand Total:";
+            this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrandTotal.Location = new System.Drawing.Point(646, 280);
+            this.lblGrandTotal.Name = "lblGrandTotal";
+            this.lblGrandTotal.Size = new System.Drawing.Size(125, 24);
+            this.lblGrandTotal.TabIndex = 16;
+            this.lblGrandTotal.Text = "Grand Total:";
             // 
-            // label5
+            // lblTip
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(446, 542);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 24);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Tip:";
+            this.lblTip.AutoSize = true;
+            this.lblTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTip.Location = new System.Drawing.Point(725, 244);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(46, 24);
+            this.lblTip.TabIndex = 15;
+            this.lblTip.Text = "Tip:";
             // 
-            // label4
+            // lblTax
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(441, 504);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 24);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Tax:";
+            this.lblTax.AutoSize = true;
+            this.lblTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTax.Location = new System.Drawing.Point(720, 206);
+            this.lblTax.Name = "lblTax";
+            this.lblTax.Size = new System.Drawing.Size(51, 24);
+            this.lblTax.TabIndex = 14;
+            this.lblTax.Text = "Tax:";
             // 
-            // label3
+            // lblSubtotalInfo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(401, 466);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 24);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Subtotal:";
+            this.lblSubtotalInfo.AutoSize = true;
+            this.lblSubtotalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotalInfo.Location = new System.Drawing.Point(680, 168);
+            this.lblSubtotalInfo.Name = "lblSubtotalInfo";
+            this.lblSubtotalInfo.Size = new System.Drawing.Size(91, 24);
+            this.lblSubtotalInfo.TabIndex = 13;
+            this.lblSubtotalInfo.Text = "Subtotal:";
             // 
-            // lblReceiptNumber
+            // lblReceiptNumbers
             // 
-            this.lblReceiptNumber.AutoSize = true;
-            this.lblReceiptNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceiptNumber.Location = new System.Drawing.Point(287, 114);
-            this.lblReceiptNumber.Name = "lblReceiptNumber";
-            this.lblReceiptNumber.Size = new System.Drawing.Size(104, 24);
-            this.lblReceiptNumber.TabIndex = 18;
-            this.lblReceiptNumber.Text = "Receipt #:";
+            this.lblReceiptNumbers.AutoSize = true;
+            this.lblReceiptNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceiptNumbers.Location = new System.Drawing.Point(667, 110);
+            this.lblReceiptNumbers.Name = "lblReceiptNumbers";
+            this.lblReceiptNumbers.Size = new System.Drawing.Size(104, 24);
+            this.lblReceiptNumbers.TabIndex = 18;
+            this.lblReceiptNumbers.Text = "Receipt #:";
             // 
             // lblcustomerName
             // 
             this.lblcustomerName.AutoSize = true;
             this.lblcustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcustomerName.Location = new System.Drawing.Point(526, 114);
+            this.lblcustomerName.Location = new System.Drawing.Point(44, 102);
             this.lblcustomerName.Name = "lblcustomerName";
             this.lblcustomerName.Size = new System.Drawing.Size(166, 24);
             this.lblcustomerName.TabIndex = 19;
             this.lblcustomerName.Text = "Customer Name:";
-            // 
-            // lstDetailOnReceipt
-            // 
-            this.lstDetailOnReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lstDetailOnReceipt.FormattingEnabled = true;
-            this.lstDetailOnReceipt.ItemHeight = 24;
-            this.lstDetailOnReceipt.Items.AddRange(new object[] {
-            "1     Dish1      $32.50",
-            "2     Dish2      $32.50",
-            "3     Dish3      $32.50",
-            "4     Dish4      $32.50"});
-            this.lstDetailOnReceipt.Location = new System.Drawing.Point(24, 34);
-            this.lstDetailOnReceipt.Name = "lstDetailOnReceipt";
-            this.lstDetailOnReceipt.Size = new System.Drawing.Size(469, 244);
-            this.lstDetailOnReceipt.TabIndex = 20;
             // 
             // picRestLogo
             // 
@@ -152,16 +147,115 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName.TabIndex = 22;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
             // 
-            // gbxOrderDetailOnReceipt
+            // gbxYourOrder
             // 
-            this.gbxOrderDetailOnReceipt.Controls.Add(this.lstDetailOnReceipt);
-            this.gbxOrderDetailOnReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxOrderDetailOnReceipt.Location = new System.Drawing.Point(291, 155);
-            this.gbxOrderDetailOnReceipt.Name = "gbxOrderDetailOnReceipt";
-            this.gbxOrderDetailOnReceipt.Size = new System.Drawing.Size(519, 308);
-            this.gbxOrderDetailOnReceipt.TabIndex = 24;
-            this.gbxOrderDetailOnReceipt.TabStop = false;
-            this.gbxOrderDetailOnReceipt.Text = "Orde Detail:";
+            this.gbxYourOrder.Controls.Add(this.lstItemsOrdered);
+            this.gbxYourOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxYourOrder.Location = new System.Drawing.Point(48, 148);
+            this.gbxYourOrder.Name = "gbxYourOrder";
+            this.gbxYourOrder.Size = new System.Drawing.Size(439, 542);
+            this.gbxYourOrder.TabIndex = 24;
+            this.gbxYourOrder.TabStop = false;
+            this.gbxYourOrder.Text = "Your Order";
+            // 
+            // lstItemsOrdered
+            // 
+            this.lstItemsOrdered.FormattingEnabled = true;
+            this.lstItemsOrdered.ItemHeight = 20;
+            this.lstItemsOrdered.Location = new System.Drawing.Point(21, 57);
+            this.lstItemsOrdered.Name = "lstItemsOrdered";
+            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 444);
+            this.lstItemsOrdered.TabIndex = 0;
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(713, 49);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(58, 24);
+            this.lblDate.TabIndex = 25;
+            this.lblDate.Text = "Date:";
+            // 
+            // picGrazie
+            // 
+            this.picGrazie.Image = ((System.Drawing.Image)(resources.GetObject("picGrazie.Image")));
+            this.picGrazie.Location = new System.Drawing.Point(579, 399);
+            this.picGrazie.Name = "picGrazie";
+            this.picGrazie.Size = new System.Drawing.Size(318, 291);
+            this.picGrazie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGrazie.TabIndex = 26;
+            this.picGrazie.TabStop = false;
+            // 
+            // lblDateInfo
+            // 
+            this.lblDateInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDateInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateInfo.Location = new System.Drawing.Point(777, 49);
+            this.lblDateInfo.Name = "lblDateInfo";
+            this.lblDateInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblDateInfo.TabIndex = 27;
+            this.lblDateInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblReceiptNumInfo
+            // 
+            this.lblReceiptNumInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblReceiptNumInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceiptNumInfo.Location = new System.Drawing.Point(777, 112);
+            this.lblReceiptNumInfo.Name = "lblReceiptNumInfo";
+            this.lblReceiptNumInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblReceiptNumInfo.TabIndex = 28;
+            this.lblReceiptNumInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSubtotal
+            // 
+            this.lblSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtotal.Location = new System.Drawing.Point(777, 168);
+            this.lblSubtotal.Name = "lblSubtotal";
+            this.lblSubtotal.Size = new System.Drawing.Size(100, 23);
+            this.lblSubtotal.TabIndex = 29;
+            this.lblSubtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTaxInfo
+            // 
+            this.lblTaxInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTaxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxInfo.Location = new System.Drawing.Point(777, 205);
+            this.lblTaxInfo.Name = "lblTaxInfo";
+            this.lblTaxInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblTaxInfo.TabIndex = 30;
+            this.lblTaxInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTipInfo
+            // 
+            this.lblTipInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTipInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipInfo.Location = new System.Drawing.Point(777, 244);
+            this.lblTipInfo.Name = "lblTipInfo";
+            this.lblTipInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblTipInfo.TabIndex = 31;
+            this.lblTipInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblGrandTotalInfo
+            // 
+            this.lblGrandTotalInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblGrandTotalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGrandTotalInfo.Location = new System.Drawing.Point(777, 280);
+            this.lblGrandTotalInfo.Name = "lblGrandTotalInfo";
+            this.lblGrandTotalInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblGrandTotalInfo.TabIndex = 32;
+            this.lblGrandTotalInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMethodPymtInfo
+            // 
+            this.lblMethodPymtInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMethodPymtInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMethodPymtInfo.Location = new System.Drawing.Point(777, 319);
+            this.lblMethodPymtInfo.Name = "lblMethodPymtInfo";
+            this.lblMethodPymtInfo.Size = new System.Drawing.Size(100, 23);
+            this.lblMethodPymtInfo.TabIndex = 33;
+            this.lblMethodPymtInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmReceipt
             // 
@@ -169,36 +263,55 @@ namespace FinalProjectGUIDraft
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.gbxOrderDetailOnReceipt);
+            this.Controls.Add(this.lblMethodPymtInfo);
+            this.Controls.Add(this.lblGrandTotalInfo);
+            this.Controls.Add(this.lblTipInfo);
+            this.Controls.Add(this.lblTaxInfo);
+            this.Controls.Add(this.lblSubtotal);
+            this.Controls.Add(this.lblReceiptNumInfo);
+            this.Controls.Add(this.lblDateInfo);
+            this.Controls.Add(this.picGrazie);
+            this.Controls.Add(this.lblDate);
+            this.Controls.Add(this.gbxYourOrder);
             this.Controls.Add(this.picRestLogo);
             this.Controls.Add(this.lblRestaurantName);
             this.Controls.Add(this.lblcustomerName);
-            this.Controls.Add(this.lblReceiptNumber);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblReceiptNumbers);
+            this.Controls.Add(this.lblMethodPayment);
+            this.Controls.Add(this.lblGrandTotal);
+            this.Controls.Add(this.lblTip);
+            this.Controls.Add(this.lblTax);
+            this.Controls.Add(this.lblSubtotalInfo);
             this.Name = "frmReceipt";
             this.Text = "Receipt";
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
-            this.gbxOrderDetailOnReceipt.ResumeLayout(false);
+            this.gbxYourOrder.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblReceiptNumber;
+        private System.Windows.Forms.Label lblMethodPayment;
+        private System.Windows.Forms.Label lblGrandTotal;
+        private System.Windows.Forms.Label lblTip;
+        private System.Windows.Forms.Label lblTax;
+        private System.Windows.Forms.Label lblSubtotalInfo;
+        private System.Windows.Forms.Label lblReceiptNumbers;
         private System.Windows.Forms.Label lblcustomerName;
-        private System.Windows.Forms.ListBox lstDetailOnReceipt;
         private System.Windows.Forms.PictureBox picRestLogo;
         private System.Windows.Forms.Label lblRestaurantName;
-        private System.Windows.Forms.GroupBox gbxOrderDetailOnReceipt;
+        private System.Windows.Forms.GroupBox gbxYourOrder;
+        public System.Windows.Forms.ListBox lstItemsOrdered;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.PictureBox picGrazie;
+        private System.Windows.Forms.Label lblDateInfo;
+        private System.Windows.Forms.Label lblReceiptNumInfo;
+        private System.Windows.Forms.Label lblSubtotal;
+        private System.Windows.Forms.Label lblTaxInfo;
+        private System.Windows.Forms.Label lblTipInfo;
+        private System.Windows.Forms.Label lblGrandTotalInfo;
+        private System.Windows.Forms.Label lblMethodPymtInfo;
     }
 }
