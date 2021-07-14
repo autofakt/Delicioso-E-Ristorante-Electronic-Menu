@@ -278,7 +278,6 @@ namespace FinalProjectGUIDraft
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "Main Course Meals";
             this.MainMenu.UseVisualStyleBackColor = true;
-            this.MainMenu.Click += new System.EventHandler(this.MainMenu_Click);
             // 
             // lblPriceMacaroni
             // 

@@ -28,7 +28,7 @@ namespace FinalProjectGUIDraft
         {
             frmBillAndPayment paymentForm = new frmBillAndPayment();
             for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
-                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] +"\t" + (frmMainMenu.quantity[i] * frmMainMenu.price[i]));
+                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.totalQuantity[i] + " " + frmMainMenu.totalItems[i] +"\t" + (frmMainMenu.totalQuantity[i] * frmMainMenu.price[i]));
             double subTotal = frmMainMenu.getEstimate();
             paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
             double taxRate = 0.095;
@@ -47,7 +47,18 @@ namespace FinalProjectGUIDraft
 
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
+            // Create mainMenu object //
+            //frmMainMenu mainMenu = new frmMainMenu();
+            frmMainMenu.updateArray();
+
+
             MessageBox.Show("Thanks for placing your order, the kitchen is preparing your food, you can continue ordering.");
+            lstCurrentItems.Items.Clear();
+            //Yongqin Lin
+            //for Loop displays all items selected 
+            for (int i = 0; i < frmMainMenu.totalQuantity.Length; i++)
+                lstTotalItems.Items.Add(frmMainMenu.totalQuantity[i] + " " + frmMainMenu.totalItems[i] + " @ $" + frmMainMenu.price[i] + " each");
+
         }
     }
 }
