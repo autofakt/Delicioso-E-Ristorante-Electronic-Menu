@@ -435,6 +435,7 @@ namespace FinalProjectGUIDraft
         // Executes when View Order button is clicked //
         public void btnViewOrder_Click(object sender, EventArgs e)
         {
+            frmViewOrder orderForm;
             // Checks is text box for CustName is empty or null //
             if (String.IsNullOrEmpty(txtCustomerName.Text))
             {
@@ -450,7 +451,7 @@ namespace FinalProjectGUIDraft
                 //Array.Clear(price, 0, items.Length);
 
                 // Create orderForm object //
-                frmViewOrder orderForm = new frmViewOrder();
+                orderForm = new frmViewOrder();
 
                 customerName = txtCustomerName.Text;
                 orderForm.txtCustomerName.Text = customerName;
@@ -644,7 +645,7 @@ namespace FinalProjectGUIDraft
                     orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
 
                 // estimate variable is assigned the return value of calling estimateCalculator //
-                estimate = estimateCalculator();
+                //estimate = estimateCalculator();
 
                 // Displays estimate total in lblEstimatedTotal //   instructor
                 //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
@@ -652,86 +653,7 @@ namespace FinalProjectGUIDraft
             }
 
 
-            if (nudGelato.Value >= 1)
-            {
-                items[itemCounter] = (lblGelato.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudGelato.Value));
-                price[itemCounter] = (double.Parse(lblPriceGelato.Text));
-                itemCounter++;
-            }
-
-            if (nudCannoli.Value >= 1)
-            {
-                items[itemCounter] = (lblCannoli.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudCannoli.Value));
-                price[itemCounter] = (double.Parse(lblPriceCannoli.Text));
-                itemCounter++;
-            }
-
-            // Lee //
-            // Beverages //
-            if (nudRedWine.Value >= 1)
-            {
-                items[itemCounter] = (lblRedWine.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudRedWine.Value));
-                price[itemCounter] = (double.Parse(lblPriceRedWine.Text));
-                itemCounter++;
-            }
-
-            if (nudWhiteWine.Value >= 1)
-            {
-                items[itemCounter] = (lblWhiteWine.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudWhiteWine.Value));
-                price[itemCounter] = (double.Parse(lblPriceWhiteWine.Text));
-                itemCounter++;
-            }
-
-            if (nudItalianSoda.Value >= 1)
-            {
-                items[itemCounter] = (lblItalianSoda.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudItalianSoda.Value));
-                price[itemCounter] = (double.Parse(lblPriceItalianSoda.Text));
-                itemCounter++;
-            }
-
-            if (nudSanPellegrino.Value >= 1)
-            {
-                items[itemCounter] = (lblSanPellegrino.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudSanPellegrino.Value));
-                price[itemCounter] = (double.Parse(lblPriceSanPellegrino.Text));
-                itemCounter++;
-            }
-
-            if (nudPellegrinoWater.Value >= 1)
-            {
-                items[itemCounter] = (lblPellegrinoWater.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudPellegrinoWater.Value));
-                price[itemCounter] = (double.Parse(lblPricePellegrinoWater.Text));
-                itemCounter++;
-            }
-
-            if (nudCocaCola.Value >= 1)
-            {
-                items[itemCounter] = (lblCocaCola.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudCocaCola.Value));
-                price[itemCounter] = (double.Parse(lblPriceCocaCola.Text));
-                itemCounter++;
-            }
-
-            // For Loop displays items slected and adds them to a list //
-            for (int i = 0; i < itemCounter; i++)
-                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
-
-            for (int i = 0; i < itemCounterFinal; i++)
-                orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
-
-            // estimate variable is assigned the return value of calling estimateCalculator //
-            //estimate = estimateCalculator();
-
-            // Displays estimate total in lblEstimatedTotal //   instructor
-            //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
-            orderForm.ShowDialog();
-
+            
           
         }
 

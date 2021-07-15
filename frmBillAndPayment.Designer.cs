@@ -43,6 +43,8 @@ namespace FinalProjectGUIDraft
             this.lblSubTotal = new System.Windows.Forms.Label();
             this.lstItemizedBill = new System.Windows.Forms.ListBox();
             this.gbxPaymentMethod = new System.Windows.Forms.GroupBox();
+            this.lblCardNumberFormat = new System.Windows.Forms.Label();
+            this.lblDateFormat = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPayBill = new System.Windows.Forms.Button();
             this.lblPinNum = new System.Windows.Forms.Label();
@@ -62,8 +64,6 @@ namespace FinalProjectGUIDraft
             this.rbtn15 = new System.Windows.Forms.RadioButton();
             this.rbtn10 = new System.Windows.Forms.RadioButton();
             this.btnBack = new System.Windows.Forms.Button();
-            this.lblDateFormat = new System.Windows.Forms.Label();
-            this.lblCardNumberFormat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxItemizedBill.SuspendLayout();
             this.gbxPaymentMethod.SuspendLayout();
@@ -216,7 +216,30 @@ namespace FinalProjectGUIDraft
             this.gbxPaymentMethod.TabIndex = 23;
             this.gbxPaymentMethod.TabStop = false;
             this.gbxPaymentMethod.Text = "Method of Payment";
-            this.gbxPaymentMethod.Visible = false;
+            // 
+            // lblCardNumberFormat
+            // 
+            this.lblCardNumberFormat.AutoSize = true;
+            this.lblCardNumberFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardNumberFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCardNumberFormat.Location = new System.Drawing.Point(436, 157);
+            this.lblCardNumberFormat.Name = "lblCardNumberFormat";
+            this.lblCardNumberFormat.Size = new System.Drawing.Size(75, 16);
+            this.lblCardNumberFormat.TabIndex = 16;
+            this.lblCardNumberFormat.Text = "(No space)";
+            this.lblCardNumberFormat.Visible = false;
+            // 
+            // lblDateFormat
+            // 
+            this.lblDateFormat.AutoSize = true;
+            this.lblDateFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDateFormat.Location = new System.Drawing.Point(280, 208);
+            this.lblDateFormat.Name = "lblDateFormat";
+            this.lblDateFormat.Size = new System.Drawing.Size(108, 16);
+            this.lblDateFormat.TabIndex = 15;
+            this.lblDateFormat.Text = "(Format: MM/YY)";
+            this.lblDateFormat.Visible = false;
             // 
             // label1
             // 
@@ -424,30 +447,6 @@ namespace FinalProjectGUIDraft
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // lblDateFormat
-            // 
-            this.lblDateFormat.AutoSize = true;
-            this.lblDateFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDateFormat.Location = new System.Drawing.Point(280, 208);
-            this.lblDateFormat.Name = "lblDateFormat";
-            this.lblDateFormat.Size = new System.Drawing.Size(108, 16);
-            this.lblDateFormat.TabIndex = 15;
-            this.lblDateFormat.Text = "(Format: MM/YY)";
-            this.lblDateFormat.Visible = false;
-            // 
-            // lblCardNumberFormat
-            // 
-            this.lblCardNumberFormat.AutoSize = true;
-            this.lblCardNumberFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardNumberFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCardNumberFormat.Location = new System.Drawing.Point(436, 157);
-            this.lblCardNumberFormat.Name = "lblCardNumberFormat";
-            this.lblCardNumberFormat.Size = new System.Drawing.Size(75, 16);
-            this.lblCardNumberFormat.TabIndex = 16;
-            this.lblCardNumberFormat.Text = "(No space)";
-            this.lblCardNumberFormat.Visible = false;
-            // 
             // frmBillAndPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,7 +454,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1331, 780);
+            this.ClientSize = new System.Drawing.Size(1331, 749);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbxAddTip);
