@@ -98,22 +98,18 @@ namespace FinalProjectGUIDraft
             receiptForm.lblCustNameInfo.Text = frmMainMenu.customerName;
 
             receiptForm.ShowDialog();
+
+            this.Close();
         }
 
         private void rbtn10_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbtn10.Checked)
-            {
-                double percent10 = .10;
-                double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent10);
-                tbxTip.Text = newTip.ToString("C");
-                double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
-                double tax = double.Parse(tbxTax.Text.Substring(1));
-                tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
-
-                
-            }
-                
+            double percent10 = .10;
+            double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent10);
+            tbxTip.Text = newTip.ToString("C");
+            double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
+            double tax = double.Parse(tbxTax.Text.Substring(1));
+            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");     
         }
 
         private void rbtn15_CheckedChanged(object sender, EventArgs e)

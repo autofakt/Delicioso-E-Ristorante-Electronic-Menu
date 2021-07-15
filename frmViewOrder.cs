@@ -94,6 +94,8 @@ namespace FinalProjectGUIDraft
                 paymentForm.tbxGrandTotal.Text = grandTotal.ToString("C");
 
                 paymentForm.ShowDialog();
+
+                this.Close();
             }
             else // Else it displays an error message //
             {

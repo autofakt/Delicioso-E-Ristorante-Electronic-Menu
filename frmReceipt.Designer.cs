@@ -53,6 +53,7 @@ namespace FinalProjectGUIDraft
             this.lblCustNameInfo = new System.Windows.Forms.Label();
             this.btnSaveReceipt = new System.Windows.Forms.Button();
             this.lblResetPrompt = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).BeginInit();
@@ -366,5 +367,6 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.Label lblCustNameInfo; // made Public // Lee
         private System.Windows.Forms.Button btnSaveReceipt;
         private System.Windows.Forms.Label lblResetPrompt;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
