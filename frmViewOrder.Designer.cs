@@ -176,11 +176,12 @@ namespace FinalProjectGUIDraft
             // 
             // txtCustomerName
             // 
-            this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustomerName.Location = new System.Drawing.Point(613, 197);
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(126, 27);
+            this.txtCustomerName.Size = new System.Drawing.Size(126, 31);
             this.txtCustomerName.TabIndex = 29;
+            this.txtCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblSubmitOrderPrompt
             // 
@@ -230,7 +231,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1328, 755);
+            this.ClientSize = new System.Drawing.Size(1328, 749);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picItaly);
