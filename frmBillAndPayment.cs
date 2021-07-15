@@ -31,6 +31,9 @@ namespace FinalProjectGUIDraft
             txtCardNumber.ReadOnly = false;
             txtExpDate.ReadOnly = false;
             txtPinNumber.ReadOnly = true;
+            //Yongqin Lin
+            lblDateFormat.Visible = true;
+            lblCardNumberFormat.Visible = true;
         }
 
         private void rbtnCash_CheckedChanged(object sender, EventArgs e)
@@ -60,7 +63,16 @@ namespace FinalProjectGUIDraft
 
         private void btnPayBill_Click(object sender, EventArgs e)
         {
-            
+            //Yongqin Lin
+            //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
+            string cardNumber = txtCardNumber.Text;
+            var list = Enumerable
+                .Range(0, cardNumber.Length / 4)
+                .Select(i => cardNumber.Substring(i * 4, 4))
+                .ToList();
+            var resl = string.Join("-", list);
+            txtCardNumber.Text = resl;
+
             frmReceipt receiptForm = new frmReceipt();
             DateTime now = DateTime.Now;
             string format = "MMM ddd d HH:mm yyyy";

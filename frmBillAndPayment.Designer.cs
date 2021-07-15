@@ -62,6 +62,8 @@ namespace FinalProjectGUIDraft
             this.rbtn15 = new System.Windows.Forms.RadioButton();
             this.rbtn10 = new System.Windows.Forms.RadioButton();
             this.btnBack = new System.Windows.Forms.Button();
+            this.lblDateFormat = new System.Windows.Forms.Label();
+            this.lblCardNumberFormat = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxItemizedBill.SuspendLayout();
             this.gbxPaymentMethod.SuspendLayout();
@@ -193,6 +195,8 @@ namespace FinalProjectGUIDraft
             // 
             // gbxPaymentMethod
             // 
+            this.gbxPaymentMethod.Controls.Add(this.lblCardNumberFormat);
+            this.gbxPaymentMethod.Controls.Add(this.lblDateFormat);
             this.gbxPaymentMethod.Controls.Add(this.label1);
             this.gbxPaymentMethod.Controls.Add(this.btnPayBill);
             this.gbxPaymentMethod.Controls.Add(this.lblPinNum);
@@ -212,6 +216,7 @@ namespace FinalProjectGUIDraft
             this.gbxPaymentMethod.TabIndex = 23;
             this.gbxPaymentMethod.TabStop = false;
             this.gbxPaymentMethod.Text = "Method of Payment";
+            this.gbxPaymentMethod.Visible = false;
             // 
             // label1
             // 
@@ -419,6 +424,30 @@ namespace FinalProjectGUIDraft
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
+            // lblDateFormat
+            // 
+            this.lblDateFormat.AutoSize = true;
+            this.lblDateFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDateFormat.Location = new System.Drawing.Point(280, 208);
+            this.lblDateFormat.Name = "lblDateFormat";
+            this.lblDateFormat.Size = new System.Drawing.Size(108, 16);
+            this.lblDateFormat.TabIndex = 15;
+            this.lblDateFormat.Text = "(Format: MM/YY)";
+            this.lblDateFormat.Visible = false;
+            // 
+            // lblCardNumberFormat
+            // 
+            this.lblCardNumberFormat.AutoSize = true;
+            this.lblCardNumberFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardNumberFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCardNumberFormat.Location = new System.Drawing.Point(436, 157);
+            this.lblCardNumberFormat.Name = "lblCardNumberFormat";
+            this.lblCardNumberFormat.Size = new System.Drawing.Size(75, 16);
+            this.lblCardNumberFormat.TabIndex = 16;
+            this.lblCardNumberFormat.Text = "(No space)";
+            this.lblCardNumberFormat.Visible = false;
+            // 
             // frmBillAndPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,5 +512,7 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.TextBox tbxSubTotal;
         private System.Windows.Forms.Label lblSubTotal;
         internal System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Label lblDateFormat;
+        private System.Windows.Forms.Label lblCardNumberFormat;
     }
 }
