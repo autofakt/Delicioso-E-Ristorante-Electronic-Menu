@@ -72,9 +72,9 @@ namespace FinalProjectGUIDraft
             // 
             this.picRestLogo.Image = ((System.Drawing.Image)(resources.GetObject("picRestLogo.Image")));
             this.picRestLogo.InitialImage = null;
-            this.picRestLogo.Location = new System.Drawing.Point(35, 24);
+            this.picRestLogo.Location = new System.Drawing.Point(12, 12);
             this.picRestLogo.Name = "picRestLogo";
-            this.picRestLogo.Size = new System.Drawing.Size(64, 56);
+            this.picRestLogo.Size = new System.Drawing.Size(111, 106);
             this.picRestLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRestLogo.TabIndex = 21;
             this.picRestLogo.TabStop = false;
@@ -82,11 +82,11 @@ namespace FinalProjectGUIDraft
             // lblRestaurantName
             // 
             this.lblRestaurantName.AutoSize = true;
-            this.lblRestaurantName.BackColor = System.Drawing.Color.White;
-            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRestaurantName.Location = new System.Drawing.Point(105, 25);
+            this.lblRestaurantName.BackColor = System.Drawing.Color.Transparent;
+            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestaurantName.Location = new System.Drawing.Point(151, 33);
             this.lblRestaurantName.Name = "lblRestaurantName";
-            this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
+            this.lblRestaurantName.Size = new System.Drawing.Size(547, 76);
             this.lblRestaurantName.TabIndex = 20;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
             // 
@@ -102,7 +102,7 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill.Controls.Add(this.lblSubTotal);
             this.gbxItemizedBill.Controls.Add(this.lstItemizedBill);
             this.gbxItemizedBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxItemizedBill.Location = new System.Drawing.Point(35, 117);
+            this.gbxItemizedBill.Location = new System.Drawing.Point(243, 166);
             this.gbxItemizedBill.Name = "gbxItemizedBill";
             this.gbxItemizedBill.Size = new System.Drawing.Size(388, 565);
             this.gbxItemizedBill.TabIndex = 22;
@@ -206,7 +206,7 @@ namespace FinalProjectGUIDraft
             this.gbxPaymentMethod.Controls.Add(this.rbtnCreditCard);
             this.gbxPaymentMethod.Controls.Add(this.rbtnCash);
             this.gbxPaymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxPaymentMethod.Location = new System.Drawing.Point(440, 263);
+            this.gbxPaymentMethod.Location = new System.Drawing.Point(667, 312);
             this.gbxPaymentMethod.Name = "gbxPaymentMethod";
             this.gbxPaymentMethod.Size = new System.Drawing.Size(523, 419);
             this.gbxPaymentMethod.TabIndex = 23;
@@ -339,7 +339,7 @@ namespace FinalProjectGUIDraft
             this.gbxAddTip.Controls.Add(this.rbtn15);
             this.gbxAddTip.Controls.Add(this.rbtn10);
             this.gbxAddTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxAddTip.Location = new System.Drawing.Point(440, 117);
+            this.gbxAddTip.Location = new System.Drawing.Point(667, 166);
             this.gbxAddTip.Name = "gbxAddTip";
             this.gbxAddTip.Size = new System.Drawing.Size(523, 106);
             this.gbxAddTip.TabIndex = 24;
@@ -411,7 +411,7 @@ namespace FinalProjectGUIDraft
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBack.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(861, 43);
+            this.btnBack.Location = new System.Drawing.Point(1087, 105);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(103, 37);
             this.btnBack.TabIndex = 25;
@@ -424,7 +424,9 @@ namespace FinalProjectGUIDraft
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1331, 780);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbxAddTip);
