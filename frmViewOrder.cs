@@ -17,6 +17,7 @@ namespace FinalProjectGUIDraft
             InitializeComponent();
         }
 
+       
         // Lee //
         // Added event handler to OrderMore button which closes form //
         private void btnOrderMore_Click(object sender, EventArgs e)
@@ -29,10 +30,13 @@ namespace FinalProjectGUIDraft
         private void btnRequestCheck_Click(object sender, EventArgs e)
         {
             frmBillAndPayment paymentForm = new frmBillAndPayment();
+
             for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
                 paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] +"\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
+
             double subTotal = frmMainMenu.getEstimate();
             paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
+
             double taxRate = 0.095;
             double tax = subTotal * taxRate;
             paymentForm.tbxTax.Text = tax.ToString("C");
@@ -47,8 +51,24 @@ namespace FinalProjectGUIDraft
             paymentForm.ShowDialog();
         }
 
+
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
+        
+        // Checks is text box for CustName is empty or null //
+            if (String.IsNullOrEmpty(txtCustomerName.Text))
+            {
+                // Displays an error message //
+                MessageBox.Show("We cannot accept an order with no name. Please resubmit your order with a name.");
+            }
+            // otherwise stores text in customerName variable and displays a confirmation message regarding the order //
+            else
+            {
+                string customerName = txtCustomerName.Text;
+                MessageBox.Show("Thank you " + customerName + " for your business.\nYour order will be out soon.\n" +
+                    "You may continue ordering until you request the check.");
+            }
+            
             int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
             int itemsCounterFinal = frmMainMenu.getItemCounterFinal();  // number of final items
 
@@ -105,5 +125,6 @@ namespace FinalProjectGUIDraft
 
             MessageBox.Show("Thanks for placing your order, the kitchen is preparing your food, you can continue ordering.");
         }
+
     }
 }
