@@ -154,6 +154,8 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.btnRequestCheck = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.lblCustNamePrompt = new System.Windows.Forms.Label();
             this.tabSelection.SuspendLayout();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
@@ -213,7 +215,7 @@ namespace FinalProjectGUIDraft
             this.tabSelection.Controls.Add(this.tabDesserts);
             this.tabSelection.Controls.Add(this.tabBeverages);
             this.tabSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabSelection.Location = new System.Drawing.Point(28, 78);
+            this.tabSelection.Location = new System.Drawing.Point(154, 138);
             this.tabSelection.Name = "tabSelection";
             this.tabSelection.SelectedIndex = 0;
             this.tabSelection.Size = new System.Drawing.Size(953, 639);
@@ -386,7 +388,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudMacaroni.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudMacaroni.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMacaroni.Location = new System.Drawing.Point(133, 916);
+            this.nudMacaroni.Location = new System.Drawing.Point(109, 916);
             this.nudMacaroni.Name = "nudMacaroni";
             this.nudMacaroni.Size = new System.Drawing.Size(45, 22);
             this.nudMacaroni.TabIndex = 96;
@@ -398,7 +400,7 @@ namespace FinalProjectGUIDraft
             this.lblMacaroniQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblMacaroniQuantity.AutoSize = true;
             this.lblMacaroniQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMacaroniQuantity.Location = new System.Drawing.Point(61, 918);
+            this.lblMacaroniQuantity.Location = new System.Drawing.Point(37, 918);
             this.lblMacaroniQuantity.Name = "lblMacaroniQuantity";
             this.lblMacaroniQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblMacaroniQuantity.TabIndex = 91;
@@ -409,7 +411,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudRavioli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudRavioli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRavioli.Location = new System.Drawing.Point(751, 616);
+            this.nudRavioli.Location = new System.Drawing.Point(727, 616);
             this.nudRavioli.Name = "nudRavioli";
             this.nudRavioli.Size = new System.Drawing.Size(45, 22);
             this.nudRavioli.TabIndex = 84;
@@ -421,7 +423,7 @@ namespace FinalProjectGUIDraft
             this.lblRavioliQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblRavioliQuantity.AutoSize = true;
             this.lblRavioliQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRavioliQuantity.Location = new System.Drawing.Point(679, 618);
+            this.lblRavioliQuantity.Location = new System.Drawing.Point(655, 618);
             this.lblRavioliQuantity.Name = "lblRavioliQuantity";
             this.lblRavioliQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblRavioliQuantity.TabIndex = 83;
@@ -432,7 +434,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudSeafoodPasta.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudSeafoodPasta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSeafoodPasta.Location = new System.Drawing.Point(445, 616);
+            this.nudSeafoodPasta.Location = new System.Drawing.Point(421, 616);
             this.nudSeafoodPasta.Name = "nudSeafoodPasta";
             this.nudSeafoodPasta.Size = new System.Drawing.Size(45, 22);
             this.nudSeafoodPasta.TabIndex = 82;
@@ -444,7 +446,7 @@ namespace FinalProjectGUIDraft
             this.lblSeafoodPastaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSeafoodPastaQuantity.AutoSize = true;
             this.lblSeafoodPastaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeafoodPastaQuantity.Location = new System.Drawing.Point(373, 618);
+            this.lblSeafoodPastaQuantity.Location = new System.Drawing.Point(349, 618);
             this.lblSeafoodPastaQuantity.Name = "lblSeafoodPastaQuantity";
             this.lblSeafoodPastaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblSeafoodPastaQuantity.TabIndex = 81;
@@ -455,7 +457,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudPesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudPesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPesto.Location = new System.Drawing.Point(133, 616);
+            this.nudPesto.Location = new System.Drawing.Point(109, 616);
             this.nudPesto.Name = "nudPesto";
             this.nudPesto.Size = new System.Drawing.Size(45, 22);
             this.nudPesto.TabIndex = 80;
@@ -467,7 +469,7 @@ namespace FinalProjectGUIDraft
             this.lblPestoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPestoQuantity.AutoSize = true;
             this.lblPestoQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPestoQuantity.Location = new System.Drawing.Point(61, 618);
+            this.lblPestoQuantity.Location = new System.Drawing.Point(37, 618);
             this.lblPestoQuantity.Name = "lblPestoQuantity";
             this.lblPestoQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblPestoQuantity.TabIndex = 79;
@@ -478,7 +480,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudPizza.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudPizza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPizza.Location = new System.Drawing.Point(751, 315);
+            this.nudPizza.Location = new System.Drawing.Point(727, 315);
             this.nudPizza.Name = "nudPizza";
             this.nudPizza.Size = new System.Drawing.Size(45, 22);
             this.nudPizza.TabIndex = 72;
@@ -490,7 +492,7 @@ namespace FinalProjectGUIDraft
             this.lblPizzaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblPizzaQuantity.AutoSize = true;
             this.lblPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPizzaQuantity.Location = new System.Drawing.Point(679, 317);
+            this.lblPizzaQuantity.Location = new System.Drawing.Point(655, 317);
             this.lblPizzaQuantity.Name = "lblPizzaQuantity";
             this.lblPizzaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblPizzaQuantity.TabIndex = 71;
@@ -501,7 +503,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudStuffedShells.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudStuffedShells.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStuffedShells.Location = new System.Drawing.Point(445, 315);
+            this.nudStuffedShells.Location = new System.Drawing.Point(421, 315);
             this.nudStuffedShells.Name = "nudStuffedShells";
             this.nudStuffedShells.Size = new System.Drawing.Size(45, 22);
             this.nudStuffedShells.TabIndex = 70;
@@ -513,7 +515,7 @@ namespace FinalProjectGUIDraft
             this.lblStuffedShellsQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblStuffedShellsQuantity.AutoSize = true;
             this.lblStuffedShellsQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStuffedShellsQuantity.Location = new System.Drawing.Point(373, 317);
+            this.lblStuffedShellsQuantity.Location = new System.Drawing.Point(349, 317);
             this.lblStuffedShellsQuantity.Name = "lblStuffedShellsQuantity";
             this.lblStuffedShellsQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblStuffedShellsQuantity.TabIndex = 69;
@@ -524,7 +526,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudFettAlfredo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudFettAlfredo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudFettAlfredo.Location = new System.Drawing.Point(133, 315);
+            this.nudFettAlfredo.Location = new System.Drawing.Point(109, 315);
             this.nudFettAlfredo.Name = "nudFettAlfredo";
             this.nudFettAlfredo.Size = new System.Drawing.Size(45, 22);
             this.nudFettAlfredo.TabIndex = 68;
@@ -536,7 +538,7 @@ namespace FinalProjectGUIDraft
             this.lblFettAlfredoQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblFettAlfredoQuantity.AutoSize = true;
             this.lblFettAlfredoQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFettAlfredoQuantity.Location = new System.Drawing.Point(61, 317);
+            this.lblFettAlfredoQuantity.Location = new System.Drawing.Point(37, 317);
             this.lblFettAlfredoQuantity.Name = "lblFettAlfredoQuantity";
             this.lblFettAlfredoQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblFettAlfredoQuantity.TabIndex = 67;
@@ -547,7 +549,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudRatatouille.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudRatatouille.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudRatatouille.Location = new System.Drawing.Point(751, 19);
+            this.nudRatatouille.Location = new System.Drawing.Point(727, 19);
             this.nudRatatouille.Name = "nudRatatouille";
             this.nudRatatouille.Size = new System.Drawing.Size(45, 22);
             this.nudRatatouille.TabIndex = 49;
@@ -559,7 +561,7 @@ namespace FinalProjectGUIDraft
             this.lblRatatouilleQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblRatatouilleQuantity.AutoSize = true;
             this.lblRatatouilleQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRatatouilleQuantity.Location = new System.Drawing.Point(679, 21);
+            this.lblRatatouilleQuantity.Location = new System.Drawing.Point(655, 21);
             this.lblRatatouilleQuantity.Name = "lblRatatouilleQuantity";
             this.lblRatatouilleQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblRatatouilleQuantity.TabIndex = 48;
@@ -570,7 +572,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudLasagna.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudLasagna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLasagna.Location = new System.Drawing.Point(445, 19);
+            this.nudLasagna.Location = new System.Drawing.Point(421, 19);
             this.nudLasagna.Name = "nudLasagna";
             this.nudLasagna.Size = new System.Drawing.Size(45, 22);
             this.nudLasagna.TabIndex = 45;
@@ -582,7 +584,7 @@ namespace FinalProjectGUIDraft
             this.lblLasagnaQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblLasagnaQuantity.AutoSize = true;
             this.lblLasagnaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLasagnaQuantity.Location = new System.Drawing.Point(373, 21);
+            this.lblLasagnaQuantity.Location = new System.Drawing.Point(349, 21);
             this.lblLasagnaQuantity.Name = "lblLasagnaQuantity";
             this.lblLasagnaQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblLasagnaQuantity.TabIndex = 44;
@@ -593,7 +595,7 @@ namespace FinalProjectGUIDraft
             // 
             this.nudSpaghetti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nudSpaghetti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSpaghetti.Location = new System.Drawing.Point(133, 19);
+            this.nudSpaghetti.Location = new System.Drawing.Point(109, 19);
             this.nudSpaghetti.Name = "nudSpaghetti";
             this.nudSpaghetti.Size = new System.Drawing.Size(45, 22);
             this.nudSpaghetti.TabIndex = 41;
@@ -605,7 +607,7 @@ namespace FinalProjectGUIDraft
             this.lblSpaghettiQuantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lblSpaghettiQuantity.AutoSize = true;
             this.lblSpaghettiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpaghettiQuantity.Location = new System.Drawing.Point(61, 21);
+            this.lblSpaghettiQuantity.Location = new System.Drawing.Point(37, 21);
             this.lblSpaghettiQuantity.Name = "lblSpaghettiQuantity";
             this.lblSpaghettiQuantity.Size = new System.Drawing.Size(68, 16);
             this.lblSpaghettiQuantity.TabIndex = 40;
@@ -862,7 +864,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceAntiPastoSalad.AutoSize = true;
             this.lblPriceAntiPastoSalad.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceAntiPastoSalad.Location = new System.Drawing.Point(840, 276);
+            this.lblPriceAntiPastoSalad.Location = new System.Drawing.Point(840, 271);
             this.lblPriceAntiPastoSalad.Name = "lblPriceAntiPastoSalad";
             this.lblPriceAntiPastoSalad.Size = new System.Drawing.Size(30, 23);
             this.lblPriceAntiPastoSalad.TabIndex = 100;
@@ -872,7 +874,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceBigGreenSalad.AutoSize = true;
             this.lblPriceBigGreenSalad.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceBigGreenSalad.Location = new System.Drawing.Point(530, 276);
+            this.lblPriceBigGreenSalad.Location = new System.Drawing.Point(530, 271);
             this.lblPriceBigGreenSalad.Name = "lblPriceBigGreenSalad";
             this.lblPriceBigGreenSalad.Size = new System.Drawing.Size(30, 23);
             this.lblPriceBigGreenSalad.TabIndex = 99;
@@ -882,7 +884,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceCapreseSalad.AutoSize = true;
             this.lblPriceCapreseSalad.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceCapreseSalad.Location = new System.Drawing.Point(229, 276);
+            this.lblPriceCapreseSalad.Location = new System.Drawing.Point(224, 271);
             this.lblPriceCapreseSalad.Name = "lblPriceCapreseSalad";
             this.lblPriceCapreseSalad.Size = new System.Drawing.Size(20, 23);
             this.lblPriceCapreseSalad.TabIndex = 98;
@@ -1057,7 +1059,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceCannoli.AutoSize = true;
             this.lblPriceCannoli.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceCannoli.Location = new System.Drawing.Point(813, 276);
+            this.lblPriceCannoli.Location = new System.Drawing.Point(813, 272);
             this.lblPriceCannoli.Name = "lblPriceCannoli";
             this.lblPriceCannoli.Size = new System.Drawing.Size(20, 23);
             this.lblPriceCannoli.TabIndex = 101;
@@ -1067,7 +1069,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceGelato.AutoSize = true;
             this.lblPriceGelato.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceGelato.Location = new System.Drawing.Point(540, 276);
+            this.lblPriceGelato.Location = new System.Drawing.Point(540, 271);
             this.lblPriceGelato.Name = "lblPriceGelato";
             this.lblPriceGelato.Size = new System.Drawing.Size(20, 23);
             this.lblPriceGelato.TabIndex = 100;
@@ -1077,7 +1079,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblPriceTiramisu.AutoSize = true;
             this.lblPriceTiramisu.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceTiramisu.Location = new System.Drawing.Point(212, 276);
+            this.lblPriceTiramisu.Location = new System.Drawing.Point(212, 272);
             this.lblPriceTiramisu.Name = "lblPriceTiramisu";
             this.lblPriceTiramisu.Size = new System.Drawing.Size(20, 23);
             this.lblPriceTiramisu.TabIndex = 99;
@@ -1273,60 +1275,60 @@ namespace FinalProjectGUIDraft
             // lblPriceCocaCola
             // 
             this.lblPriceCocaCola.AutoSize = true;
-            this.lblPriceCocaCola.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceCocaCola.Location = new System.Drawing.Point(835, 573);
+            this.lblPriceCocaCola.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceCocaCola.Location = new System.Drawing.Point(816, 573);
             this.lblPriceCocaCola.Name = "lblPriceCocaCola";
-            this.lblPriceCocaCola.Size = new System.Drawing.Size(17, 19);
+            this.lblPriceCocaCola.Size = new System.Drawing.Size(20, 23);
             this.lblPriceCocaCola.TabIndex = 105;
             this.lblPriceCocaCola.Text = "3";
             // 
             // lblPricePellegrinoWater
             // 
             this.lblPricePellegrinoWater.AutoSize = true;
-            this.lblPricePellegrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPricePellegrinoWater.Location = new System.Drawing.Point(540, 573);
+            this.lblPricePellegrinoWater.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPricePellegrinoWater.Location = new System.Drawing.Point(530, 573);
             this.lblPricePellegrinoWater.Name = "lblPricePellegrinoWater";
-            this.lblPricePellegrinoWater.Size = new System.Drawing.Size(17, 19);
+            this.lblPricePellegrinoWater.Size = new System.Drawing.Size(20, 23);
             this.lblPricePellegrinoWater.TabIndex = 104;
             this.lblPricePellegrinoWater.Text = "3";
             // 
             // lblPriceSanPellegrino
             // 
             this.lblPriceSanPellegrino.AutoSize = true;
-            this.lblPriceSanPellegrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceSanPellegrino.Location = new System.Drawing.Point(221, 573);
+            this.lblPriceSanPellegrino.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceSanPellegrino.Location = new System.Drawing.Point(202, 574);
             this.lblPriceSanPellegrino.Name = "lblPriceSanPellegrino";
-            this.lblPriceSanPellegrino.Size = new System.Drawing.Size(17, 19);
+            this.lblPriceSanPellegrino.Size = new System.Drawing.Size(20, 23);
             this.lblPriceSanPellegrino.TabIndex = 103;
             this.lblPriceSanPellegrino.Text = "4";
             // 
             // lblPriceItalianSoda
             // 
             this.lblPriceItalianSoda.AutoSize = true;
-            this.lblPriceItalianSoda.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceItalianSoda.Location = new System.Drawing.Point(842, 276);
+            this.lblPriceItalianSoda.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceItalianSoda.Location = new System.Drawing.Point(809, 277);
             this.lblPriceItalianSoda.Name = "lblPriceItalianSoda";
-            this.lblPriceItalianSoda.Size = new System.Drawing.Size(17, 19);
+            this.lblPriceItalianSoda.Size = new System.Drawing.Size(20, 23);
             this.lblPriceItalianSoda.TabIndex = 102;
             this.lblPriceItalianSoda.Text = "5";
             // 
             // lblPriceWhiteWine
             // 
             this.lblPriceWhiteWine.AutoSize = true;
-            this.lblPriceWhiteWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceWhiteWine.Location = new System.Drawing.Point(529, 276);
+            this.lblPriceWhiteWine.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceWhiteWine.Location = new System.Drawing.Point(508, 277);
             this.lblPriceWhiteWine.Name = "lblPriceWhiteWine";
-            this.lblPriceWhiteWine.Size = new System.Drawing.Size(25, 19);
+            this.lblPriceWhiteWine.Size = new System.Drawing.Size(30, 23);
             this.lblPriceWhiteWine.TabIndex = 101;
             this.lblPriceWhiteWine.Text = "10";
             // 
             // lblPriceRedWine
             // 
             this.lblPriceRedWine.AutoSize = true;
-            this.lblPriceRedWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPriceRedWine.Location = new System.Drawing.Point(197, 276);
+            this.lblPriceRedWine.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriceRedWine.Location = new System.Drawing.Point(197, 277);
             this.lblPriceRedWine.Name = "lblPriceRedWine";
-            this.lblPriceRedWine.Size = new System.Drawing.Size(25, 19);
+            this.lblPriceRedWine.Size = new System.Drawing.Size(30, 23);
             this.lblPriceRedWine.TabIndex = 100;
             this.lblPriceRedWine.Text = "10";
             // 
@@ -1337,7 +1339,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCocaCola2.AutoSize = true;
             this.lblCocaCola2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCocaCola2.Location = new System.Drawing.Point(753, 573);
+            this.lblCocaCola2.Location = new System.Drawing.Point(736, 576);
             this.lblCocaCola2.Name = "lblCocaCola2";
             this.lblCocaCola2.Size = new System.Drawing.Size(74, 19);
             this.lblCocaCola2.TabIndex = 78;
@@ -1350,7 +1352,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPellegrinoWater.AutoSize = true;
             this.lblPellegrinoWater.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPellegrinoWater.Location = new System.Drawing.Point(417, 573);
+            this.lblPellegrinoWater.Location = new System.Drawing.Point(407, 576);
             this.lblPellegrinoWater.Name = "lblPellegrinoWater";
             this.lblPellegrinoWater.Size = new System.Drawing.Size(117, 19);
             this.lblPellegrinoWater.TabIndex = 77;
@@ -1363,7 +1365,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSanPellegrino.AutoSize = true;
             this.lblSanPellegrino.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSanPellegrino.Location = new System.Drawing.Point(112, 573);
+            this.lblSanPellegrino.Location = new System.Drawing.Point(95, 578);
             this.lblSanPellegrino.Name = "lblSanPellegrino";
             this.lblSanPellegrino.Size = new System.Drawing.Size(101, 19);
             this.lblSanPellegrino.TabIndex = 76;
@@ -1577,7 +1579,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblItalianSoda.AutoSize = true;
             this.lblItalianSoda.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItalianSoda.Location = new System.Drawing.Point(747, 276);
+            this.lblItalianSoda.Location = new System.Drawing.Point(718, 281);
             this.lblItalianSoda.Name = "lblItalianSoda";
             this.lblItalianSoda.Size = new System.Drawing.Size(85, 19);
             this.lblItalianSoda.TabIndex = 27;
@@ -1590,7 +1592,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblWhiteWine.AutoSize = true;
             this.lblWhiteWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWhiteWine.Location = new System.Drawing.Point(433, 276);
+            this.lblWhiteWine.Location = new System.Drawing.Point(417, 280);
             this.lblWhiteWine.Name = "lblWhiteWine";
             this.lblWhiteWine.Size = new System.Drawing.Size(86, 19);
             this.lblWhiteWine.TabIndex = 26;
@@ -1603,7 +1605,7 @@ namespace FinalProjectGUIDraft
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRedWine.AutoSize = true;
             this.lblRedWine.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRedWine.Location = new System.Drawing.Point(117, 276);
+            this.lblRedWine.Location = new System.Drawing.Point(119, 281);
             this.lblRedWine.Name = "lblRedWine";
             this.lblRedWine.Size = new System.Drawing.Size(72, 19);
             this.lblRedWine.TabIndex = 25;
@@ -1695,12 +1697,12 @@ namespace FinalProjectGUIDraft
             // 
             // btnStartOver
             // 
-            this.btnStartOver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnStartOver.BackColor = System.Drawing.Color.White;
             this.btnStartOver.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartOver.ForeColor = System.Drawing.Color.Black;
-            this.btnStartOver.Location = new System.Drawing.Point(757, 52);
+            this.btnStartOver.Location = new System.Drawing.Point(1138, 536);
             this.btnStartOver.Name = "btnStartOver";
-            this.btnStartOver.Size = new System.Drawing.Size(103, 37);
+            this.btnStartOver.Size = new System.Drawing.Size(123, 37);
             this.btnStartOver.TabIndex = 20;
             this.btnStartOver.Text = "Start Over";
             this.btnStartOver.UseVisualStyleBackColor = false;
@@ -1711,7 +1713,7 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnViewOrder.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnViewOrder.Location = new System.Drawing.Point(477, 52);
+            this.btnViewOrder.Location = new System.Drawing.Point(1138, 167);
             this.btnViewOrder.Name = "btnViewOrder";
             this.btnViewOrder.Size = new System.Drawing.Size(123, 37);
             this.btnViewOrder.TabIndex = 19;
@@ -1721,32 +1723,33 @@ namespace FinalProjectGUIDraft
             // 
             // picRestLogo
             // 
+            this.picRestLogo.BackColor = System.Drawing.Color.Transparent;
             this.picRestLogo.Image = ((System.Drawing.Image)(resources.GetObject("picRestLogo.Image")));
             this.picRestLogo.InitialImage = null;
-            this.picRestLogo.Location = new System.Drawing.Point(28, 12);
+            this.picRestLogo.Location = new System.Drawing.Point(13, 9);
             this.picRestLogo.Name = "picRestLogo";
-            this.picRestLogo.Size = new System.Drawing.Size(64, 56);
+            this.picRestLogo.Size = new System.Drawing.Size(124, 116);
             this.picRestLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRestLogo.TabIndex = 17;
             this.picRestLogo.TabStop = false;
             // 
             // lblRestaurantName
             // 
-            this.lblRestaurantName.AutoSize = true;
-            this.lblRestaurantName.BackColor = System.Drawing.Color.White;
-            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRestaurantName.Location = new System.Drawing.Point(98, 13);
+            this.lblRestaurantName.BackColor = System.Drawing.Color.Transparent;
+            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestaurantName.Location = new System.Drawing.Point(167, 9);
             this.lblRestaurantName.Name = "lblRestaurantName";
-            this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
+            this.lblRestaurantName.Size = new System.Drawing.Size(567, 115);
             this.lblRestaurantName.TabIndex = 16;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
+            this.lblRestaurantName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnRequestCheck
             // 
-            this.btnRequestCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRequestCheck.BackColor = System.Drawing.Color.White;
             this.btnRequestCheck.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequestCheck.ForeColor = System.Drawing.Color.Black;
-            this.btnRequestCheck.Location = new System.Drawing.Point(617, 52);
+            this.btnRequestCheck.Location = new System.Drawing.Point(1138, 257);
             this.btnRequestCheck.Name = "btnRequestCheck";
             this.btnRequestCheck.Size = new System.Drawing.Size(123, 37);
             this.btnRequestCheck.TabIndex = 21;
@@ -1758,22 +1761,44 @@ namespace FinalProjectGUIDraft
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnExit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(878, 52);
+            this.btnExit.Location = new System.Drawing.Point(1138, 440);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(103, 37);
+            this.btnExit.Size = new System.Drawing.Size(123, 37);
             this.btnExit.TabIndex = 22;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Location = new System.Drawing.Point(1135, 106);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(126, 27);
+            this.txtCustomerName.TabIndex = 30;
+            // 
+            // lblCustNamePrompt
+            // 
+            this.lblCustNamePrompt.AutoSize = true;
+            this.lblCustNamePrompt.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustNamePrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustNamePrompt.Location = new System.Drawing.Point(991, 108);
+            this.lblCustNamePrompt.Name = "lblCustNamePrompt";
+            this.lblCustNamePrompt.Size = new System.Drawing.Size(142, 20);
+            this.lblCustNamePrompt.TabIndex = 31;
+            this.lblCustNamePrompt.Text = "Customer Name:";
             // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1331, 862);
             this.ControlBox = false;
+            this.Controls.Add(this.lblCustNamePrompt);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRequestCheck);
             this.Controls.Add(this.btnStartOver);
@@ -1968,5 +1993,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblPriceRedWine;
         private System.Windows.Forms.Button btnRequestCheck;
         internal System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.TextBox txtCustomerName;
+        private System.Windows.Forms.Label lblCustNamePrompt;
     }
 }
