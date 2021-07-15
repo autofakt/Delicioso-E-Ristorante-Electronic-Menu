@@ -667,11 +667,11 @@ namespace FinalProjectGUIDraft
 
         }
 
-        // Lee //
-        //Executes when Start Over button is clicked //
-        // Resets Numeric up and down and item counter back to zero//
-        public void btnStartOver_Click(object sender, EventArgs e)
+        // Method used to clear everything in the main menu //
+        public void clearMainMenu()
         {
+            // Customer Name //
+            txtCustomerName.Text = " ";
             // Main Courses //
             nudSpaghetti.Value = 0;
             nudLasagna.Value = 0;
@@ -700,6 +700,13 @@ namespace FinalProjectGUIDraft
             nudCocaCola.Value = 0;
             // Counter //
             itemCounter = 0;
+        }
+
+        // Lee //
+        //Executes when Start Over button is clicked //
+        public void btnStartOver_Click(object sender, EventArgs e)
+        {
+            clearMainMenu();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
