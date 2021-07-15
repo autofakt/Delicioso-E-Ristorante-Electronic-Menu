@@ -17,7 +17,7 @@ namespace FinalProjectGUIDraft
 
         static int itemCounter = 0; //counter for the current order array
         static int itemCounterFinal = 0; //counter for the total order array
-        static double estimate = 0;
+        //static double estimate = 0;
 
         public static int getItemCounter()
         {
@@ -34,11 +34,12 @@ namespace FinalProjectGUIDraft
            itemCounterFinal = counter;
         }
 
+        /*
         public static double getEstimate()
         {
             return estimate;
         }
-
+        */
 
         public static string[] items = new string[MAX_ITEMS];
         public static int[] quantity = new int[MAX_ITEMS];
@@ -48,10 +49,11 @@ namespace FinalProjectGUIDraft
         public static int[] quantityFinal = new int[MAX_ORDER];
         public static double[] priceFinal = new double[MAX_ORDER];
 
-
+        /*
         public double estimateCalculator()
         {
             double sum = 0;
+            MessageBox.Show("Itemcounter: "+itemCounterFinal.ToString());
             for(int i =0; i < itemCounterFinal; i++)
             {
                 sum += priceFinal[i] * quantityFinal[i];
@@ -59,7 +61,7 @@ namespace FinalProjectGUIDraft
 
             return sum;
         }
-
+        */
         public frmMainMenu()
         {
             InitializeComponent();
@@ -626,7 +628,7 @@ namespace FinalProjectGUIDraft
                 orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
 
             // estimate variable is assigned the return value of calling estimateCalculator //
-            estimate = estimateCalculator();
+            //estimate = estimateCalculator();
 
             // Displays estimate total in lblEstimatedTotal //   instructor
             //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
