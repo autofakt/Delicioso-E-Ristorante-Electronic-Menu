@@ -12,6 +12,8 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
+        string customerName = "";
+
         public frmViewOrder()
         {
             InitializeComponent();
@@ -54,8 +56,8 @@ namespace FinalProjectGUIDraft
 
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
-        
-        // Checks is text box for CustName is empty or null //
+
+            // Checks is text box for CustName is empty or null //
             if (String.IsNullOrEmpty(txtCustomerName.Text))
             {
                 // Displays an error message //
@@ -64,66 +66,60 @@ namespace FinalProjectGUIDraft
             // otherwise stores text in customerName variable and displays a confirmation message regarding the order //
             else
             {
-                string customerName = txtCustomerName.Text;
+                customerName = txtCustomerName.Text;
                 MessageBox.Show("Thank you " + customerName + " for your business.\nYour order will be out soon.\n" +
                     "You may continue ordering until you request the check.");
-            }
-            
-            int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
-            int itemsCounterFinal = frmMainMenu.getItemCounterFinal();  // number of final items
 
-            
+                int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
+                int itemsCounterFinal = frmMainMenu.getItemCounterFinal();  // number of final items
 
-
-            if (itemsCounterFinal == 0)
-            {
-                for(int i = 0; i<itemsCounter; i++)
+                if (itemsCounterFinal == 0)
                 {
+                    for (int i = 0; i < itemsCounter; i++)
+                    {
 
-                    frmMainMenu.itemsFinal[i] = frmMainMenu.items[i];
-                    frmMainMenu.quantityFinal[i] = frmMainMenu.quantity[i];
-                    frmMainMenu.priceFinal[i] = frmMainMenu.price[i];
-                    itemsCounterFinal++;
-                }
-                
-                for (int i = 0; i < itemsCounterFinal; i++)
-                    lstTotalItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i]);
-            }
-            else
-            {
-                for(int i = 0; i<itemsCounter; i++)
-                {
-                    int foundIndex = Array.IndexOf(frmMainMenu.itemsFinal, frmMainMenu.items[i]);
-                    
-                    if (foundIndex >= 0)
-                    {
-                        frmMainMenu.quantityFinal[foundIndex] = frmMainMenu.quantity[i] + frmMainMenu.quantityFinal[foundIndex];
-                    }
-                    else
-                    {
-                        frmMainMenu.itemsFinal[itemsCounterFinal] = frmMainMenu.items[i];
-                        frmMainMenu.quantityFinal[itemsCounterFinal] = frmMainMenu.quantity[i];
-                        frmMainMenu.priceFinal[itemsCounterFinal] = frmMainMenu.price[i];
+                        frmMainMenu.itemsFinal[i] = frmMainMenu.items[i];
+                        frmMainMenu.quantityFinal[i] = frmMainMenu.quantity[i];
+                        frmMainMenu.priceFinal[i] = frmMainMenu.price[i];
                         itemsCounterFinal++;
                     }
-                    
+
+                    for (int i = 0; i < itemsCounterFinal; i++)
+                        lstTotalItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i]);
                 }
+                else
+                {
+                    for (int i = 0; i < itemsCounter; i++)
+                    {
+                        int foundIndex = Array.IndexOf(frmMainMenu.itemsFinal, frmMainMenu.items[i]);
+
+                        if (foundIndex >= 0)
+                        {
+                            frmMainMenu.quantityFinal[foundIndex] = frmMainMenu.quantity[i] + frmMainMenu.quantityFinal[foundIndex];
+                        }
+                        else
+                        {
+                            frmMainMenu.itemsFinal[itemsCounterFinal] = frmMainMenu.items[i];
+                            frmMainMenu.quantityFinal[itemsCounterFinal] = frmMainMenu.quantity[i];
+                            frmMainMenu.priceFinal[itemsCounterFinal] = frmMainMenu.price[i];
+                            itemsCounterFinal++;
+                        }
+
+                    }
+                }
+
+                Array.Clear(frmMainMenu.items, 0, frmMainMenu.items.Length); //clears current array
+                Array.Clear(frmMainMenu.quantity, 0, frmMainMenu.items.Length);
+                Array.Clear(frmMainMenu.price, 0, frmMainMenu.items.Length);
+
+                frmMainMenu.setItemCounterFinal(itemsCounterFinal); //sets the new value of final array in main menu
+                lstItemsOrdered.Items.Clear();
+
+                lstTotalItemsOrdered.Items.Clear();
+                for (int i = 0; i < itemsCounterFinal; i++)
+                    lstTotalItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i]);
+
             }
-            
-            
-
-            Array.Clear(frmMainMenu.items, 0, frmMainMenu.items.Length); //clears current array
-            Array.Clear(frmMainMenu.quantity, 0, frmMainMenu.items.Length);
-            Array.Clear(frmMainMenu.price, 0, frmMainMenu.items.Length);
-
-            frmMainMenu.setItemCounterFinal(itemsCounterFinal); //sets the new value of final array in main menu
-            lstItemsOrdered.Items.Clear();  
-
-            lstTotalItemsOrdered.Items.Clear();
-            for (int i = 0; i < itemsCounterFinal; i++)
-                lstTotalItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i]);
-
-            MessageBox.Show("Thanks for placing your order, the kitchen is preparing your food, you can continue ordering.");
         }
 
     }

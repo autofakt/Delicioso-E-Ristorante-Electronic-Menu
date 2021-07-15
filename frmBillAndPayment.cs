@@ -60,6 +60,7 @@ namespace FinalProjectGUIDraft
 
         private void btnPayBill_Click(object sender, EventArgs e)
         {
+            
             frmReceipt receiptForm = new frmReceipt();
             DateTime now = DateTime.Now;
             string format = "MMM ddd d HH:mm yyyy";
@@ -81,6 +82,7 @@ namespace FinalProjectGUIDraft
             receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
 
             receiptForm.lblMethodPymtInfo.Text = paymentType;
+            //receiptForm.lblCustNameInfo.Text = frmViewOrder.customerName;
 
             receiptForm.ShowDialog();
         }

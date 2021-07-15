@@ -350,7 +350,7 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.Label lblTipInfo; //made public
         public System.Windows.Forms.Label lblGrandTotalInfo; //made public
         public System.Windows.Forms.Label lblMethodPymtInfo; //made public
-        private System.Windows.Forms.Label lblCustNameInfo; 
+        public System.Windows.Forms.Label lblCustNameInfo; // made Public // Lee
         private System.Windows.Forms.Button btnSaveReceipt;
         private System.Windows.Forms.Label lblResetPrompt;
     }
