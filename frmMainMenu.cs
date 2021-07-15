@@ -440,7 +440,7 @@ namespace FinalProjectGUIDraft
             if (String.IsNullOrEmpty(txtCustomerName.Text))
             {
                 // Displays an error message //
-                MessageBox.Show("Please enter a name before viewing your order.");
+                MessageBox.Show("Please enter a name for your order.");
             }
             // Else opens new form frmViewOrder and displays selected items //
             else
@@ -453,6 +453,7 @@ namespace FinalProjectGUIDraft
                 // Create orderForm object //
                 orderForm = new frmViewOrder();
 
+                // Gets customer name and displays it as Order Name //
                 customerName = txtCustomerName.Text;
                 orderForm.txtCustomerName.Text = customerName;
 
@@ -637,29 +638,38 @@ namespace FinalProjectGUIDraft
                     itemCounter++;
                 }
 
-                // For Loop displays items slected and adds them to a list //
-                for (int i = 0; i < itemCounter; i++)
-                    orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
+                // Lee // 
+                // Executes if user has selected at least one item to order //
+                if (itemCounter >= 1 || itemCounterFinal >=1)
+                {
+                    // For Loop displays items slected and adds them to a list //
+                    for (int i = 0; i < itemCounter; i++)
+                        orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
 
-                for (int i = 0; i < itemCounterFinal; i++)
-                    orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
+                    for (int i = 0; i < itemCounterFinal; i++)
+                        orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
 
-                // estimate variable is assigned the return value of calling estimateCalculator //
-                //estimate = estimateCalculator();
+                    // estimate variable is assigned the return value of calling estimateCalculator //
+                    //estimate = estimateCalculator();
 
-                // Displays estimate total in lblEstimatedTotal //   instructor
-                //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
-                orderForm.ShowDialog();
+                    // Displays estimate total in lblEstimatedTotal //   instructor
+                    //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
+                    orderForm.ShowDialog();
+                }
+                // Executes if user has not selected an order //
+                else
+                {
+                    // Displays an error message //
+                    MessageBox.Show("Please select an item to order.");
+                }
+
             }
 
-
-            
-          
         }
 
         // Lee //
         //Executes when Start Over button is clicked //
-        // Resets Numeric up and down back to zero//
+        // Resets Numeric up and down and item counter back to zero//
         public void btnStartOver_Click(object sender, EventArgs e)
         {
             // Main Courses //
@@ -688,22 +698,19 @@ namespace FinalProjectGUIDraft
             nudSanPellegrino.Value = 0;
             nudPellegrinoWater.Value = 0;
             nudCocaCola.Value = 0;
-        }
-
-
-
-
-
-
-
-        private void MainMenu_Click(object sender, EventArgs e) 
-        {
-            // Accidental MainMenu Click created //
+            // Counter //
+            itemCounter = 0;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        private void MainMenu_Click(object sender, EventArgs e) 
+        {
+            // Accidental MainMenu Click created //
+        }
+
     }
 }
