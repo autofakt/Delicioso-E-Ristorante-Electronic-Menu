@@ -16,6 +16,8 @@ namespace FinalProjectGUIDraft
         // Declare Variable Field for customer name // 
         public static string customerName = "";
 
+        
+
         const int MAX_ITEMS = 22; // 22 Menu Items
         const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
 
