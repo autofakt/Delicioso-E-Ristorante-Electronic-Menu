@@ -33,12 +33,10 @@ namespace FinalProjectGUIDraft
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.gbxYourOrder = new System.Windows.Forms.GroupBox();
+            this.lblEditMenuPrompt = new System.Windows.Forms.Label();
             this.lstItemsOrdered = new System.Windows.Forms.ListBox();
             this.btnOrderMore = new System.Windows.Forms.Button();
             this.btnSubmitOrder = new System.Windows.Forms.Button();
-            this.gbxEstTotal = new System.Windows.Forms.GroupBox();
-            this.lblNoTaxOrTip = new System.Windows.Forms.Label();
-            this.lblEstimatedTotal = new System.Windows.Forms.Label();
             this.btnRequestCheck = new System.Windows.Forms.Button();
             this.lblReqChkPrompt = new System.Windows.Forms.Label();
             this.lblEnterNamePrompt = new System.Windows.Forms.Label();
@@ -46,11 +44,12 @@ namespace FinalProjectGUIDraft
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.lblSubmitOrderPrompt = new System.Windows.Forms.Label();
             this.picItaly = new System.Windows.Forms.PictureBox();
-            this.lblEditMenuPrompt = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lstTotalItemsOrdered = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxYourOrder.SuspendLayout();
-            this.gbxEstTotal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItaly)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // picRestLogo
@@ -80,12 +79,21 @@ namespace FinalProjectGUIDraft
             this.gbxYourOrder.Controls.Add(this.lblEditMenuPrompt);
             this.gbxYourOrder.Controls.Add(this.lstItemsOrdered);
             this.gbxYourOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxYourOrder.Location = new System.Drawing.Point(52, 112);
+            this.gbxYourOrder.Location = new System.Drawing.Point(47, 123);
             this.gbxYourOrder.Name = "gbxYourOrder";
-            this.gbxYourOrder.Size = new System.Drawing.Size(439, 558);
+            this.gbxYourOrder.Size = new System.Drawing.Size(439, 289);
             this.gbxYourOrder.TabIndex = 20;
             this.gbxYourOrder.TabStop = false;
-            this.gbxYourOrder.Text = "Your Order";
+            this.gbxYourOrder.Text = "Your Current Order";
+            // 
+            // lblEditMenuPrompt
+            // 
+            this.lblEditMenuPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditMenuPrompt.Location = new System.Drawing.Point(21, 255);
+            this.lblEditMenuPrompt.Name = "lblEditMenuPrompt";
+            this.lblEditMenuPrompt.Size = new System.Drawing.Size(400, 31);
+            this.lblEditMenuPrompt.TabIndex = 1;
+            this.lblEditMenuPrompt.Text = "*You can edit your order by returning to the Main Menu";
             // 
             // lstItemsOrdered
             // 
@@ -93,7 +101,7 @@ namespace FinalProjectGUIDraft
             this.lstItemsOrdered.ItemHeight = 20;
             this.lstItemsOrdered.Location = new System.Drawing.Point(21, 37);
             this.lstItemsOrdered.Name = "lstItemsOrdered";
-            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 464);
+            this.lstItemsOrdered.Size = new System.Drawing.Size(400, 204);
             this.lstItemsOrdered.TabIndex = 0;
             // 
             // btnOrderMore
@@ -121,37 +129,6 @@ namespace FinalProjectGUIDraft
             this.btnSubmitOrder.Text = "Submit Order";
             this.btnSubmitOrder.UseVisualStyleBackColor = false;
             this.btnSubmitOrder.Click += new System.EventHandler(this.btnSubmitOrder_Click);
-            // 
-            // gbxEstTotal
-            // 
-            this.gbxEstTotal.Controls.Add(this.lblNoTaxOrTip);
-            this.gbxEstTotal.Controls.Add(this.lblEstimatedTotal);
-            this.gbxEstTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxEstTotal.Location = new System.Drawing.Point(542, 431);
-            this.gbxEstTotal.Name = "gbxEstTotal";
-            this.gbxEstTotal.Size = new System.Drawing.Size(418, 116);
-            this.gbxEstTotal.TabIndex = 24;
-            this.gbxEstTotal.TabStop = false;
-            this.gbxEstTotal.Text = "Estimated Total";
-            // 
-            // lblNoTaxOrTip
-            // 
-            this.lblNoTaxOrTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoTaxOrTip.Location = new System.Drawing.Point(192, 71);
-            this.lblNoTaxOrTip.Name = "lblNoTaxOrTip";
-            this.lblNoTaxOrTip.Size = new System.Drawing.Size(201, 25);
-            this.lblNoTaxOrTip.TabIndex = 1;
-            this.lblNoTaxOrTip.Text = "*does not include tax or tip.";
-            // 
-            // lblEstimatedTotal
-            // 
-            this.lblEstimatedTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstimatedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstimatedTotal.Location = new System.Drawing.Point(33, 36);
-            this.lblEstimatedTotal.Name = "lblEstimatedTotal";
-            this.lblEstimatedTotal.Size = new System.Drawing.Size(360, 35);
-            this.lblEstimatedTotal.TabIndex = 0;
-            this.lblEstimatedTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnRequestCheck
             // 
@@ -215,21 +192,32 @@ namespace FinalProjectGUIDraft
             // picItaly
             // 
             this.picItaly.Image = ((System.Drawing.Image)(resources.GetObject("picItaly.Image")));
-            this.picItaly.Location = new System.Drawing.Point(609, 152);
+            this.picItaly.Location = new System.Drawing.Point(246, 418);
             this.picItaly.Name = "picItaly";
             this.picItaly.Size = new System.Drawing.Size(298, 273);
             this.picItaly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picItaly.TabIndex = 31;
             this.picItaly.TabStop = false;
             // 
-            // lblEditMenuPrompt
+            // groupBox1
             // 
-            this.lblEditMenuPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditMenuPrompt.Location = new System.Drawing.Point(21, 504);
-            this.lblEditMenuPrompt.Name = "lblEditMenuPrompt";
-            this.lblEditMenuPrompt.Size = new System.Drawing.Size(400, 31);
-            this.lblEditMenuPrompt.TabIndex = 1;
-            this.lblEditMenuPrompt.Text = "*You can edit your order by returning to the Main Menu";
+            this.groupBox1.Controls.Add(this.lstTotalItemsOrdered);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(521, 126);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(439, 289);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Your Complete Order";
+            // 
+            // lstTotalItemsOrdered
+            // 
+            this.lstTotalItemsOrdered.FormattingEnabled = true;
+            this.lstTotalItemsOrdered.ItemHeight = 20;
+            this.lstTotalItemsOrdered.Location = new System.Drawing.Point(21, 37);
+            this.lstTotalItemsOrdered.Name = "lstTotalItemsOrdered";
+            this.lstTotalItemsOrdered.Size = new System.Drawing.Size(400, 204);
+            this.lstTotalItemsOrdered.TabIndex = 0;
             // 
             // frmViewOrder
             // 
@@ -237,6 +225,8 @@ namespace FinalProjectGUIDraft
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picItaly);
             this.Controls.Add(this.lblSubmitOrderPrompt);
             this.Controls.Add(this.txtCustomerName);
@@ -244,7 +234,6 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.lblEnterNamePrompt);
             this.Controls.Add(this.lblReqChkPrompt);
             this.Controls.Add(this.btnRequestCheck);
-            this.Controls.Add(this.gbxEstTotal);
             this.Controls.Add(this.btnOrderMore);
             this.Controls.Add(this.btnSubmitOrder);
             this.Controls.Add(this.gbxYourOrder);
@@ -252,10 +241,11 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.lblRestaurantName);
             this.Name = "frmViewOrder";
             this.Text = "View My Order";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxYourOrder.ResumeLayout(false);
-            this.gbxEstTotal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picItaly)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,9 +258,6 @@ namespace FinalProjectGUIDraft
         public System.Windows.Forms.ListBox lstItemsOrdered; //made this public
         private System.Windows.Forms.Button btnOrderMore;
         private System.Windows.Forms.Button btnSubmitOrder;
-        public System.Windows.Forms.GroupBox gbxEstTotal; //made public
-        private System.Windows.Forms.Label lblNoTaxOrTip;
-        public System.Windows.Forms.Label lblEstimatedTotal; //made public
         private System.Windows.Forms.Button btnRequestCheck;
         private System.Windows.Forms.Label lblReqChkPrompt;
         private System.Windows.Forms.Label lblEnterNamePrompt;
@@ -279,5 +266,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblSubmitOrderPrompt;
         private System.Windows.Forms.PictureBox picItaly;
         private System.Windows.Forms.Label lblEditMenuPrompt;
+        private System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.ListBox lstTotalItemsOrdered;
     }
 }

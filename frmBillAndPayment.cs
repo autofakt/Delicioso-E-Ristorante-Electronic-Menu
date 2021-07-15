@@ -140,5 +140,10 @@ namespace FinalProjectGUIDraft
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax).ToString("C");
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
