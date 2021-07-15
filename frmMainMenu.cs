@@ -13,12 +13,25 @@ namespace FinalProjectGUIDraft
     public partial class frmMainMenu : Form
     {
         const int MAX_ITEMS = 22; // 22 Menu Items
-        static int itemCounter = 0;
+        const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
+
+        static int itemCounter = 0; //counter for the current order array
+        static int itemCounterFinal = 0; //counter for the total order array
         static double estimate = 0;
 
         public static int getItemCounter()
         {
                 return itemCounter; 
+        }
+
+        public static int getItemCounterFinal()
+        {
+            return itemCounterFinal;
+        }
+
+        public static void setItemCounterFinal(int counter)
+        {
+           itemCounterFinal = counter;
         }
 
         public static double getEstimate()
@@ -31,13 +44,17 @@ namespace FinalProjectGUIDraft
         public static int[] quantity = new int[MAX_ITEMS];
         public static double[] price = new double[MAX_ITEMS];
 
+        public static string[] itemsFinal = new string[MAX_ORDER];
+        public static int[] quantityFinal = new int[MAX_ORDER];
+        public static double[] priceFinal = new double[MAX_ORDER];
+
 
         public double estimateCalculator()
         {
             double sum = 0;
-            for(int i =0; i < itemCounter; i++)
+            for(int i =0; i < itemCounterFinal; i++)
             {
-                sum += price[i] * quantity[i];
+                sum += priceFinal[i] * quantityFinal[i];
             }
 
             return sum;
@@ -413,9 +430,9 @@ namespace FinalProjectGUIDraft
         public void btnViewOrder_Click(object sender, EventArgs e)
         {
             itemCounter = 0;
-            Array.Clear(items, 0, items.Length);
-            Array.Clear(quantity, 0, items.Length);
-            Array.Clear(price, 0, items.Length);
+            //Array.Clear(items, 0, items.Length);
+            //Array.Clear(quantity, 0, items.Length);
+            //Array.Clear(price, 0, items.Length);
 
             // Create orderForm object //
             frmViewOrder orderForm = new frmViewOrder();
@@ -603,13 +620,16 @@ namespace FinalProjectGUIDraft
 
             // For Loop displays items slected and adds them to a list //
             for (int i = 0; i < itemCounter; i++)
-                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i] + " @ $" + price[i] + " each");
+                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
+
+            for (int i = 0; i < itemCounterFinal; i++)
+                orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
 
             // estimate variable is assigned the return value of calling estimateCalculator //
             estimate = estimateCalculator();
 
-            // Displays estimate total in lblEstimatedTotal //
-            orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
+            // Displays estimate total in lblEstimatedTotal //   instructor
+            //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
             orderForm.ShowDialog();
             
         }
@@ -617,7 +637,7 @@ namespace FinalProjectGUIDraft
         // Lee //
         //Executes when Start Over button is clicked //
         // Resets Numeric up and down back to zero//
-        private void btnStartOver_Click(object sender, EventArgs e)
+        public void btnStartOver_Click(object sender, EventArgs e)
         {
             // Main Courses //
             nudSpaghetti.Value = 0;
@@ -658,5 +678,9 @@ namespace FinalProjectGUIDraft
             // Accidental MainMenu Click created //
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

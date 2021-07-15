@@ -61,6 +61,7 @@ namespace FinalProjectGUIDraft
             this.rbtn20 = new System.Windows.Forms.RadioButton();
             this.rbtn15 = new System.Windows.Forms.RadioButton();
             this.rbtn10 = new System.Windows.Forms.RadioButton();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).BeginInit();
             this.gbxItemizedBill.SuspendLayout();
             this.gbxPaymentMethod.SuspendLayout();
@@ -405,12 +406,27 @@ namespace FinalProjectGUIDraft
             this.rbtn10.UseVisualStyleBackColor = true;
             this.rbtn10.CheckedChanged += new System.EventHandler(this.rbtn10_CheckedChanged);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBack.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
+            this.btnBack.Location = new System.Drawing.Point(861, 43);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(103, 37);
+            this.btnBack.TabIndex = 25;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // frmBillAndPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbxAddTip);
             this.Controls.Add(this.gbxPaymentMethod);
             this.Controls.Add(this.gbxItemizedBill);
@@ -418,6 +434,7 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.lblRestaurantName);
             this.Name = "frmBillAndPayment";
             this.Text = "Itemized Bill";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxItemizedBill.ResumeLayout(false);
             this.gbxItemizedBill.PerformLayout();
@@ -463,5 +480,6 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblTax;
         public System.Windows.Forms.TextBox tbxSubTotal;
         private System.Windows.Forms.Label lblSubTotal;
+        internal System.Windows.Forms.Button btnBack;
     }
 }
