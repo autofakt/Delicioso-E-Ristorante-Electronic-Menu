@@ -61,8 +61,9 @@ namespace FinalProjectGUIDraft
             // lblMethodPayment
             // 
             this.lblMethodPayment.AutoSize = true;
+            this.lblMethodPayment.BackColor = System.Drawing.Color.Transparent;
             this.lblMethodPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMethodPayment.Location = new System.Drawing.Point(576, 317);
+            this.lblMethodPayment.Location = new System.Drawing.Point(733, 387);
             this.lblMethodPayment.Name = "lblMethodPayment";
             this.lblMethodPayment.Size = new System.Drawing.Size(195, 24);
             this.lblMethodPayment.TabIndex = 17;
@@ -71,8 +72,9 @@ namespace FinalProjectGUIDraft
             // lblGrandTotal
             // 
             this.lblGrandTotal.AutoSize = true;
+            this.lblGrandTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblGrandTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandTotal.Location = new System.Drawing.Point(646, 280);
+            this.lblGrandTotal.Location = new System.Drawing.Point(803, 350);
             this.lblGrandTotal.Name = "lblGrandTotal";
             this.lblGrandTotal.Size = new System.Drawing.Size(125, 24);
             this.lblGrandTotal.TabIndex = 16;
@@ -81,8 +83,9 @@ namespace FinalProjectGUIDraft
             // lblTip
             // 
             this.lblTip.AutoSize = true;
+            this.lblTip.BackColor = System.Drawing.Color.Transparent;
             this.lblTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTip.Location = new System.Drawing.Point(725, 244);
+            this.lblTip.Location = new System.Drawing.Point(882, 314);
             this.lblTip.Name = "lblTip";
             this.lblTip.Size = new System.Drawing.Size(46, 24);
             this.lblTip.TabIndex = 15;
@@ -91,8 +94,9 @@ namespace FinalProjectGUIDraft
             // lblTax
             // 
             this.lblTax.AutoSize = true;
+            this.lblTax.BackColor = System.Drawing.Color.Transparent;
             this.lblTax.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTax.Location = new System.Drawing.Point(720, 206);
+            this.lblTax.Location = new System.Drawing.Point(877, 276);
             this.lblTax.Name = "lblTax";
             this.lblTax.Size = new System.Drawing.Size(51, 24);
             this.lblTax.TabIndex = 14;
@@ -101,8 +105,9 @@ namespace FinalProjectGUIDraft
             // lblSubtotalInfo
             // 
             this.lblSubtotalInfo.AutoSize = true;
+            this.lblSubtotalInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblSubtotalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotalInfo.Location = new System.Drawing.Point(680, 168);
+            this.lblSubtotalInfo.Location = new System.Drawing.Point(837, 238);
             this.lblSubtotalInfo.Name = "lblSubtotalInfo";
             this.lblSubtotalInfo.Size = new System.Drawing.Size(91, 24);
             this.lblSubtotalInfo.TabIndex = 13;
@@ -111,8 +116,9 @@ namespace FinalProjectGUIDraft
             // lblReceiptNumbers
             // 
             this.lblReceiptNumbers.AutoSize = true;
+            this.lblReceiptNumbers.BackColor = System.Drawing.Color.Transparent;
             this.lblReceiptNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceiptNumbers.Location = new System.Drawing.Point(667, 110);
+            this.lblReceiptNumbers.Location = new System.Drawing.Point(824, 180);
             this.lblReceiptNumbers.Name = "lblReceiptNumbers";
             this.lblReceiptNumbers.Size = new System.Drawing.Size(104, 24);
             this.lblReceiptNumbers.TabIndex = 18;
@@ -121,8 +127,9 @@ namespace FinalProjectGUIDraft
             // lblcustomerName
             // 
             this.lblcustomerName.AutoSize = true;
+            this.lblcustomerName.BackColor = System.Drawing.Color.Transparent;
             this.lblcustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcustomerName.Location = new System.Drawing.Point(44, 102);
+            this.lblcustomerName.Location = new System.Drawing.Point(264, 124);
             this.lblcustomerName.Name = "lblcustomerName";
             this.lblcustomerName.Size = new System.Drawing.Size(166, 24);
             this.lblcustomerName.TabIndex = 19;
@@ -134,7 +141,7 @@ namespace FinalProjectGUIDraft
             this.picRestLogo.InitialImage = null;
             this.picRestLogo.Location = new System.Drawing.Point(24, 21);
             this.picRestLogo.Name = "picRestLogo";
-            this.picRestLogo.Size = new System.Drawing.Size(64, 56);
+            this.picRestLogo.Size = new System.Drawing.Size(111, 106);
             this.picRestLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRestLogo.TabIndex = 23;
             this.picRestLogo.TabStop = false;
@@ -142,19 +149,20 @@ namespace FinalProjectGUIDraft
             // lblRestaurantName
             // 
             this.lblRestaurantName.AutoSize = true;
-            this.lblRestaurantName.BackColor = System.Drawing.Color.White;
-            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRestaurantName.Location = new System.Drawing.Point(94, 26);
+            this.lblRestaurantName.BackColor = System.Drawing.Color.Transparent;
+            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestaurantName.Location = new System.Drawing.Point(140, 35);
             this.lblRestaurantName.Name = "lblRestaurantName";
-            this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
+            this.lblRestaurantName.Size = new System.Drawing.Size(547, 76);
             this.lblRestaurantName.TabIndex = 22;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
             // 
             // gbxYourOrder
             // 
+            this.gbxYourOrder.BackColor = System.Drawing.Color.White;
             this.gbxYourOrder.Controls.Add(this.lstItemsOrdered);
             this.gbxYourOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbxYourOrder.Location = new System.Drawing.Point(48, 148);
+            this.gbxYourOrder.Location = new System.Drawing.Point(268, 170);
             this.gbxYourOrder.Name = "gbxYourOrder";
             this.gbxYourOrder.Size = new System.Drawing.Size(439, 542);
             this.gbxYourOrder.TabIndex = 24;
@@ -173,8 +181,9 @@ namespace FinalProjectGUIDraft
             // lblDate
             // 
             this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(644, 54);
+            this.lblDate.Location = new System.Drawing.Point(801, 124);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(58, 24);
             this.lblDate.TabIndex = 25;
@@ -183,9 +192,9 @@ namespace FinalProjectGUIDraft
             // picGrazie
             // 
             this.picGrazie.Image = ((System.Drawing.Image)(resources.GetObject("picGrazie.Image")));
-            this.picGrazie.Location = new System.Drawing.Point(579, 358);
+            this.picGrazie.Location = new System.Drawing.Point(766, 463);
             this.picGrazie.Name = "picGrazie";
-            this.picGrazie.Size = new System.Drawing.Size(318, 291);
+            this.picGrazie.Size = new System.Drawing.Size(288, 249);
             this.picGrazie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picGrazie.TabIndex = 26;
             this.picGrazie.TabStop = false;
@@ -194,7 +203,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblDateInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDateInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateInfo.Location = new System.Drawing.Point(708, 54);
+            this.lblDateInfo.Location = new System.Drawing.Point(865, 124);
             this.lblDateInfo.Name = "lblDateInfo";
             this.lblDateInfo.Size = new System.Drawing.Size(189, 23);
             this.lblDateInfo.TabIndex = 27;
@@ -204,7 +213,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblReceiptNumInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblReceiptNumInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReceiptNumInfo.Location = new System.Drawing.Point(777, 112);
+            this.lblReceiptNumInfo.Location = new System.Drawing.Point(934, 182);
             this.lblReceiptNumInfo.Name = "lblReceiptNumInfo";
             this.lblReceiptNumInfo.Size = new System.Drawing.Size(120, 23);
             this.lblReceiptNumInfo.TabIndex = 28;
@@ -214,7 +223,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblSubTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubTotal.Location = new System.Drawing.Point(777, 168);
+            this.lblSubTotal.Location = new System.Drawing.Point(934, 238);
             this.lblSubTotal.Name = "lblSubTotal";
             this.lblSubTotal.Size = new System.Drawing.Size(120, 23);
             this.lblSubTotal.TabIndex = 29;
@@ -224,7 +233,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblTaxInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTaxInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTaxInfo.Location = new System.Drawing.Point(777, 205);
+            this.lblTaxInfo.Location = new System.Drawing.Point(934, 275);
             this.lblTaxInfo.Name = "lblTaxInfo";
             this.lblTaxInfo.Size = new System.Drawing.Size(120, 23);
             this.lblTaxInfo.TabIndex = 30;
@@ -234,7 +243,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblTipInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTipInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipInfo.Location = new System.Drawing.Point(777, 244);
+            this.lblTipInfo.Location = new System.Drawing.Point(934, 314);
             this.lblTipInfo.Name = "lblTipInfo";
             this.lblTipInfo.Size = new System.Drawing.Size(120, 23);
             this.lblTipInfo.TabIndex = 31;
@@ -244,7 +253,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblGrandTotalInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblGrandTotalInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandTotalInfo.Location = new System.Drawing.Point(777, 280);
+            this.lblGrandTotalInfo.Location = new System.Drawing.Point(934, 350);
             this.lblGrandTotalInfo.Name = "lblGrandTotalInfo";
             this.lblGrandTotalInfo.Size = new System.Drawing.Size(120, 23);
             this.lblGrandTotalInfo.TabIndex = 32;
@@ -254,7 +263,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblMethodPymtInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMethodPymtInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMethodPymtInfo.Location = new System.Drawing.Point(777, 319);
+            this.lblMethodPymtInfo.Location = new System.Drawing.Point(934, 389);
             this.lblMethodPymtInfo.Name = "lblMethodPymtInfo";
             this.lblMethodPymtInfo.Size = new System.Drawing.Size(120, 23);
             this.lblMethodPymtInfo.TabIndex = 33;
@@ -264,7 +273,7 @@ namespace FinalProjectGUIDraft
             // 
             this.lblCustNameInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCustNameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustNameInfo.Location = new System.Drawing.Point(216, 102);
+            this.lblCustNameInfo.Location = new System.Drawing.Point(436, 124);
             this.lblCustNameInfo.Name = "lblCustNameInfo";
             this.lblCustNameInfo.Size = new System.Drawing.Size(145, 23);
             this.lblCustNameInfo.TabIndex = 34;
@@ -273,7 +282,7 @@ namespace FinalProjectGUIDraft
             // btnSaveReceipt
             // 
             this.btnSaveReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveReceipt.Location = new System.Drawing.Point(650, 644);
+            this.btnSaveReceipt.Location = new System.Drawing.Point(571, 777);
             this.btnSaveReceipt.Name = "btnSaveReceipt";
             this.btnSaveReceipt.Size = new System.Drawing.Size(193, 37);
             this.btnSaveReceipt.TabIndex = 35;
@@ -284,8 +293,9 @@ namespace FinalProjectGUIDraft
             // lblResetPrompt
             // 
             this.lblResetPrompt.AutoSize = true;
+            this.lblResetPrompt.BackColor = System.Drawing.Color.Transparent;
             this.lblResetPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResetPrompt.Location = new System.Drawing.Point(646, 684);
+            this.lblResetPrompt.Location = new System.Drawing.Point(567, 817);
             this.lblResetPrompt.Name = "lblResetPrompt";
             this.lblResetPrompt.Size = new System.Drawing.Size(198, 20);
             this.lblResetPrompt.TabIndex = 36;
@@ -296,7 +306,9 @@ namespace FinalProjectGUIDraft
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1332, 849);
             this.Controls.Add(this.lblResetPrompt);
             this.Controls.Add(this.btnSaveReceipt);
             this.Controls.Add(this.lblCustNameInfo);
@@ -321,6 +333,7 @@ namespace FinalProjectGUIDraft
             this.Controls.Add(this.lblSubtotalInfo);
             this.Name = "frmReceipt";
             this.Text = "Receipt";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.picRestLogo)).EndInit();
             this.gbxYourOrder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picGrazie)).EndInit();
