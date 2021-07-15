@@ -12,6 +12,10 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmMainMenu : Form
     {
+        // Lee //
+        // Declare Variable Field for customer name // 
+        public static string customerName = "";
+
         const int MAX_ITEMS = 22; // 22 Menu Items
         const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
 
@@ -429,208 +433,221 @@ namespace FinalProjectGUIDraft
         // Executes when View Order button is clicked //
         public void btnViewOrder_Click(object sender, EventArgs e)
         {
-            itemCounter = 0;
-            //Array.Clear(items, 0, items.Length);
-            //Array.Clear(quantity, 0, items.Length);
-            //Array.Clear(price, 0, items.Length);
-
-            // Create orderForm object //
-            frmViewOrder orderForm = new frmViewOrder();
-
-            if (nudSpaghetti.Value >= 1)
+            // Checks is text box for CustName is empty or null //
+            if (String.IsNullOrEmpty(txtCustomerName.Text))
             {
-                items[itemCounter] =(lblSpaghetti.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudSpaghetti.Value));
-                price[itemCounter] = (double.Parse(lblPriceSpaghetti.Text));
-                itemCounter++;
+                // Displays an error message //
+                MessageBox.Show("Please enter a name before viewing your order.");
             }
-
-            if (nudLasagna.Value >= 1)
+            // Else opens new form frmViewOrder and displays selected items //
+            else
             {
-                items[itemCounter] = (lblLasagna.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudLasagna.Value));
-                price[itemCounter] = (double.Parse(lblPriceLasagna.Text));
-                itemCounter++;
+                itemCounter = 0;
+                //Array.Clear(items, 0, items.Length);
+                //Array.Clear(quantity, 0, items.Length);
+                //Array.Clear(price, 0, items.Length);
+
+                // Create orderForm object //
+                frmViewOrder orderForm = new frmViewOrder();
+
+                customerName = txtCustomerName.Text;
+                orderForm.txtCustomerName.Text = customerName;
+
+                if (nudSpaghetti.Value >= 1)
+                {
+                    items[itemCounter] = (lblSpaghetti.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudSpaghetti.Value));
+                    price[itemCounter] = (double.Parse(lblPriceSpaghetti.Text));
+                    itemCounter++;
+                }
+
+                if (nudLasagna.Value >= 1)
+                {
+                    items[itemCounter] = (lblLasagna.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudLasagna.Value));
+                    price[itemCounter] = (double.Parse(lblPriceLasagna.Text));
+                    itemCounter++;
+                }
+
+                if (nudRatatouille.Value >= 1)
+                {
+                    items[itemCounter] = (lblRatatouille.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudRatatouille.Value));
+                    price[itemCounter] = (double.Parse(lblPriceRatatouille.Text));
+                    itemCounter++;
+                }
+
+                if (nudFettAlfredo.Value >= 1)
+                {
+                    items[itemCounter] = (lblFettAlfredo.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudFettAlfredo.Value));
+                    price[itemCounter] = (double.Parse(lblPriceFettAlfredo.Text));
+                    itemCounter++;
+                }
+
+                if (nudStuffedShells.Value >= 1)
+                {
+                    items[itemCounter] = (lblStuffedShells.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudStuffedShells.Value));
+                    price[itemCounter] = (double.Parse(lblPriceStuffedShells.Text));
+                    itemCounter++;
+                }
+
+                if (nudPizza.Value >= 1)
+                {
+                    items[itemCounter] = (lblPizza.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudPizza.Value));
+                    price[itemCounter] = (double.Parse(lblPricePizza.Text));
+                    itemCounter++;
+                }
+
+                if (nudPesto.Value >= 1)
+                {
+                    items[itemCounter] = (lblPesto.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudPesto.Value));
+                    price[itemCounter] = (double.Parse(lblPricePesto.Text));
+                    itemCounter++;
+                }
+
+                if (nudSeafoodPasta.Value >= 1)
+                {
+                    items[itemCounter] = (lblSeafoodPasta.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudSeafoodPasta.Value));
+                    price[itemCounter] = (double.Parse(lblPriceSeafoodPasta.Text));
+                    itemCounter++;
+                }
+
+                if (nudRavioli.Value >= 1)
+                {
+                    items[itemCounter] = (lblRavioli.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudRavioli.Value));
+                    price[itemCounter] = (double.Parse(lblPriceRavioli.Text));
+                    itemCounter++;
+                }
+
+                if (nudMacaroni.Value >= 1)
+                {
+                    items[itemCounter] = (lblMacaroni.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudMacaroni.Value));
+                    price[itemCounter] = (double.Parse(lblPriceMacaroni.Text));
+                    itemCounter++;
+                }
+
+                //SALADS
+                if (nudCapreseSalad.Value >= 1)
+                {
+                    items[itemCounter] = (lblCapreseSalad.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudCapreseSalad.Value));
+                    price[itemCounter] = (double.Parse(lblPriceCapreseSalad.Text));
+                    itemCounter++;
+                }
+
+                if (nudBigGreenSalad.Value >= 1)
+                {
+                    items[itemCounter] = (lblGreenSalad.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudBigGreenSalad.Value));
+                    price[itemCounter] = (double.Parse(lblPriceBigGreenSalad.Text));
+                    itemCounter++;
+                }
+
+                if (nudAntiPastoSalad.Value >= 1)
+                {
+                    items[itemCounter] = (lblAntiPastoSalad.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudAntiPastoSalad.Value));
+                    price[itemCounter] = (double.Parse(lblPriceAntiPastoSalad.Text));
+                    itemCounter++;
+                }
+
+                // Lee //
+                // Desserts //
+                if (nudTiramisu.Value >= 1)
+                {
+                    items[itemCounter] = (lblTiramisu.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudTiramisu.Value));
+                    price[itemCounter] = (double.Parse(lblPriceTiramisu.Text));
+                    itemCounter++;
+                }
+
+                if (nudGelato.Value >= 1)
+                {
+                    items[itemCounter] = (lblGelato.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudGelato.Value));
+                    price[itemCounter] = (double.Parse(lblPriceGelato.Text));
+                    itemCounter++;
+                }
+
+                if (nudCannoli.Value >= 1)
+                {
+                    items[itemCounter] = (lblCannoli.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudCannoli.Value));
+                    price[itemCounter] = (double.Parse(lblPriceCannoli.Text));
+                    itemCounter++;
+                }
+
+                // Lee //
+                // Beverages //
+                if (nudRedWine.Value >= 1)
+                {
+                    items[itemCounter] = (lblRedWine.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudRedWine.Value));
+                    price[itemCounter] = (double.Parse(lblPriceRedWine.Text));
+                    itemCounter++;
+                }
+
+                if (nudWhiteWine.Value >= 1)
+                {
+                    items[itemCounter] = (lblWhiteWine.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudWhiteWine.Value));
+                    price[itemCounter] = (double.Parse(lblPriceWhiteWine.Text));
+                    itemCounter++;
+                }
+
+                if (nudItalianSoda.Value >= 1)
+                {
+                    items[itemCounter] = (lblItalianSoda.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudItalianSoda.Value));
+                    price[itemCounter] = (double.Parse(lblPriceItalianSoda.Text));
+                    itemCounter++;
+                }
+
+                if (nudSanPellegrino.Value >= 1)
+                {
+                    items[itemCounter] = (lblSanPellegrino.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudSanPellegrino.Value));
+                    price[itemCounter] = (double.Parse(lblPriceSanPellegrino.Text));
+                    itemCounter++;
+                }
+
+                if (nudPellegrinoWater.Value >= 1)
+                {
+                    items[itemCounter] = (lblPellegrinoWater.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudPellegrinoWater.Value));
+                    price[itemCounter] = (double.Parse(lblPricePellegrinoWater.Text));
+                    itemCounter++;
+                }
+
+                if (nudCocaCola.Value >= 1)
+                {
+                    items[itemCounter] = (lblCocaCola.Text);
+                    quantity[itemCounter] = (Convert.ToInt32(nudCocaCola.Value));
+                    price[itemCounter] = (double.Parse(lblPriceCocaCola.Text));
+                    itemCounter++;
+                }
+
+                // For Loop displays items slected and adds them to a list //
+                for (int i = 0; i < itemCounter; i++)
+                    orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
+
+                for (int i = 0; i < itemCounterFinal; i++)
+                    orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
+
+                // estimate variable is assigned the return value of calling estimateCalculator //
+                estimate = estimateCalculator();
+
+                // Displays estimate total in lblEstimatedTotal //   instructor
+                //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
+                orderForm.ShowDialog();
             }
-
-            if (nudRatatouille.Value >= 1)
-            {
-                items[itemCounter] = (lblRatatouille.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudRatatouille.Value));
-                price[itemCounter] = (double.Parse(lblPriceRatatouille.Text));
-                itemCounter++;
-            }
-
-            if (nudFettAlfredo.Value >= 1)
-            {
-                items[itemCounter] = (lblFettAlfredo.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudFettAlfredo.Value));
-                price[itemCounter] = (double.Parse(lblPriceFettAlfredo.Text));
-                itemCounter++;
-            }
-
-            if (nudStuffedShells.Value >= 1)
-            {
-                items[itemCounter] = (lblStuffedShells.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudStuffedShells.Value));
-                price[itemCounter] = (double.Parse(lblPriceStuffedShells.Text));
-                itemCounter++;
-            }
-
-            if (nudPizza.Value >= 1)
-            {
-                items[itemCounter] = (lblPizza.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudPizza.Value));
-                price[itemCounter] = (double.Parse(lblPricePizza.Text));
-                itemCounter++;
-            }
-
-            if (nudPesto.Value >= 1)
-            {
-                items[itemCounter] = (lblPesto.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudPesto.Value));
-                price[itemCounter] = (double.Parse(lblPricePesto.Text));
-                itemCounter++;
-            }
-
-            if (nudSeafoodPasta.Value >= 1)
-            {
-                items[itemCounter] = (lblSeafoodPasta.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudSeafoodPasta.Value));
-                price[itemCounter] = (double.Parse(lblPriceSeafoodPasta.Text));
-                itemCounter++;
-            }
-
-            if (nudRavioli.Value >= 1)
-            {
-                items[itemCounter] = (lblRavioli.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudRavioli.Value));
-                price[itemCounter] = (double.Parse(lblPriceRavioli.Text));
-                itemCounter++;
-            }
-
-            if (nudMacaroni.Value >= 1)
-            {
-                items[itemCounter] = (lblMacaroni.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudMacaroni.Value));
-                price[itemCounter] = (double.Parse(lblPriceMacaroni.Text));
-                itemCounter++;
-            }
-
-            //SALADS
-            if (nudCapreseSalad .Value >= 1)
-            {
-                items[itemCounter] = (lblCapreseSalad.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudCapreseSalad.Value));
-                price[itemCounter] = (double.Parse(lblPriceCapreseSalad.Text));
-                itemCounter++;
-            }
-
-            if (nudBigGreenSalad.Value >= 1)
-            {
-                items[itemCounter] = (lblGreenSalad.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudBigGreenSalad.Value));
-                price[itemCounter] = (double.Parse(lblPriceBigGreenSalad.Text));
-                itemCounter++;
-            }
-
-            if (nudAntiPastoSalad.Value >= 1)
-            {
-                items[itemCounter] = (lblAntiPastoSalad.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudAntiPastoSalad.Value));
-                price[itemCounter] = (double.Parse(lblPriceAntiPastoSalad.Text));
-                itemCounter++;
-            }
-
-            // Lee //
-            // Desserts //
-            if (nudTiramisu.Value >= 1)
-            {
-                items[itemCounter] = (lblTiramisu.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudTiramisu.Value));
-                price[itemCounter] = (double.Parse(lblPriceTiramisu.Text));
-                itemCounter++;
-            }
-
-            if (nudGelato.Value >= 1)
-            {
-                items[itemCounter] = (lblGelato.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudGelato.Value));
-                price[itemCounter] = (double.Parse(lblPriceGelato.Text));
-                itemCounter++;
-            }
-
-            if (nudCannoli.Value >= 1)
-            {
-                items[itemCounter] = (lblCannoli.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudCannoli.Value));
-                price[itemCounter] = (double.Parse(lblPriceCannoli.Text));
-                itemCounter++;
-            }
-
-            // Lee //
-            // Beverages //
-            if (nudRedWine.Value >= 1)
-            {
-                items[itemCounter] = (lblRedWine.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudRedWine.Value));
-                price[itemCounter] = (double.Parse(lblPriceRedWine.Text));
-                itemCounter++;
-            }
-
-            if (nudWhiteWine.Value >= 1)
-            {
-                items[itemCounter] = (lblWhiteWine.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudWhiteWine.Value));
-                price[itemCounter] = (double.Parse(lblPriceWhiteWine.Text));
-                itemCounter++;
-            }
-
-            if (nudItalianSoda.Value >= 1)
-            {
-                items[itemCounter] = (lblItalianSoda.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudItalianSoda.Value));
-                price[itemCounter] = (double.Parse(lblPriceItalianSoda.Text));
-                itemCounter++;
-            }
-
-            if (nudSanPellegrino.Value >= 1)
-            {
-                items[itemCounter] = (lblSanPellegrino.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudSanPellegrino.Value));
-                price[itemCounter] = (double.Parse(lblPriceSanPellegrino.Text));
-                itemCounter++;
-            }
-
-            if (nudPellegrinoWater.Value >= 1)
-            {
-                items[itemCounter] = (lblPellegrinoWater.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudPellegrinoWater.Value));
-                price[itemCounter] = (double.Parse(lblPricePellegrinoWater.Text));
-                itemCounter++;
-            }
-
-            if (nudCocaCola.Value >= 1)
-            {
-                items[itemCounter] = (lblCocaCola.Text);
-                quantity[itemCounter] = (Convert.ToInt32(nudCocaCola.Value));
-                price[itemCounter] = (double.Parse(lblPriceCocaCola.Text));
-                itemCounter++;
-            }
-
-            // For Loop displays items slected and adds them to a list //
-            for (int i = 0; i < itemCounter; i++)
-                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
-
-            for (int i = 0; i < itemCounterFinal; i++)
-                orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
-
-            // estimate variable is assigned the return value of calling estimateCalculator //
-            estimate = estimateCalculator();
-
-            // Displays estimate total in lblEstimatedTotal //   instructor
-            //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
-            orderForm.ShowDialog();
             
         }
 
