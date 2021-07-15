@@ -80,7 +80,8 @@ namespace FinalProjectGUIDraft
 
             for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
                 receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] + "\t" + (frmMainMenu.quantity[i] * frmMainMenu.price[i]));
-            double subTotal = frmMainMenu.getEstimate();
+            //double subTotal = frmMainMenu.getEstimate();
+            double subTotal = frmViewOrder.getEstimate();
             receiptForm.lblSubTotal.Text = subTotal.ToString("C");
             double taxRate = 0.095;
             double tax = subTotal * taxRate;

@@ -21,7 +21,7 @@ namespace FinalProjectGUIDraft
 
         static int itemCounter = 0; //counter for the current order array
         static int itemCounterFinal = 0; //counter for the total order array
-        static double estimate = 0;
+        //static double estimate = 0;
 
         public static int getItemCounter()
         {
@@ -38,11 +38,12 @@ namespace FinalProjectGUIDraft
            itemCounterFinal = counter;
         }
 
+        /*
         public static double getEstimate()
         {
             return estimate;
         }
-
+        */
 
         public static string[] items = new string[MAX_ITEMS];
         public static int[] quantity = new int[MAX_ITEMS];
@@ -52,10 +53,11 @@ namespace FinalProjectGUIDraft
         public static int[] quantityFinal = new int[MAX_ORDER];
         public static double[] priceFinal = new double[MAX_ORDER];
 
-
+        /*
         public double estimateCalculator()
         {
             double sum = 0;
+            MessageBox.Show("Itemcounter: "+itemCounterFinal.ToString());
             for(int i =0; i < itemCounterFinal; i++)
             {
                 sum += priceFinal[i] * quantityFinal[i];
@@ -63,7 +65,7 @@ namespace FinalProjectGUIDraft
 
             return sum;
         }
-
+        */
         public frmMainMenu()
         {
             InitializeComponent();
@@ -648,7 +650,89 @@ namespace FinalProjectGUIDraft
                 //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
                 orderForm.ShowDialog();
             }
-            
+
+
+            if (nudGelato.Value >= 1)
+            {
+                items[itemCounter] = (lblGelato.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudGelato.Value));
+                price[itemCounter] = (double.Parse(lblPriceGelato.Text));
+                itemCounter++;
+            }
+
+            if (nudCannoli.Value >= 1)
+            {
+                items[itemCounter] = (lblCannoli.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudCannoli.Value));
+                price[itemCounter] = (double.Parse(lblPriceCannoli.Text));
+                itemCounter++;
+            }
+
+            // Lee //
+            // Beverages //
+            if (nudRedWine.Value >= 1)
+            {
+                items[itemCounter] = (lblRedWine.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudRedWine.Value));
+                price[itemCounter] = (double.Parse(lblPriceRedWine.Text));
+                itemCounter++;
+            }
+
+            if (nudWhiteWine.Value >= 1)
+            {
+                items[itemCounter] = (lblWhiteWine.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudWhiteWine.Value));
+                price[itemCounter] = (double.Parse(lblPriceWhiteWine.Text));
+                itemCounter++;
+            }
+
+            if (nudItalianSoda.Value >= 1)
+            {
+                items[itemCounter] = (lblItalianSoda.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudItalianSoda.Value));
+                price[itemCounter] = (double.Parse(lblPriceItalianSoda.Text));
+                itemCounter++;
+            }
+
+            if (nudSanPellegrino.Value >= 1)
+            {
+                items[itemCounter] = (lblSanPellegrino.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudSanPellegrino.Value));
+                price[itemCounter] = (double.Parse(lblPriceSanPellegrino.Text));
+                itemCounter++;
+            }
+
+            if (nudPellegrinoWater.Value >= 1)
+            {
+                items[itemCounter] = (lblPellegrinoWater.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudPellegrinoWater.Value));
+                price[itemCounter] = (double.Parse(lblPricePellegrinoWater.Text));
+                itemCounter++;
+            }
+
+            if (nudCocaCola.Value >= 1)
+            {
+                items[itemCounter] = (lblCocaCola.Text);
+                quantity[itemCounter] = (Convert.ToInt32(nudCocaCola.Value));
+                price[itemCounter] = (double.Parse(lblPriceCocaCola.Text));
+                itemCounter++;
+            }
+
+            // For Loop displays items slected and adds them to a list //
+            for (int i = 0; i < itemCounter; i++)
+                orderForm.lstItemsOrdered.Items.Add(quantity[i] + " " + items[i]);
+
+            for (int i = 0; i < itemCounterFinal; i++)
+                orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
+
+            // estimate variable is assigned the return value of calling estimateCalculator //
+            //estimate = estimateCalculator();
+
+            // Displays estimate total in lblEstimatedTotal //   instructor
+            //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
+            orderForm.ShowDialog();
+
+          
         }
 
         // Lee //

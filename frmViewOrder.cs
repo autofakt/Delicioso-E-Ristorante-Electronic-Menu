@@ -12,6 +12,10 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
+
+        string customerName = "";
+        static double estimate = 0;
+
         public frmViewOrder()
         {
             InitializeComponent();
@@ -27,14 +31,33 @@ namespace FinalProjectGUIDraft
             this.Close();
         }
 
+        public static double getEstimate()
+        {
+            return estimate;
+        }
+
+        public double estimateCalculator()
+        {
+            int itemCounterFinal = frmMainMenu.getItemCounterFinal();
+            double sum = 0;
+            
+            for (int i = 0; i < itemCounterFinal; i++)
+            {
+                sum += frmMainMenu.priceFinal[i] * frmMainMenu.quantityFinal[i];
+            }
+
+            return sum;
+        }
+
         private void btnRequestCheck_Click(object sender, EventArgs e)
         {
             frmBillAndPayment paymentForm = new frmBillAndPayment();
-
             for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
                 paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] +"\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
 
-            double subTotal = frmMainMenu.getEstimate();
+            //double subTotal = frmMainMenu.getEstimate();
+            estimate = estimateCalculator();
+            double subTotal = estimate;
             paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
 
             double taxRate = 0.095;
