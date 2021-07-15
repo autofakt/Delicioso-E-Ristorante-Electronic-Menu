@@ -78,8 +78,8 @@ namespace FinalProjectGUIDraft
             string format = "MMM ddd d HH:mm yyyy";
             receiptForm.lblDateInfo.Text = now.ToString(format);
 
-            for (int i = 0; i < frmMainMenu.getItemCounter(); i++)
-                receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantity[i] + " " + frmMainMenu.items[i] + "\t" + (frmMainMenu.quantity[i] * frmMainMenu.price[i]));
+            for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
+                receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
             //double subTotal = frmMainMenu.getEstimate();
             double subTotal = frmViewOrder.getEstimate();
             receiptForm.lblSubTotal.Text = subTotal.ToString("C");
