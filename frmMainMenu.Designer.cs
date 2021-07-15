@@ -154,6 +154,8 @@ namespace FinalProjectGUIDraft
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.btnRequestCheck = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.lblCustNamePrompt = new System.Windows.Forms.Label();
             this.tabSelection.SuspendLayout();
             this.MainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMacaroni)).BeginInit();
@@ -213,7 +215,7 @@ namespace FinalProjectGUIDraft
             this.tabSelection.Controls.Add(this.tabDesserts);
             this.tabSelection.Controls.Add(this.tabBeverages);
             this.tabSelection.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabSelection.Location = new System.Drawing.Point(28, 78);
+            this.tabSelection.Location = new System.Drawing.Point(154, 138);
             this.tabSelection.Name = "tabSelection";
             this.tabSelection.SelectedIndex = 0;
             this.tabSelection.Size = new System.Drawing.Size(953, 639);
@@ -1695,12 +1697,12 @@ namespace FinalProjectGUIDraft
             // 
             // btnStartOver
             // 
-            this.btnStartOver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnStartOver.BackColor = System.Drawing.Color.White;
             this.btnStartOver.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartOver.ForeColor = System.Drawing.Color.Black;
-            this.btnStartOver.Location = new System.Drawing.Point(757, 52);
+            this.btnStartOver.Location = new System.Drawing.Point(1138, 536);
             this.btnStartOver.Name = "btnStartOver";
-            this.btnStartOver.Size = new System.Drawing.Size(103, 37);
+            this.btnStartOver.Size = new System.Drawing.Size(123, 37);
             this.btnStartOver.TabIndex = 20;
             this.btnStartOver.Text = "Start Over";
             this.btnStartOver.UseVisualStyleBackColor = false;
@@ -1711,7 +1713,7 @@ namespace FinalProjectGUIDraft
             this.btnViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnViewOrder.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnViewOrder.Location = new System.Drawing.Point(477, 52);
+            this.btnViewOrder.Location = new System.Drawing.Point(1138, 167);
             this.btnViewOrder.Name = "btnViewOrder";
             this.btnViewOrder.Size = new System.Drawing.Size(123, 37);
             this.btnViewOrder.TabIndex = 19;
@@ -1721,32 +1723,33 @@ namespace FinalProjectGUIDraft
             // 
             // picRestLogo
             // 
+            this.picRestLogo.BackColor = System.Drawing.Color.Transparent;
             this.picRestLogo.Image = ((System.Drawing.Image)(resources.GetObject("picRestLogo.Image")));
             this.picRestLogo.InitialImage = null;
-            this.picRestLogo.Location = new System.Drawing.Point(28, 12);
+            this.picRestLogo.Location = new System.Drawing.Point(13, 9);
             this.picRestLogo.Name = "picRestLogo";
-            this.picRestLogo.Size = new System.Drawing.Size(64, 56);
+            this.picRestLogo.Size = new System.Drawing.Size(124, 116);
             this.picRestLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRestLogo.TabIndex = 17;
             this.picRestLogo.TabStop = false;
             // 
             // lblRestaurantName
             // 
-            this.lblRestaurantName.AutoSize = true;
-            this.lblRestaurantName.BackColor = System.Drawing.Color.White;
-            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRestaurantName.Location = new System.Drawing.Point(98, 13);
+            this.lblRestaurantName.BackColor = System.Drawing.Color.Transparent;
+            this.lblRestaurantName.Font = new System.Drawing.Font("Papyrus", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRestaurantName.Location = new System.Drawing.Point(167, 9);
             this.lblRestaurantName.Name = "lblRestaurantName";
-            this.lblRestaurantName.Size = new System.Drawing.Size(376, 51);
+            this.lblRestaurantName.Size = new System.Drawing.Size(567, 115);
             this.lblRestaurantName.TabIndex = 16;
             this.lblRestaurantName.Text = "Delicioso E-Ristorante";
+            this.lblRestaurantName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnRequestCheck
             // 
-            this.btnRequestCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRequestCheck.BackColor = System.Drawing.Color.White;
             this.btnRequestCheck.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequestCheck.ForeColor = System.Drawing.Color.Black;
-            this.btnRequestCheck.Location = new System.Drawing.Point(617, 52);
+            this.btnRequestCheck.Location = new System.Drawing.Point(1138, 257);
             this.btnRequestCheck.Name = "btnRequestCheck";
             this.btnRequestCheck.Size = new System.Drawing.Size(123, 37);
             this.btnRequestCheck.TabIndex = 21;
@@ -1758,22 +1761,44 @@ namespace FinalProjectGUIDraft
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnExit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Black;
-            this.btnExit.Location = new System.Drawing.Point(878, 52);
+            this.btnExit.Location = new System.Drawing.Point(1138, 440);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(103, 37);
+            this.btnExit.Size = new System.Drawing.Size(123, 37);
             this.btnExit.TabIndex = 22;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // txtCustomerName
+            // 
+            this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Location = new System.Drawing.Point(1135, 106);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(126, 27);
+            this.txtCustomerName.TabIndex = 30;
+            // 
+            // lblCustNamePrompt
+            // 
+            this.lblCustNamePrompt.AutoSize = true;
+            this.lblCustNamePrompt.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustNamePrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustNamePrompt.Location = new System.Drawing.Point(991, 108);
+            this.lblCustNamePrompt.Name = "lblCustNamePrompt";
+            this.lblCustNamePrompt.Size = new System.Drawing.Size(142, 20);
+            this.lblCustNamePrompt.TabIndex = 31;
+            this.lblCustNamePrompt.Text = "Customer Name:";
             // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1284, 774);
+            this.ClientSize = new System.Drawing.Size(1284, 862);
             this.ControlBox = false;
+            this.Controls.Add(this.lblCustNamePrompt);
+            this.Controls.Add(this.txtCustomerName);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRequestCheck);
             this.Controls.Add(this.btnStartOver);
@@ -1968,5 +1993,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblPriceRedWine;
         private System.Windows.Forms.Button btnRequestCheck;
         internal System.Windows.Forms.Button btnExit;
+        public System.Windows.Forms.TextBox txtCustomerName;
+        private System.Windows.Forms.Label lblCustNamePrompt;
     }
 }

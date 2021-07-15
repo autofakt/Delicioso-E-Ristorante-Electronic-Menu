@@ -12,10 +12,6 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
-        // Lee //
-        // Declare Variable Field // 
-        public static string customerName = "";
-
         public frmViewOrder()
         {
             InitializeComponent();
@@ -59,20 +55,9 @@ namespace FinalProjectGUIDraft
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
 
-            // Checks is text box for CustName is empty or null //
-            if (String.IsNullOrEmpty(txtCustomerName.Text))
-            {
-                // Displays an error message //
-                MessageBox.Show("We cannot accept an order with no name. Please resubmit your order with a name.");
-            }
-            // otherwise stores text in customerName variable and displays a confirmation message regarding the order //
-            else
-            {
-                customerName = txtCustomerName.Text;
-                MessageBox.Show("Thank you " + customerName + " for your business.\nYour order will be out soon.\n" +
-                    "You may continue ordering until you request the check.");
+            MessageBox.Show("Thank you.\nYour order will be out soon.\nYou may continue ordering until you request the check.");
 
-                int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
+            int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
                 int itemsCounterFinal = frmMainMenu.getItemCounterFinal();  // number of final items
 
                 if (itemsCounterFinal == 0)
@@ -121,8 +106,7 @@ namespace FinalProjectGUIDraft
                 for (int i = 0; i < itemsCounterFinal; i++)
                     lstTotalItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i]);
 
-            }
+         
         }
-
     }
 }
