@@ -12,8 +12,8 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
-
-        string customerName = "";
+        // Variable Fields //
+        public static bool itemOrdered = false;
         static double estimate = 0;
 
         public frmViewOrder()
@@ -48,36 +48,63 @@ namespace FinalProjectGUIDraft
 
             return sum;
         }
+        // Lee //
+        // Method validates that 1 minimum order has been submitted //
+        public bool oneOrderMinimum()
+        {
+            int itemCounterFinal = frmMainMenu.getItemCounterFinal();
+            // Return true if greater than or equal to 1 //
+            if (itemCounterFinal >= 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
 
         private void btnRequestCheck_Click(object sender, EventArgs e)
         {
-            frmBillAndPayment paymentForm = new frmBillAndPayment();
-            for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
-                paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] +"\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
+            // Lee //
+            // Assign return value from oneOrderMinimum to itemOrdered //
+            itemOrdered = oneOrderMinimum();
+            // Executes code if itemOrdered was set to true //
+            if (itemOrdered)
+            {
+                frmBillAndPayment paymentForm = new frmBillAndPayment();
+                for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
+                    paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
 
-            //double subTotal = frmMainMenu.getEstimate();
-            estimate = estimateCalculator();
-            double subTotal = estimate;
-            paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
+                //double subTotal = frmMainMenu.getEstimate();
+                estimate = estimateCalculator();
+                double subTotal = estimate;
+                paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
 
-            double taxRate = 0.095;
-            double tax = subTotal * taxRate;
-            paymentForm.tbxTax.Text = tax.ToString("C");
-           
-            double tip = 0;
-            paymentForm.tbxTip.Text = tip.ToString("C");
-            paymentForm.rbtn0.Checked = true;
+                double taxRate = 0.095;
+                double tax = subTotal * taxRate;
+                paymentForm.tbxTax.Text = tax.ToString("C");
 
-            double grandTotal = subTotal + tax;
-            paymentForm.tbxGrandTotal.Text = grandTotal.ToString("C");
+                double tip = 0;
+                paymentForm.tbxTip.Text = tip.ToString("C");
+                paymentForm.rbtn0.Checked = true;
 
-            paymentForm.ShowDialog();
+                double grandTotal = subTotal + tax;
+                paymentForm.tbxGrandTotal.Text = grandTotal.ToString("C");
+
+                paymentForm.ShowDialog();
+            }
+            else // Else it displays an error message //
+            {
+                MessageBox.Show("Please submit your order before requesting your check.");
+            }
         }
 
 
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
-
+            // Confirmation Message that order was submitted successfully //
             MessageBox.Show("Thank you.\nYour order will be out soon.\nYou may continue ordering until you request the check.");
 
             int itemsCounter = frmMainMenu.getItemCounter();  // number of current items
