@@ -82,7 +82,7 @@ namespace FinalProjectGUIDraft
             receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
 
             receiptForm.lblMethodPymtInfo.Text = paymentType;
-            //receiptForm.lblCustNameInfo.Text = frmViewOrder.customerName;
+            receiptForm.lblCustNameInfo.Text = frmViewOrder.customerName;
 
             receiptForm.ShowDialog();
         }

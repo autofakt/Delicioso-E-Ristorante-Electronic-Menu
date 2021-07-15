@@ -12,7 +12,9 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
-        string customerName = "";
+        // Lee //
+        // Declare Variable Field // 
+        public static string customerName = "";
 
         public frmViewOrder()
         {
