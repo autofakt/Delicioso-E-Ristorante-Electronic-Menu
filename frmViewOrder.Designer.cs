@@ -122,9 +122,9 @@ namespace FinalProjectGUIDraft
             this.btnSubmitOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSubmitOrder.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmitOrder.ForeColor = System.Drawing.Color.Black;
-            this.btnSubmitOrder.Location = new System.Drawing.Point(887, 100);
+            this.btnSubmitOrder.Location = new System.Drawing.Point(877, 78);
             this.btnSubmitOrder.Name = "btnSubmitOrder";
-            this.btnSubmitOrder.Size = new System.Drawing.Size(127, 37);
+            this.btnSubmitOrder.Size = new System.Drawing.Size(196, 59);
             this.btnSubmitOrder.TabIndex = 22;
             this.btnSubmitOrder.Text = "Submit Order";
             this.btnSubmitOrder.UseVisualStyleBackColor = false;
@@ -188,7 +188,7 @@ namespace FinalProjectGUIDraft
             this.lblSubmitOrderPrompt.AutoSize = true;
             this.lblSubmitOrderPrompt.BackColor = System.Drawing.Color.Transparent;
             this.lblSubmitOrderPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(894, 69);
+            this.lblSubmitOrderPrompt.Location = new System.Drawing.Point(923, 55);
             this.lblSubmitOrderPrompt.Name = "lblSubmitOrderPrompt";
             this.lblSubmitOrderPrompt.Size = new System.Drawing.Size(109, 20);
             this.lblSubmitOrderPrompt.TabIndex = 30;

@@ -273,7 +273,7 @@ namespace FinalProjectGUIDraft
             // lblCustNameInfo
             // 
             this.lblCustNameInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCustNameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustNameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustNameInfo.Location = new System.Drawing.Point(436, 124);
             this.lblCustNameInfo.Name = "lblCustNameInfo";
             this.lblCustNameInfo.Size = new System.Drawing.Size(145, 23);
@@ -309,7 +309,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1332, 849);
+            this.ClientSize = new System.Drawing.Size(1332, 749);
             this.Controls.Add(this.lblResetPrompt);
             this.Controls.Add(this.btnSaveReceipt);
             this.Controls.Add(this.lblCustNameInfo);
