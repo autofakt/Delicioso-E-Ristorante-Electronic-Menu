@@ -63,6 +63,8 @@ namespace FinalProjectGUIDraft
                 // Return focus back to Main Menu and clears all controls //
                 frmMainMenu master = (frmMainMenu)Application.OpenForms["frmMainMenu"];
                 master.clearMainMenu();
+
+                frmMainMenu.resetFinalArray();
                 // Closes Form
                 this.Close();
 

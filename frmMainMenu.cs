@@ -48,7 +48,14 @@ namespace FinalProjectGUIDraft
         public static int[] quantityFinal = new int[MAX_ORDER];
         public static double[] priceFinal = new double[MAX_ORDER];
 
-        
+        public static void resetFinalArray() // resets the completed order array
+        {
+            Array.Clear(itemsFinal, 0, itemsFinal.Length);
+            Array.Clear(quantityFinal, 0, quantityFinal.Length);
+            Array.Clear(priceFinal, 0, priceFinal.Length);
+            itemCounterFinal = 0;
+        }
+
         public frmMainMenu()
         {
             InitializeComponent();
