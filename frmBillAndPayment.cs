@@ -117,57 +117,61 @@ namespace FinalProjectGUIDraft
 
         private void rbtn10_CheckedChanged(object sender, EventArgs e)
         {
+            if (chkRoundTip.Checked)
+                chkRoundTip.Checked = false;
             double percent10 = .10;
             double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent10);
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
-            txtRoundedTotal.Text = (subTotal + tax + newTip).ToString();
         }
 
         private void rbtn15_CheckedChanged(object sender, EventArgs e)
         {
+            if (chkRoundTip.Checked)
+                chkRoundTip.Checked = false;
             double percent15 = .15;
             double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent15);
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
-            txtRoundedTotal.Text = (subTotal + tax + newTip).ToString();
         }
 
         private void rbtn20_CheckedChanged(object sender, EventArgs e)
         {
+            if (chkRoundTip.Checked)
+                chkRoundTip.Checked = false;
             double percent20 = .20;
             double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent20);
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
-            txtRoundedTotal.Text = (subTotal + tax + newTip).ToString();
         }
 
         private void rbtn25_CheckedChanged(object sender, EventArgs e)
         {
+            if (chkRoundTip.Checked)
+                chkRoundTip.Checked = false;
             double percent25 = .25;
             double newTip = (double.Parse(tbxSubTotal.Text.Substring(1)) * percent25);
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
-            txtRoundedTotal.Text = (subTotal + tax + newTip).ToString();
         }
 
         private void rbtn0_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (chkRoundTip.Checked)
+                chkRoundTip.Checked = false;
             double newTip = 0;
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax).ToString("C");
-            txtRoundedTotal.Text = (subTotal + tax + newTip).ToString();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -179,13 +183,25 @@ namespace FinalProjectGUIDraft
         {
             //Yongqin 
             //Round the total amount
+            
             if (chkRoundTip.Checked)
             {
-                double d = Convert.ToDouble(txtRoundedTotal.Text);
-                int finalAmount = (int)Math.Round(d, 0);
-                txtRoundedTotal.Text = finalAmount.ToString("C");
-                lblRoundTotal.Visible = true;
-                txtRoundedTotal.Visible = true;
+                if (rbtn0.Checked)
+                {
+                    MessageBox.Show("Cannot round with 0 tip");
+                }
+                else {
+                    double tempTip = double.Parse(tbxTip.Text.Substring(1));
+                    double tempGrandTotal = double.Parse(tbxGrandTotal.Text.Substring(1));
+                    double newGrandTotal = Math.Round(tempGrandTotal, 0, MidpointRounding.AwayFromZero);
+                    double difference = tempGrandTotal - newGrandTotal;
+
+                    tbxTip.Text = (tempTip - difference).ToString("C");
+                    tbxGrandTotal.Text = newGrandTotal.ToString("C");
+                    //MessageBox.Show(newGrandTotal.ToString());
+
+
+                }
             }
             
         }
