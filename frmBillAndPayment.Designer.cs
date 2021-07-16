@@ -33,6 +33,8 @@ namespace FinalProjectGUIDraft
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.gbxItemizedBill = new System.Windows.Forms.GroupBox();
+            this.txtRoundedTotal = new System.Windows.Forms.TextBox();
+            this.lblRoundTotal = new System.Windows.Forms.Label();
             this.tbxGrandTotal = new System.Windows.Forms.TextBox();
             this.lblGrandTotal = new System.Windows.Forms.Label();
             this.tbxTip = new System.Windows.Forms.TextBox();
@@ -58,6 +60,7 @@ namespace FinalProjectGUIDraft
             this.rbtnCreditCard = new System.Windows.Forms.RadioButton();
             this.rbtnCash = new System.Windows.Forms.RadioButton();
             this.gbxAddTip = new System.Windows.Forms.GroupBox();
+            this.chkRoundTip = new System.Windows.Forms.CheckBox();
             this.rbtn0 = new System.Windows.Forms.RadioButton();
             this.rbtn25 = new System.Windows.Forms.RadioButton();
             this.rbtn20 = new System.Windows.Forms.RadioButton();
@@ -94,6 +97,8 @@ namespace FinalProjectGUIDraft
             // 
             // gbxItemizedBill
             // 
+            this.gbxItemizedBill.Controls.Add(this.txtRoundedTotal);
+            this.gbxItemizedBill.Controls.Add(this.lblRoundTotal);
             this.gbxItemizedBill.Controls.Add(this.tbxGrandTotal);
             this.gbxItemizedBill.Controls.Add(this.lblGrandTotal);
             this.gbxItemizedBill.Controls.Add(this.tbxTip);
@@ -111,9 +116,29 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill.TabStop = false;
             this.gbxItemizedBill.Text = "Itemized Bill";
             // 
+            // txtRoundedTotal
+            // 
+            this.txtRoundedTotal.Location = new System.Drawing.Point(202, 518);
+            this.txtRoundedTotal.Name = "txtRoundedTotal";
+            this.txtRoundedTotal.ReadOnly = true;
+            this.txtRoundedTotal.Size = new System.Drawing.Size(100, 26);
+            this.txtRoundedTotal.TabIndex = 34;
+            this.txtRoundedTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRoundedTotal.Visible = false;
+            // 
+            // lblRoundTotal
+            // 
+            this.lblRoundTotal.AutoSize = true;
+            this.lblRoundTotal.Location = new System.Drawing.Point(53, 521);
+            this.lblRoundTotal.Name = "lblRoundTotal";
+            this.lblRoundTotal.Size = new System.Drawing.Size(132, 20);
+            this.lblRoundTotal.TabIndex = 33;
+            this.lblRoundTotal.Text = "Rounded Total:";
+            this.lblRoundTotal.Visible = false;
+            // 
             // tbxGrandTotal
             // 
-            this.tbxGrandTotal.Location = new System.Drawing.Point(173, 483);
+            this.tbxGrandTotal.Location = new System.Drawing.Point(202, 477);
             this.tbxGrandTotal.Name = "tbxGrandTotal";
             this.tbxGrandTotal.ReadOnly = true;
             this.tbxGrandTotal.Size = new System.Drawing.Size(100, 26);
@@ -123,7 +148,7 @@ namespace FinalProjectGUIDraft
             // lblGrandTotal
             // 
             this.lblGrandTotal.AutoSize = true;
-            this.lblGrandTotal.Location = new System.Drawing.Point(76, 486);
+            this.lblGrandTotal.Location = new System.Drawing.Point(105, 480);
             this.lblGrandTotal.Name = "lblGrandTotal";
             this.lblGrandTotal.Size = new System.Drawing.Size(54, 20);
             this.lblGrandTotal.TabIndex = 31;
@@ -131,7 +156,7 @@ namespace FinalProjectGUIDraft
             // 
             // tbxTip
             // 
-            this.tbxTip.Location = new System.Drawing.Point(173, 440);
+            this.tbxTip.Location = new System.Drawing.Point(202, 434);
             this.tbxTip.Name = "tbxTip";
             this.tbxTip.ReadOnly = true;
             this.tbxTip.Size = new System.Drawing.Size(100, 26);
@@ -141,7 +166,7 @@ namespace FinalProjectGUIDraft
             // lblTip
             // 
             this.lblTip.AutoSize = true;
-            this.lblTip.Location = new System.Drawing.Point(76, 443);
+            this.lblTip.Location = new System.Drawing.Point(105, 437);
             this.lblTip.Name = "lblTip";
             this.lblTip.Size = new System.Drawing.Size(38, 20);
             this.lblTip.TabIndex = 29;
@@ -149,7 +174,7 @@ namespace FinalProjectGUIDraft
             // 
             // tbxTax
             // 
-            this.tbxTax.Location = new System.Drawing.Point(173, 396);
+            this.tbxTax.Location = new System.Drawing.Point(202, 390);
             this.tbxTax.Name = "tbxTax";
             this.tbxTax.ReadOnly = true;
             this.tbxTax.Size = new System.Drawing.Size(100, 26);
@@ -159,7 +184,7 @@ namespace FinalProjectGUIDraft
             // lblTax
             // 
             this.lblTax.AutoSize = true;
-            this.lblTax.Location = new System.Drawing.Point(76, 399);
+            this.lblTax.Location = new System.Drawing.Point(105, 393);
             this.lblTax.Name = "lblTax";
             this.lblTax.Size = new System.Drawing.Size(42, 20);
             this.lblTax.TabIndex = 27;
@@ -167,7 +192,7 @@ namespace FinalProjectGUIDraft
             // 
             // tbxSubTotal
             // 
-            this.tbxSubTotal.Location = new System.Drawing.Point(173, 351);
+            this.tbxSubTotal.Location = new System.Drawing.Point(202, 345);
             this.tbxSubTotal.Name = "tbxSubTotal";
             this.tbxSubTotal.ReadOnly = true;
             this.tbxSubTotal.Size = new System.Drawing.Size(100, 26);
@@ -177,7 +202,7 @@ namespace FinalProjectGUIDraft
             // lblSubTotal
             // 
             this.lblSubTotal.AutoSize = true;
-            this.lblSubTotal.Location = new System.Drawing.Point(76, 354);
+            this.lblSubTotal.Location = new System.Drawing.Point(105, 348);
             this.lblSubTotal.Name = "lblSubTotal";
             this.lblSubTotal.Size = new System.Drawing.Size(91, 20);
             this.lblSubTotal.TabIndex = 25;
@@ -361,6 +386,7 @@ namespace FinalProjectGUIDraft
             // 
             // gbxAddTip
             // 
+            this.gbxAddTip.Controls.Add(this.chkRoundTip);
             this.gbxAddTip.Controls.Add(this.rbtn0);
             this.gbxAddTip.Controls.Add(this.rbtn25);
             this.gbxAddTip.Controls.Add(this.rbtn20);
@@ -369,10 +395,21 @@ namespace FinalProjectGUIDraft
             this.gbxAddTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxAddTip.Location = new System.Drawing.Point(667, 166);
             this.gbxAddTip.Name = "gbxAddTip";
-            this.gbxAddTip.Size = new System.Drawing.Size(523, 106);
+            this.gbxAddTip.Size = new System.Drawing.Size(523, 127);
             this.gbxAddTip.TabIndex = 24;
             this.gbxAddTip.TabStop = false;
             this.gbxAddTip.Text = "Add a Tip";
+            // 
+            // chkRoundTip
+            // 
+            this.chkRoundTip.AutoSize = true;
+            this.chkRoundTip.Location = new System.Drawing.Point(28, 82);
+            this.chkRoundTip.Name = "chkRoundTip";
+            this.chkRoundTip.Size = new System.Drawing.Size(313, 24);
+            this.chkRoundTip.TabIndex = 5;
+            this.chkRoundTip.Text = "Check if you want to round the total";
+            this.chkRoundTip.UseVisualStyleBackColor = true;
+            this.chkRoundTip.CheckedChanged += new System.EventHandler(this.chkRoundTip_CheckedChanged);
             // 
             // rbtn0
             // 
@@ -513,5 +550,8 @@ namespace FinalProjectGUIDraft
         internal System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblDateFormat;
         private System.Windows.Forms.Label lblCardNumberFormat;
+        public System.Windows.Forms.TextBox txtRoundedTotal;
+        private System.Windows.Forms.Label lblRoundTotal;
+        private System.Windows.Forms.CheckBox chkRoundTip;
     }
 }
