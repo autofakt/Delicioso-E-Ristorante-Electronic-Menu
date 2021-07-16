@@ -13,7 +13,14 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmBillAndPayment : Form
     {
+        // Variable fields //
         public static string paymentType = "";
+        public static string cardNumber = "";
+        public static string expDate = "";
+        public static string pinNumber = "";
+        public const int CARD_MIN_LENGTH = 13;
+        public const int EXDATE_MIN_LENGTH = 4;
+        public const int PIN_MIN_LENGTH = 4;
 
         public frmBillAndPayment()
         {
@@ -69,92 +76,132 @@ namespace FinalProjectGUIDraft
             outputFile.WriteLine(frmMainMenu.receiptCounter.ToString());
             outputFile.Close();
         }
-        // Lee //
-        // Method checks if string consists of numbers only //
-        public bool isOnlyDigits(string str)
-        {
-            foreach (char c in str)
-            {
-                if (c < '0' || c > '9')
-                    return false;
-            }
 
-            return true;
-        }
-        // Lee //
-        // Method checks if string is has a valid length //
-        public bool validCardLength()
+        /* couldn't get this to work yet
+        public bool isOnlyDigits(string cardNum)
         {
-            if (txtCardNumber.TextLength == 16)
+            foreach (char ch in cardNum)
             {
+                if (char.IsDigit(ch))
+                { 
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            return false;
+        }
+        */
+
+        // Lee //
+        // Method validates Credit Card info and returns a bool //
+        public bool validateCreditCard(string cardNum, string expDate)
+        {
+            //bool onlyDigits = isOnlyDigits(cardNum);
+            if (cardNum.Length >= CARD_MIN_LENGTH && expDate.Length == EXDATE_MIN_LENGTH)
+            { 
                 return true;
             }
             else
-            {
                 return false;
+        }
+        // Lee //
+        // Method validates Debit Card info and returns a bool //
+        private bool validateDebitCard(string cardNum, string expDate, string pinNum)
+        {
+            if (cardNum.Length >= CARD_MIN_LENGTH && expDate.Length == EXDATE_MIN_LENGTH && pinNum.Length == PIN_MIN_LENGTH)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        // Lee //
+        // Method validates Payment Method and returns a bool //
+        public bool isPymtMethodValid(string pymtType, string cardNum, string expDate, string pinNum)
+        {
+            switch (paymentType)
+            {
+                case "Credit Card":
+                    return validateCreditCard(cardNum, expDate);
+                    break;
+                case "Debit Card":
+                    return validateDebitCard(cardNum, expDate, pinNum);
+                    break;
+                case "Cash":
+                    return true;
+                    break;
+                default:
+                    return false;
             }
         }
+
         // Executes if Pay Bill button is clicked //
         private void btnPayBill_Click(object sender, EventArgs e)
         {
             // Lee //
-            // Call methods to validate card information //
-            if (validCardLength())
+            // Get user input from text boxes and assign to variables //
+            cardNumber = txtCardNumber.Text;
+            expDate = txtExpDate.Text;
+            pinNumber = txtPinNumber.Text;
+            // Assign return value of isPaymentMethodValid to variable validPaymentMethod bool //
+            bool validPaymentMethod = isPymtMethodValid(paymentType, cardNumber, expDate, pinNumber);
+            // Executes code IF user entered validPaymentMethod //
+            if (validPaymentMethod)
             {
-                string cardNumber = txtCardNumber.Text;
-                if (isOnlyDigits(cardNumber))
-                {
-                    //Yongqin Lin
-                    //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
-                    var list = Enumerable
-                    .Range(0, cardNumber.Length / 4)
-                    .Select(i => cardNumber.Substring(i * 4, 4))
-                    .ToList();
-                    var resl = string.Join("-", list);
-                    txtCardNumber.Text = resl;
+                //Yongqin Lin
+                //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
+                cardNumber = txtCardNumber.Text;
+                var list = Enumerable
+                .Range(0, cardNumber.Length / 4)
+                .Select(i => cardNumber.Substring(i * 4, 4))
+                .ToList();
+                var resl = string.Join("-", list);
+                txtCardNumber.Text = resl;
 
-                    frmReceipt receiptForm = new frmReceipt();
-                    DateTime now = DateTime.Now;
-                    string format = "MMM ddd d HH:mm yyyy";
-                    receiptForm.lblDateInfo.Text = now.ToString(format);
+                frmReceipt receiptForm = new frmReceipt();
+                DateTime now = DateTime.Now;
+                string format = "MMM ddd d HH:mm yyyy";
+                receiptForm.lblDateInfo.Text = now.ToString(format);
 
-                    receiptForm.lblReceiptNumInfo.Text = frmMainMenu.receiptCounter++.ToString(); // gets receipt number and increments
-                    writeReceiptCounter(); // writes new receipt counter value to file.
+                receiptForm.lblReceiptNumInfo.Text = frmMainMenu.receiptCounter++.ToString(); // gets receipt number and increments
+                writeReceiptCounter(); // writes new receipt counter value to file.
 
-                    for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
-                        receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
+                for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
+                    receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
 
-                    //double subTotal = frmMainMenu.getEstimate();
-                    double subTotal = frmViewOrder.getEstimate();
-                    receiptForm.lblSubTotal.Text = subTotal.ToString("C");
-                    double taxRate = 0.095;
-                    double tax = subTotal * taxRate;
-                    receiptForm.lblTaxInfo.Text = tax.ToString("C");
+                //double subTotal = frmMainMenu.getEstimate();
+                double subTotal = frmViewOrder.getEstimate();
+                receiptForm.lblSubTotal.Text = subTotal.ToString("C");
+                double taxRate = 0.095;
+                double tax = subTotal * taxRate;
+                receiptForm.lblTaxInfo.Text = tax.ToString("C");
 
-                    double tip = double.Parse(tbxTip.Text.Substring(1));
-                    receiptForm.lblTipInfo.Text = tip.ToString("C");
+                double tip = double.Parse(tbxTip.Text.Substring(1));
+                receiptForm.lblTipInfo.Text = tip.ToString("C");
 
 
-                    double grandTotal = subTotal + tax + tip;
-                    receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
+                double grandTotal = subTotal + tax + tip;
+                receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
 
-                    receiptForm.lblMethodPymtInfo.Text = paymentType;
-                    receiptForm.lblCustNameInfo.Text = frmMainMenu.customerName;
+                receiptForm.lblMethodPymtInfo.Text = paymentType;
+                receiptForm.lblCustNameInfo.Text = frmMainMenu.customerName;
 
-                    receiptForm.ShowDialog();
+                receiptForm.ShowDialog();
 
-                    this.Close();
-                }
-                else // Else displays error message //
-                {
-                    MessageBox.Show("Please only enter numbers and try again.");
-                }
+                this.Close();
             }
-            else // Else displays error message //
+            // Else it displays an error message //
+            else
             {
-                MessageBox.Show("Please enter a valid 16 digit card number and try again.");
+                MessageBox.Show("We could not process your payment.\nPlease review your information and try again.");
             }
         }
+
+
 
         private void rbtn10_CheckedChanged(object sender, EventArgs e)
         {
