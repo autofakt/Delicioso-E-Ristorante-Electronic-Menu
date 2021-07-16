@@ -125,7 +125,7 @@ namespace FinalProjectGUIDraft
             {
                 bool cardGood = long.TryParse(cardNum, out temp);
                 bool expDataGood = int.TryParse(expDate, out temp2);
-                bool pinGood = int.TryParse(pinNum, out temp2);
+                bool pinGood = int.TryParse(pinNum, out temp3);
                 return cardGood && expDataGood && pinGood;
             }
             return false;

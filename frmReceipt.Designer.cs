@@ -288,7 +288,7 @@ namespace FinalProjectGUIDraft
             this.btnSaveReceipt.Name = "btnSaveReceipt";
             this.btnSaveReceipt.Size = new System.Drawing.Size(193, 37);
             this.btnSaveReceipt.TabIndex = 35;
-            this.btnSaveReceipt.Text = "Save Receipt ";
+            this.btnSaveReceipt.Text = "Exit";
             this.btnSaveReceipt.UseVisualStyleBackColor = false;
             this.btnSaveReceipt.Click += new System.EventHandler(this.btnSaveReceipt_Click);
             // 
