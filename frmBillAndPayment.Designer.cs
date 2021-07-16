@@ -298,6 +298,7 @@ namespace FinalProjectGUIDraft
             // txtPinNumber
             // 
             this.txtPinNumber.Location = new System.Drawing.Point(207, 253);
+            this.txtPinNumber.MaxLength = 4;
             this.txtPinNumber.Name = "txtPinNumber";
             this.txtPinNumber.ReadOnly = true;
             this.txtPinNumber.Size = new System.Drawing.Size(97, 26);
@@ -315,6 +316,7 @@ namespace FinalProjectGUIDraft
             // txtExpDate
             // 
             this.txtExpDate.Location = new System.Drawing.Point(207, 202);
+            this.txtExpDate.MaxLength = 4;
             this.txtExpDate.Name = "txtExpDate";
             this.txtExpDate.ReadOnly = true;
             this.txtExpDate.Size = new System.Drawing.Size(58, 26);
@@ -332,6 +334,7 @@ namespace FinalProjectGUIDraft
             // txtCardNumber
             // 
             this.txtCardNumber.Location = new System.Drawing.Point(207, 153);
+            this.txtCardNumber.MaxLength = 16;
             this.txtCardNumber.Name = "txtCardNumber";
             this.txtCardNumber.ReadOnly = true;
             this.txtCardNumber.Size = new System.Drawing.Size(223, 26);
@@ -491,7 +494,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1331, 749);
+            this.ClientSize = new System.Drawing.Size(1331, 806);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbxAddTip);
