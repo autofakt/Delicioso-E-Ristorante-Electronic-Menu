@@ -109,7 +109,8 @@ namespace FinalProjectGUIDraft
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
-            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");     
+            tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+            txtRoundedTotal.Text = tbxGrandTotal.Text;
         }
 
         private void rbtn15_CheckedChanged(object sender, EventArgs e)
@@ -120,6 +121,7 @@ namespace FinalProjectGUIDraft
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+            txtRoundedTotal.Text = tbxGrandTotal.Text;
         }
 
         private void rbtn20_CheckedChanged(object sender, EventArgs e)
@@ -130,6 +132,7 @@ namespace FinalProjectGUIDraft
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+            txtRoundedTotal.Text = tbxGrandTotal.Text;
         }
 
         private void rbtn25_CheckedChanged(object sender, EventArgs e)
@@ -140,6 +143,7 @@ namespace FinalProjectGUIDraft
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax + newTip).ToString("C");
+            txtRoundedTotal.Text = tbxGrandTotal.Text;
         }
 
         private void rbtn0_CheckedChanged(object sender, EventArgs e)
@@ -150,11 +154,25 @@ namespace FinalProjectGUIDraft
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
             double tax = double.Parse(tbxTax.Text.Substring(1));
             tbxGrandTotal.Text = (subTotal + tax).ToString("C");
+            txtRoundedTotal.Text = tbxGrandTotal.Text;
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void chkRoundTip_CheckedChanged(object sender, EventArgs e)
+        {
+            //Round the total amount
+            if (chkRoundTip.Checked)
+            {
+                double d = Convert.ToDouble(txtRoundedTotal.Text);
+                int finalAmount = (int)Math.Round(d, 0);
+
+                txtRoundedTotal.Text = finalAmount.ToString();
+
+            }
         }
     }
 }
