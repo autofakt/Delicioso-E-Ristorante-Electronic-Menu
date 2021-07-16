@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace FinalProjectGUIDraft
 {
@@ -61,10 +62,19 @@ namespace FinalProjectGUIDraft
             txtPinNumber.ReadOnly = false;
         }
 
+        private void writeReceiptCounter()
+        {
+            StreamWriter outputFile;
+            outputFile = File.CreateText("receiptCounter.txt");
+            outputFile.WriteLine(frmMainMenu.receiptCounter.ToString());
+            outputFile.Close();
+        }
+
         private void btnPayBill_Click(object sender, EventArgs e)
         {
             //Yongqin Lin
             //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
+            
             string cardNumber = txtCardNumber.Text;
             var list = Enumerable
                 .Range(0, cardNumber.Length / 4)
@@ -77,6 +87,9 @@ namespace FinalProjectGUIDraft
             DateTime now = DateTime.Now;
             string format = "MMM ddd d HH:mm yyyy";
             receiptForm.lblDateInfo.Text = now.ToString(format);
+
+            receiptForm.lblReceiptNumInfo.Text = frmMainMenu.receiptCounter++.ToString(); // gets receipt number and increments
+            writeReceiptCounter(); // writes new receipt counter value to file.
 
             for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
                 receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));

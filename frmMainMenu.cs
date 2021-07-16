@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace FinalProjectGUIDraft
 {
@@ -15,8 +16,7 @@ namespace FinalProjectGUIDraft
         // Lee //
         // Declare Variable Field for customer name // 
         public static string customerName = "";
-
-        
+        public static int receiptCounter = 0;
 
         const int MAX_ITEMS = 22; // 22 Menu Items
         const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
@@ -40,13 +40,6 @@ namespace FinalProjectGUIDraft
            itemCounterFinal = counter;
         }
 
-        /*
-        public static double getEstimate()
-        {
-            return estimate;
-        }
-        */
-
         public static string[] items = new string[MAX_ITEMS];
         public static int[] quantity = new int[MAX_ITEMS];
         public static double[] price = new double[MAX_ITEMS];
@@ -55,22 +48,20 @@ namespace FinalProjectGUIDraft
         public static int[] quantityFinal = new int[MAX_ORDER];
         public static double[] priceFinal = new double[MAX_ORDER];
 
-        /*
-        public double estimateCalculator()
-        {
-            double sum = 0;
-            MessageBox.Show("Itemcounter: "+itemCounterFinal.ToString());
-            for(int i =0; i < itemCounterFinal; i++)
-            {
-                sum += priceFinal[i] * quantityFinal[i];
-            }
-
-            return sum;
-        }
-        */
+        
         public frmMainMenu()
         {
             InitializeComponent();
+            receiptCounter = readReceiptCounter();   //gets the receipt counter value;
+        }
+
+        public int readReceiptCounter() //reads file to get receipt number
+        {
+            StreamReader inputFile;
+            inputFile = File.OpenText("receiptCounter.txt");
+            int receiptCounter = int.Parse(inputFile.ReadLine());
+            inputFile.Close();
+            return receiptCounter;
         }
 
         // Salad Selection //
@@ -702,6 +693,7 @@ namespace FinalProjectGUIDraft
             nudCocaCola.Value = 0;
             // Counter //
             itemCounter = 0;
+
         }
 
         // Lee //
