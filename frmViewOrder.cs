@@ -27,7 +27,7 @@ namespace FinalProjectGUIDraft
         private void btnOrderMore_Click(object sender, EventArgs e)
         {
             frmMainMenu master = (frmMainMenu)Application.OpenForms["frmMainMenu"];
-            master.btnStartOver.PerformClick();
+            master.clearMainItems();
             this.Close();
         }
 

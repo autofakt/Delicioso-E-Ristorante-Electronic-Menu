@@ -676,6 +676,40 @@ namespace FinalProjectGUIDraft
 
         }
 
+        // Lee //
+        // Method clears only the items from the main menu //
+        public void clearMainItems()
+        {
+            // Main Course //
+            nudSpaghetti.Value = 0;
+            nudLasagna.Value = 0;
+            nudRatatouille.Value = 0;
+            nudFettAlfredo.Value = 0;
+            nudStuffedShells.Value = 0;
+            nudPizza.Value = 0;
+            nudPesto.Value = 0;
+            nudSeafoodPasta.Value = 0;
+            nudRavioli.Value = 0;
+            nudMacaroni.Value = 0;
+            // Salads//
+            nudCapreseSalad.Value = 0;
+            nudBigGreenSalad.Value = 0;
+            nudAntiPastoSalad.Value = 0;
+            // Desserts //
+            nudTiramisu.Value = 0;
+            nudGelato.Value = 0;
+            nudCannoli.Value = 0;
+            // Beverages //
+            nudRedWine.Value = 0;
+            nudWhiteWine.Value = 0;
+            nudItalianSoda.Value = 0;
+            nudSanPellegrino.Value = 0;
+            nudPellegrinoWater.Value = 0;
+            nudCocaCola.Value = 0;
+            // Counter //
+            itemCounter = 0;
+        }
+
         // Method used to clear everything in the main menu //
         public void clearMainMenu()
         {
@@ -716,7 +750,15 @@ namespace FinalProjectGUIDraft
         //Executes when Start Over button is clicked //
         public void btnStartOver_Click(object sender, EventArgs e)
         {
-            clearMainMenu();
+            // Check is customer has already placed an order //
+            if(itemCounterFinal == 0)
+            {
+                clearMainMenu();
+            }
+            else
+            {
+                MessageBox.Show("Sorry, but you've already placed an order.\nYou can start over after paying for your completed order.\nYou can request your check from View My Order.");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -172,6 +172,8 @@ namespace FinalProjectGUIDraft
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            frmMainMenu master = (frmMainMenu)Application.OpenForms["frmMainMenu"];
+            master.clearMainItems();
             this.Close();
         }
 
