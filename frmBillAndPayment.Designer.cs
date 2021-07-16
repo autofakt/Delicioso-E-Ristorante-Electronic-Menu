@@ -124,6 +124,7 @@ namespace FinalProjectGUIDraft
             this.txtRoundedTotal.Size = new System.Drawing.Size(100, 26);
             this.txtRoundedTotal.TabIndex = 34;
             this.txtRoundedTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtRoundedTotal.Visible = false;
             // 
             // lblRoundTotal
             // 
@@ -133,6 +134,7 @@ namespace FinalProjectGUIDraft
             this.lblRoundTotal.Size = new System.Drawing.Size(132, 20);
             this.lblRoundTotal.TabIndex = 33;
             this.lblRoundTotal.Text = "Rounded Total:";
+            this.lblRoundTotal.Visible = false;
             // 
             // tbxGrandTotal
             // 
