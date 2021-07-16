@@ -310,7 +310,8 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1332, 870);
+            this.ClientSize = new System.Drawing.Size(1332, 749);
+            this.ControlBox = false;
             this.Controls.Add(this.lblResetPrompt);
             this.Controls.Add(this.btnSaveReceipt);
             this.Controls.Add(this.lblCustNameInfo);

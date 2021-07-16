@@ -18,7 +18,7 @@ namespace FinalProjectGUIDraft
         public static string cardNumber = "";
         public static string expDate = "";
         public static string pinNumber = "";
-        public const int CARD_MIN_LENGTH = 13;
+        public const int CARD_MIN_LENGTH = 16; // we dont accept amex or 15 card credit cards
         public const int EXDATE_MIN_LENGTH = 4;
         public const int PIN_MIN_LENGTH = 4;
 
@@ -100,10 +100,15 @@ namespace FinalProjectGUIDraft
         // Method validates Credit Card info and returns a bool //
         public bool validateCreditCard(string cardNum, string expDate)
         {
-            //bool onlyDigits = isOnlyDigits(cardNum);
-            if (cardNum.Length >= CARD_MIN_LENGTH && expDate.Length == EXDATE_MIN_LENGTH)
-            { 
-                return true;
+            long temp;
+            int temp2;
+            
+            if (cardNum.Length == CARD_MIN_LENGTH && expDate.Length == EXDATE_MIN_LENGTH)
+            {
+                bool cardGood = long.TryParse(cardNum, out temp);
+                bool expDataGood = int.TryParse(expDate, out temp2);
+               // MessageBox.Show(cardGood + " " + expDataGood + " " + cardNum + " " + expDate);
+                return cardGood && expDataGood;
             }
             else
                 return false;
@@ -112,9 +117,16 @@ namespace FinalProjectGUIDraft
         // Method validates Debit Card info and returns a bool //
         private bool validateDebitCard(string cardNum, string expDate, string pinNum)
         {
+            long temp;
+            int temp2;
+            int temp3;
+
             if (cardNum.Length >= CARD_MIN_LENGTH && expDate.Length == EXDATE_MIN_LENGTH && pinNum.Length == PIN_MIN_LENGTH)
             {
-                return true;
+                bool cardGood = long.TryParse(cardNum, out temp);
+                bool expDataGood = int.TryParse(expDate, out temp2);
+                bool pinGood = int.TryParse(pinNum, out temp2);
+                return cardGood && expDataGood && pinGood;
             }
             return false;
 
@@ -123,17 +135,14 @@ namespace FinalProjectGUIDraft
         // Method validates Payment Method and returns a bool //
         public bool isPymtMethodValid(string pymtType, string cardNum, string expDate, string pinNum)
         {
-            switch (paymentType)
+            switch (pymtType)
             {
                 case "Credit Card":
                     return validateCreditCard(cardNum, expDate);
-                    break;
                 case "Debit Card":
                     return validateDebitCard(cardNum, expDate, pinNum);
-                    break;
                 case "Cash":
                     return true;
-                    break;
                 default:
                     return false;
             }
