@@ -69,50 +69,91 @@ namespace FinalProjectGUIDraft
             outputFile.WriteLine(frmMainMenu.receiptCounter.ToString());
             outputFile.Close();
         }
+        // Lee //
+        // Method checks if string consists of numbers only //
+        public bool isOnlyDigits(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
 
+            return true;
+        }
+        // Lee //
+        // Method checks if string is has a valid length //
+        public bool validCardLength()
+        {
+            if (txtCardNumber.TextLength == 16)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        // Executes if Pay Bill button is clicked //
         private void btnPayBill_Click(object sender, EventArgs e)
         {
-            //Yongqin Lin
-            //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
-            
-            string cardNumber = txtCardNumber.Text;
-            var list = Enumerable
-                .Range(0, cardNumber.Length / 4)
-                .Select(i => cardNumber.Substring(i * 4, 4))
-                .ToList();
-            var resl = string.Join("-", list);
-            txtCardNumber.Text = resl;
+            // Lee //
+            // Call methods to validate card information //
+            if (validCardLength())
+            {
+                string cardNumber = txtCardNumber.Text;
+                if (isOnlyDigits(cardNumber))
+                {
+                    //Yongqin Lin
+                    //Add a hyphen(-) after every 4 numbers after customer entered all 16 digits
+                    var list = Enumerable
+                    .Range(0, cardNumber.Length / 4)
+                    .Select(i => cardNumber.Substring(i * 4, 4))
+                    .ToList();
+                    var resl = string.Join("-", list);
+                    txtCardNumber.Text = resl;
 
-            frmReceipt receiptForm = new frmReceipt();
-            DateTime now = DateTime.Now;
-            string format = "MMM ddd d HH:mm yyyy";
-            receiptForm.lblDateInfo.Text = now.ToString(format);
+                    frmReceipt receiptForm = new frmReceipt();
+                    DateTime now = DateTime.Now;
+                    string format = "MMM ddd d HH:mm yyyy";
+                    receiptForm.lblDateInfo.Text = now.ToString(format);
 
-            receiptForm.lblReceiptNumInfo.Text = frmMainMenu.receiptCounter++.ToString(); // gets receipt number and increments
-            writeReceiptCounter(); // writes new receipt counter value to file.
+                    receiptForm.lblReceiptNumInfo.Text = frmMainMenu.receiptCounter++.ToString(); // gets receipt number and increments
+                    writeReceiptCounter(); // writes new receipt counter value to file.
 
-            for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
-                receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
-            //double subTotal = frmMainMenu.getEstimate();
-            double subTotal = frmViewOrder.getEstimate();
-            receiptForm.lblSubTotal.Text = subTotal.ToString("C");
-            double taxRate = 0.095;
-            double tax = subTotal * taxRate;
-            receiptForm.lblTaxInfo.Text = tax.ToString("C");
+                    for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
+                        receiptForm.lstItemsOrdered.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
 
-            double tip = double.Parse(tbxTip.Text.Substring(1));
-            receiptForm.lblTipInfo.Text = tip.ToString("C");
-            
+                    //double subTotal = frmMainMenu.getEstimate();
+                    double subTotal = frmViewOrder.getEstimate();
+                    receiptForm.lblSubTotal.Text = subTotal.ToString("C");
+                    double taxRate = 0.095;
+                    double tax = subTotal * taxRate;
+                    receiptForm.lblTaxInfo.Text = tax.ToString("C");
 
-            double grandTotal = subTotal + tax + tip;
-            receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
+                    double tip = double.Parse(tbxTip.Text.Substring(1));
+                    receiptForm.lblTipInfo.Text = tip.ToString("C");
 
-            receiptForm.lblMethodPymtInfo.Text = paymentType;
-            receiptForm.lblCustNameInfo.Text = frmMainMenu.customerName;
 
-            receiptForm.ShowDialog();
+                    double grandTotal = subTotal + tax + tip;
+                    receiptForm.lblGrandTotalInfo.Text = grandTotal.ToString("C");
 
-            this.Close();
+                    receiptForm.lblMethodPymtInfo.Text = paymentType;
+                    receiptForm.lblCustNameInfo.Text = frmMainMenu.customerName;
+
+                    receiptForm.ShowDialog();
+
+                    this.Close();
+                }
+                else // Else displays error message //
+                {
+                    MessageBox.Show("Please only enter numbers and try again.");
+                }
+            }
+            else // Else displays error message //
+            {
+                MessageBox.Show("Please enter a valid 16 digit card number and try again.");
+            }
         }
 
         private void rbtn10_CheckedChanged(object sender, EventArgs e)
