@@ -750,7 +750,7 @@ namespace FinalProjectGUIDraft
         //Executes when Start Over button is clicked //
         public void btnStartOver_Click(object sender, EventArgs e)
         {
-            // Check is customer has already placed an order //
+            // Checks if customer has already placed an order //
             if(itemCounterFinal == 0)
             {
                 clearMainMenu();
