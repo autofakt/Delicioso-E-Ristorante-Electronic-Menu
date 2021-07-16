@@ -158,6 +158,7 @@ namespace FinalProjectGUIDraft
 
         private void rbtn10_CheckedChanged(object sender, EventArgs e)
         {
+            chkRoundTip.Enabled = true;
             if (chkRoundTip.Checked)
                 chkRoundTip.Checked = false;
             double percent10 = .10;
@@ -170,6 +171,7 @@ namespace FinalProjectGUIDraft
 
         private void rbtn15_CheckedChanged(object sender, EventArgs e)
         {
+            chkRoundTip.Enabled = true;
             if (chkRoundTip.Checked)
                 chkRoundTip.Checked = false;
             double percent15 = .15;
@@ -182,6 +184,7 @@ namespace FinalProjectGUIDraft
 
         private void rbtn20_CheckedChanged(object sender, EventArgs e)
         {
+            chkRoundTip.Enabled = true;
             if (chkRoundTip.Checked)
                 chkRoundTip.Checked = false;
             double percent20 = .20;
@@ -194,6 +197,7 @@ namespace FinalProjectGUIDraft
 
         private void rbtn25_CheckedChanged(object sender, EventArgs e)
         {
+            chkRoundTip.Enabled = true;
             if (chkRoundTip.Checked)
                 chkRoundTip.Checked = false;
             double percent25 = .25;
@@ -206,8 +210,8 @@ namespace FinalProjectGUIDraft
 
         private void rbtn0_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkRoundTip.Checked)
-                chkRoundTip.Checked = false;
+            chkRoundTip.Enabled = false;
+                
             double newTip = 0;
             tbxTip.Text = newTip.ToString("C");
             double subTotal = double.Parse(tbxSubTotal.Text.Substring(1));
@@ -222,20 +226,26 @@ namespace FinalProjectGUIDraft
             this.Close();
         }
 
+        double tempTip;
+        double tempGrandTotal;
         private void chkRoundTip_CheckedChanged(object sender, EventArgs e)
         {
             //Yongqin 
             //Round the total amount
+
             
+
             if (chkRoundTip.Checked)
             {
                 if (rbtn0.Checked)
                 {
                     MessageBox.Show("Cannot round with 0 tip");
+                    
                 }
                 else {
-                    double tempTip = double.Parse(tbxTip.Text.Substring(1));
-                    double tempGrandTotal = double.Parse(tbxGrandTotal.Text.Substring(1));
+                     
+                     tempTip = double.Parse(tbxTip.Text.Substring(1));
+                     tempGrandTotal = double.Parse(tbxGrandTotal.Text.Substring(1));
                     double newGrandTotal = Math.Round(tempGrandTotal, 0, MidpointRounding.AwayFromZero);
                     double difference = tempGrandTotal - newGrandTotal;
 
@@ -245,6 +255,11 @@ namespace FinalProjectGUIDraft
 
 
                 }
+            }
+            else
+            {
+                    tbxTip.Text = tempTip.ToString("C");
+                    tbxGrandTotal.Text = tempGrandTotal.ToString("C");         
             }
             
         }
