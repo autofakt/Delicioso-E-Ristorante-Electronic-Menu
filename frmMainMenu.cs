@@ -16,7 +16,7 @@ namespace FinalProjectGUIDraft
         // Lee //
         // Declare Variable Field for customer name // 
         public static string customerName = "";
-        public static int receiptCounter = 0;
+        public static int receiptCounter = 1;
 
         const int MAX_ITEMS = 22; // 22 Menu Items
         const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
@@ -54,14 +54,30 @@ namespace FinalProjectGUIDraft
             InitializeComponent();
             receiptCounter = readReceiptCounter();   //gets the receipt counter value;
         }
-
+        /*
+        public void createReceiptCounterFile()
+        {
+                StreamWriter outputFile;
+                outputFile = File.CreateText("receiptCounter.txt");
+                outputFile.WriteLine(frmMainMenu.receiptCounter.ToString());
+                outputFile.Close();
+  
+        }
+        */
         public int readReceiptCounter() //reads file to get receipt number
         {
             StreamReader inputFile;
-            inputFile = File.OpenText("receiptCounter.txt");
-            int receiptCounter = int.Parse(inputFile.ReadLine());
-            inputFile.Close();
-            return receiptCounter;
+            try
+            {
+                inputFile = File.OpenText("receiptCounter.txt");
+                int receiptCounter = int.Parse(inputFile.ReadLine());
+                inputFile.Close();
+                return receiptCounter;
+            }
+            catch
+            {
+                return 1;
+            }
         }
 
         // Salad Selection //
