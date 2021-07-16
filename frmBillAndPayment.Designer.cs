@@ -237,9 +237,9 @@ namespace FinalProjectGUIDraft
             this.lblDateFormat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblDateFormat.Location = new System.Drawing.Point(280, 208);
             this.lblDateFormat.Name = "lblDateFormat";
-            this.lblDateFormat.Size = new System.Drawing.Size(108, 16);
+            this.lblDateFormat.Size = new System.Drawing.Size(104, 16);
             this.lblDateFormat.TabIndex = 15;
-            this.lblDateFormat.Text = "(Format: MM/YY)";
+            this.lblDateFormat.Text = "(Format: MMYY)";
             this.lblDateFormat.Visible = false;
             // 
             // label1
@@ -470,7 +470,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1331, 806);
+            this.ClientSize = new System.Drawing.Size(1331, 749);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.gbxAddTip);
