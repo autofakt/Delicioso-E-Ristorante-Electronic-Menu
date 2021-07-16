@@ -164,6 +164,7 @@ namespace FinalProjectGUIDraft
 
         private void chkRoundTip_CheckedChanged(object sender, EventArgs e)
         {
+            //Yongqin 
             //Round the total amount
             if (chkRoundTip.Checked)
             {
