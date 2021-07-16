@@ -226,7 +226,7 @@ namespace FinalProjectGUIDraft
             this.Close();
         }
 
-        double tempTip;
+        double tempTip; //keeps track of pre tip rounded values to toggle with check box.
         double tempGrandTotal;
         private void chkRoundTip_CheckedChanged(object sender, EventArgs e)
         {
