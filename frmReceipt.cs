@@ -15,7 +15,7 @@ namespace FinalProjectGUIDraft
     {
         // Lee //
         // FilePath for opening and saving file name //
-        string filePath = "info.txt";
+        
         public frmReceipt()
         {
             InitializeComponent();

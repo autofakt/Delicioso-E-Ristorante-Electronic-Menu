@@ -40,6 +40,8 @@ namespace FinalProjectGUIDraft
            itemCounterFinal = counter;
         }
 
+        
+
         public static string[] items = new string[MAX_ITEMS];
         public static int[] quantity = new int[MAX_ITEMS];
         public static double[] price = new double[MAX_ITEMS];
@@ -721,7 +723,7 @@ namespace FinalProjectGUIDraft
         public void clearMainMenu()
         {
             // Customer Name //
-            txtCustomerName.Text = " ";
+            txtCustomerName.Text = "";
             // Main Courses //
             nudSpaghetti.Value = 0;
             nudLasagna.Value = 0;
