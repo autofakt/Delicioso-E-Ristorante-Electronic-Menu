@@ -476,11 +476,11 @@ namespace FinalProjectGUIDraft
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnBack.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Black;
-            this.btnBack.Location = new System.Drawing.Point(1087, 105);
+            this.btnBack.Location = new System.Drawing.Point(1036, 105);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(103, 37);
+            this.btnBack.Size = new System.Drawing.Size(154, 37);
             this.btnBack.TabIndex = 25;
-            this.btnBack.Text = "Back";
+            this.btnBack.Text = "Back to Main Menu";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 

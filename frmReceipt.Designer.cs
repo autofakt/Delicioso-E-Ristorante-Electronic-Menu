@@ -282,13 +282,14 @@ namespace FinalProjectGUIDraft
             // 
             // btnSaveReceipt
             // 
+            this.btnSaveReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSaveReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveReceipt.Location = new System.Drawing.Point(571, 777);
+            this.btnSaveReceipt.Location = new System.Drawing.Point(861, 35);
             this.btnSaveReceipt.Name = "btnSaveReceipt";
             this.btnSaveReceipt.Size = new System.Drawing.Size(193, 37);
             this.btnSaveReceipt.TabIndex = 35;
             this.btnSaveReceipt.Text = "Save Receipt ";
-            this.btnSaveReceipt.UseVisualStyleBackColor = true;
+            this.btnSaveReceipt.UseVisualStyleBackColor = false;
             this.btnSaveReceipt.Click += new System.EventHandler(this.btnSaveReceipt_Click);
             // 
             // lblResetPrompt
@@ -296,7 +297,7 @@ namespace FinalProjectGUIDraft
             this.lblResetPrompt.AutoSize = true;
             this.lblResetPrompt.BackColor = System.Drawing.Color.Transparent;
             this.lblResetPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResetPrompt.Location = new System.Drawing.Point(567, 817);
+            this.lblResetPrompt.Location = new System.Drawing.Point(857, 75);
             this.lblResetPrompt.Name = "lblResetPrompt";
             this.lblResetPrompt.Size = new System.Drawing.Size(198, 20);
             this.lblResetPrompt.TabIndex = 36;
@@ -309,7 +310,7 @@ namespace FinalProjectGUIDraft
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1332, 749);
+            this.ClientSize = new System.Drawing.Size(1332, 870);
             this.Controls.Add(this.lblResetPrompt);
             this.Controls.Add(this.btnSaveReceipt);
             this.Controls.Add(this.lblCustNameInfo);
