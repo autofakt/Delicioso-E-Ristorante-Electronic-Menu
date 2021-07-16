@@ -33,8 +33,6 @@ namespace FinalProjectGUIDraft
             this.picRestLogo = new System.Windows.Forms.PictureBox();
             this.lblRestaurantName = new System.Windows.Forms.Label();
             this.gbxItemizedBill = new System.Windows.Forms.GroupBox();
-            this.txtRoundedTotal = new System.Windows.Forms.TextBox();
-            this.lblRoundTotal = new System.Windows.Forms.Label();
             this.tbxGrandTotal = new System.Windows.Forms.TextBox();
             this.lblGrandTotal = new System.Windows.Forms.Label();
             this.tbxTip = new System.Windows.Forms.TextBox();
@@ -97,8 +95,6 @@ namespace FinalProjectGUIDraft
             // 
             // gbxItemizedBill
             // 
-            this.gbxItemizedBill.Controls.Add(this.txtRoundedTotal);
-            this.gbxItemizedBill.Controls.Add(this.lblRoundTotal);
             this.gbxItemizedBill.Controls.Add(this.tbxGrandTotal);
             this.gbxItemizedBill.Controls.Add(this.lblGrandTotal);
             this.gbxItemizedBill.Controls.Add(this.tbxTip);
@@ -115,26 +111,6 @@ namespace FinalProjectGUIDraft
             this.gbxItemizedBill.TabIndex = 22;
             this.gbxItemizedBill.TabStop = false;
             this.gbxItemizedBill.Text = "Itemized Bill";
-            // 
-            // txtRoundedTotal
-            // 
-            this.txtRoundedTotal.Location = new System.Drawing.Point(202, 518);
-            this.txtRoundedTotal.Name = "txtRoundedTotal";
-            this.txtRoundedTotal.ReadOnly = true;
-            this.txtRoundedTotal.Size = new System.Drawing.Size(100, 26);
-            this.txtRoundedTotal.TabIndex = 34;
-            this.txtRoundedTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtRoundedTotal.Visible = false;
-            // 
-            // lblRoundTotal
-            // 
-            this.lblRoundTotal.AutoSize = true;
-            this.lblRoundTotal.Location = new System.Drawing.Point(53, 521);
-            this.lblRoundTotal.Name = "lblRoundTotal";
-            this.lblRoundTotal.Size = new System.Drawing.Size(132, 20);
-            this.lblRoundTotal.TabIndex = 33;
-            this.lblRoundTotal.Text = "Rounded Total:";
-            this.lblRoundTotal.Visible = false;
             // 
             // tbxGrandTotal
             // 
@@ -550,8 +526,6 @@ namespace FinalProjectGUIDraft
         internal System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblDateFormat;
         private System.Windows.Forms.Label lblCardNumberFormat;
-        public System.Windows.Forms.TextBox txtRoundedTotal;
-        private System.Windows.Forms.Label lblRoundTotal;
         private System.Windows.Forms.CheckBox chkRoundTip;
     }
 }
