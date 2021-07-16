@@ -358,7 +358,7 @@ namespace FinalProjectGUIDraft
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.PictureBox picGrazie;
         public System.Windows.Forms.Label lblDateInfo;  //made public
-        private System.Windows.Forms.Label lblReceiptNumInfo;
+        public System.Windows.Forms.Label lblReceiptNumInfo; //made public
         public System.Windows.Forms.Label lblSubTotal; //made public
         public System.Windows.Forms.Label lblTaxInfo; //made public
         public System.Windows.Forms.Label lblTipInfo; //made public
