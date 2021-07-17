@@ -12,16 +12,16 @@ namespace FinalProjectGUIDraft
 {
     public partial class frmViewOrder : Form
     {
-        // Variable Fields //
+        // Variable Fields and Constants //
         public static bool itemOrdered = false;
         static double estimate = 0;
+        public const double TAXRATE = 0.095;
 
         public frmViewOrder()
         {
             InitializeComponent();
         }
 
-       
         // Lee //
         // Added event handler to OrderMore button which closes form //
         private void btnOrderMore_Click(object sender, EventArgs e)
@@ -30,22 +30,21 @@ namespace FinalProjectGUIDraft
             master.clearMainItems();
             this.Close();
         }
-
+        // Method returns estimate //
         public static double getEstimate()
         {
             return estimate;
         }
-
+        // Method calculates sum of items ordered and returns a double //
         public double estimateCalculator()
         {
             int itemCounterFinal = frmMainMenu.getItemCounterFinal();
             double sum = 0;
-            
+
             for (int i = 0; i < itemCounterFinal; i++)
             {
                 sum += frmMainMenu.priceFinal[i] * frmMainMenu.quantityFinal[i];
             }
-
             return sum;
         }
         // Lee //
@@ -63,8 +62,7 @@ namespace FinalProjectGUIDraft
                 return false;
             }
         }
-
-
+        // Executes when request check button is clicked //
         private void btnRequestCheck_Click(object sender, EventArgs e)
         {
             // Lee //
@@ -74,27 +72,35 @@ namespace FinalProjectGUIDraft
             if (itemOrdered)
             {
                 frmBillAndPayment paymentForm = new frmBillAndPayment();
+
+                // For Loop add each item to list in Itemized Bill Form //
                 for (int i = 0; i < frmMainMenu.getItemCounterFinal(); i++)
                     paymentForm.lstItemizedBill.Items.Add(frmMainMenu.quantityFinal[i] + " " + frmMainMenu.itemsFinal[i] + "\t" + (frmMainMenu.quantityFinal[i] * frmMainMenu.priceFinal[i]));
 
-                //double subTotal = frmMainMenu.getEstimate();
+                // Calls method and assigns results to estimate variable //
                 estimate = estimateCalculator();
+
+                // Calculate and display subtotal //
                 double subTotal = estimate;
                 paymentForm.tbxSubTotal.Text = subTotal.ToString("C");
 
-                double taxRate = 0.095;
-                double tax = subTotal * taxRate;
+                // Calculate and display tax //
+                double tax = subTotal * TAXRATE;
                 paymentForm.tbxTax.Text = tax.ToString("C");
 
+                // Calculate and display tip //
                 double tip = 0;
                 paymentForm.tbxTip.Text = tip.ToString("C");
                 paymentForm.rbtn0.Checked = true;
 
+                // Calculate and display grandtotal //
                 double grandTotal = subTotal + tax;
                 paymentForm.tbxGrandTotal.Text = grandTotal.ToString("C");
 
+                // Display BillAndPayment Form //
                 paymentForm.ShowDialog();
 
+                // Closes View Order Form //
                 this.Close();
             }
             else // Else it displays an error message //
@@ -102,8 +108,7 @@ namespace FinalProjectGUIDraft
                 MessageBox.Show("Please submit your order before requesting your check.");
             }
         }
-
-
+        // Executes if Submit Order Button is clicked //
         private void btnSubmitOrder_Click(object sender, EventArgs e)
         {
             // Confirmation Message that order was submitted successfully //

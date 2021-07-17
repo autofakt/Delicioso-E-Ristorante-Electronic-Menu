@@ -16,40 +16,43 @@ namespace FinalProjectGUIDraft
         // Lee //
         // Declare Variable Field for customer name // 
         public static string customerName = "";
-        public static int receiptCounter = 1;
+        public static int receiptCounter = 0;
 
         const int MAX_ITEMS = 22; // 22 Menu Items
         const int MAX_ORDER = 50; // Cannot have more than 50 items in one order.
 
         static int itemCounter = 0; //counter for the current order array
         static int itemCounterFinal = 0; //counter for the total order array
-        //static double estimate = 0;
 
+        // Method returns itemCounter //
         public static int getItemCounter()
         {
                 return itemCounter; 
         }
 
+        // Method return itemCounterFinal //
         public static int getItemCounterFinal()
         {
             return itemCounterFinal;
         }
 
+        // Method assigns counter to itemCounterFinal //
         public static void setItemCounterFinal(int counter)
         {
            itemCounterFinal = counter;
         }
 
-        
-
+        // Create arrays to hold selected items //
+        // Holds items for Your Order listbox //
         public static string[] items = new string[MAX_ITEMS];
         public static int[] quantity = new int[MAX_ITEMS];
         public static double[] price = new double[MAX_ITEMS];
-
+        // Holds items for Completed Order listbox //
         public static string[] itemsFinal = new string[MAX_ORDER];
         public static int[] quantityFinal = new int[MAX_ORDER];
         public static double[] priceFinal = new double[MAX_ORDER];
 
+        // Method clears the arrays and resets counter to zero //
         public static void resetFinalArray() // resets the completed order array
         {
             Array.Clear(itemsFinal, 0, itemsFinal.Length);
@@ -63,16 +66,8 @@ namespace FinalProjectGUIDraft
             InitializeComponent();
             receiptCounter = readReceiptCounter();   //gets the receipt counter value;
         }
-        /*
-        public void createReceiptCounterFile()
-        {
-                StreamWriter outputFile;
-                outputFile = File.CreateText("receiptCounter.txt");
-                outputFile.WriteLine(frmMainMenu.receiptCounter.ToString());
-                outputFile.Close();
-  
-        }
-        */
+
+        // Method opens and reads file with receipt number //
         public int readReceiptCounter() //reads file to get receipt number
         {
             StreamReader inputFile;
@@ -449,7 +444,6 @@ namespace FinalProjectGUIDraft
             }
         }
 
-
         // Executes when View Order button is clicked //
         public void btnViewOrder_Click(object sender, EventArgs e)
         {
@@ -464,9 +458,6 @@ namespace FinalProjectGUIDraft
             else
             {
                 itemCounter = 0;
-                //Array.Clear(items, 0, items.Length);
-                //Array.Clear(quantity, 0, items.Length);
-                //Array.Clear(price, 0, items.Length);
 
                 // Create orderForm object //
                 orderForm = new frmViewOrder();
@@ -475,6 +466,8 @@ namespace FinalProjectGUIDraft
                 customerName = txtCustomerName.Text;
                 orderForm.txtCustomerName.Text = customerName;
 
+                // If statements checks each item if the Numeric Up Down has changed //
+                // Main Course Items //
                 if (nudSpaghetti.Value >= 1)
                 {
                     items[itemCounter] = (lblSpaghetti.Text);
@@ -555,7 +548,7 @@ namespace FinalProjectGUIDraft
                     itemCounter++;
                 }
 
-                //SALADS
+                //SALADS items //
                 if (nudCapreseSalad.Value >= 1)
                 {
                     items[itemCounter] = (lblCapreseSalad.Text);
@@ -581,7 +574,7 @@ namespace FinalProjectGUIDraft
                 }
 
                 // Lee //
-                // Desserts //
+                // Desserts items //
                 if (nudTiramisu.Value >= 1)
                 {
                     items[itemCounter] = (lblTiramisu.Text);
@@ -667,11 +660,6 @@ namespace FinalProjectGUIDraft
                     for (int i = 0; i < itemCounterFinal; i++)
                         orderForm.lstTotalItemsOrdered.Items.Add(quantityFinal[i] + " " + itemsFinal[i]);
 
-                    // estimate variable is assigned the return value of calling estimateCalculator //
-                    //estimate = estimateCalculator();
-
-                    // Displays estimate total in lblEstimatedTotal //   instructor
-                    //orderForm.lblEstimatedTotal.Text = estimate.ToString("C");
                     orderForm.ShowDialog();
                 }
                 // Executes if user has not selected an order //
@@ -680,9 +668,7 @@ namespace FinalProjectGUIDraft
                     // Displays an error message //
                     MessageBox.Show("Please select an item to order.");
                 }
-
             }
-
         }
 
         // Lee //
@@ -762,19 +748,22 @@ namespace FinalProjectGUIDraft
             // Checks if customer has already placed an order //
             if(itemCounterFinal == 0)
             {
+                // Calls method to clear main menu //
                 clearMainMenu();
             }
             else
             {
+                // Error message displays if customer tries to dine and dash //
                 MessageBox.Show("Sorry, but you've already placed an order.\nYou can start over after paying for your completed order.\nYou can request your check from View My Order.");
             }
         }
-
+        // Executes when Exit button is clicked //
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Please ignore - unable to delete //
         private void MainMenu_Click(object sender, EventArgs e) 
         {
             // Accidental MainMenu Click created //

@@ -179,6 +179,7 @@ namespace FinalProjectGUIDraft
             this.txtCustomerName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustomerName.Location = new System.Drawing.Point(613, 197);
             this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.ReadOnly = true;
             this.txtCustomerName.Size = new System.Drawing.Size(126, 31);
             this.txtCustomerName.TabIndex = 29;
             this.txtCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
