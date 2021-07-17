@@ -9,6 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+/*
+ * CS115 C#
+ * July 16, 2021
+ * Final Lab 8
+ * Delicioso E-Ristorante electronic menu
+ * created by TriForceFinals group:
+ *          YongQin Lin
+ *          Meroujan Bagdadian
+ *          Lee Salazar Chavez
+ */
+
 namespace FinalProjectGUIDraft
 {
     public partial class frmMainMenu : Form
